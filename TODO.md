@@ -21,6 +21,7 @@
 
 ## Next Phase
 
+- [x] AI Foundations (AI, ML, DL, PyTorch, CNNs, Transformers, LLMs)
 - [ ] Data Structures Basics
 - [ ] Algorithms Basics
 - [ ] Databases Basics
@@ -29,4 +30,4 @@
 
 ## Goal
 
-Build a beginner-friendly knowledge base that explains engineering concepts in simple language, step by step, starting from zero.
+Build a beginner-friendly knowledge base that explains core engineering and AI concepts in simple language, step by step, starting from zero.
