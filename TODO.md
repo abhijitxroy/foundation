@@ -46,19 +46,25 @@
 
 ### Wishlist
 
-- [ ] Organize figures to know.
-- [ ] Organize skills to learn.
-- [ ] Organize subjects to learn.
-- [ ] Organize reading journey.
-- [ ] Organize travel roadmap.
+- [x] Organize figures to know.
+- [x] Organize skills to learn.
+- [x] Organize subjects to learn.
+- [x] Organize reading journey.
+- [x] Organize travel roadmap.
 
 ### Books
 
-- [ ] Populate must-read collection.
-- [ ] Populate finance collection.
-- [ ] Populate intelligence collection.
-- [ ] Populate mental fitness collection.
-- [ ] Populate dangerous books collection.
+- [x] Reorganize books collection structure.
+- [x] Create book note template.
+- [x] Update category dashboards (`README.md`).
+- [ ] Populate `core/` collection.
+- [ ] Populate `finance/` collection.
+- [ ] Populate `growth/` collection.
+- [ ] Populate `mind/` collection.
+- [ ] Populate `society/` collection.
+- [ ] Add chapter-wise notes to individual books.
+- [ ] Add PDF references to book notes.
+- [ ] Build quick revision notes for completed books.
 
 ### Films
 
@@ -90,4 +96,4 @@
 
 ## Goal
 
-Build a lifelong, beginner-friendly knowledge repository that explains engineering and general concepts in simple language, preserves curated collections, and supports continuous learning through structured, easy-to-revise notes.
+Build a lifelong, beginner-friendly knowledge repository that explains engineering and general concepts in simple language, preserves curated collections, captures knowledge from books and other resources, and supports continuous learning through structured, easy-to-revise notes.

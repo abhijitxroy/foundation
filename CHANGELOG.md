@@ -20,11 +20,24 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 
 #### General Knowledge
 
-- Added `general/books/` for curated reading collections.
-- Added `general/films/` for film and documentary watchlists.
-- Added `general/detective-stories/` for detective and adventure literature.
+- Added `general/books/` for building a personal knowledge library with structured book notes.
+- Added `general/films/` for film and documentary collections.
+- Added `general/detective-stories/` for detective stories, characters, and adventure literature.
 - Added `general/vocabulary/` for English, Bengali, and phrase collections.
-- Added `general/wishlist/` for long-term learning goals and personal roadmaps.
+- Added `general/wishlist/` for long-term learning goals, personal roadmaps, and curated lists.
+
+#### Book Knowledge System
+
+- Added category-based book organization:
+  - `core/`
+  - `finance/`
+  - `growth/`
+  - `mind/`
+  - `society/`
+- Added `book-note-template.md` for maintaining consistent book notes.
+- Added collection-level `README.md` files with reading roadmaps and category overviews.
+- Added individual Markdown files for preserving chapter-wise summaries, highlights, frameworks, revision notes, and references.
+- Added support for linking physical copies and local PDF references within book notes.
 
 #### Glossary & Diagrams
 
@@ -65,6 +78,19 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 - Evolved the repository from an engineering-only knowledge base into a broader lifelong learning and foundations repository.
 - Replaced the old `non-engineering/` area with a structured `general/` section.
 - Reorganized content into domain-focused collections to improve scalability and long-term maintainability.
+- Updated the root `README.md` to present the repository as a personal knowledge system with engineering and general learning domains.
+
+#### Books Organization
+
+- Reorganized the book collection from standalone category files into dedicated directories.
+- Renamed book categories to:
+  - `core/`
+  - `finance/`
+  - `growth/`
+  - `mind/`
+  - `society/`
+- Replaced simple reading lists with structured knowledge collections backed by individual book note files.
+- Updated book collection `README.md` files to include reading roadmaps, category descriptions, and long-term learning guidance.
 
 #### AI Organization
 
@@ -77,4 +103,4 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 
 ### Repository Goal
 
-- Continue building a beginner-friendly, long-term knowledge repository with simple explanations, curated collections, and a structured learning path across both engineering and general domains.
+- Continue building a beginner-friendly, long-term knowledge repository with simple explanations, curated collections, structured book notes, and a practical learning path across both engineering and general domains.
