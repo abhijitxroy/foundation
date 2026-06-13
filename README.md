@@ -12,17 +12,17 @@ The goal of this repository is not to collect random notes, but to create a stru
                ┌────────────────────────┼────────────────────────┐
                │                        │                        │
          Engineering                General                 Repository
-               │                       │                        │
-     ┌─────────┼─────────┐    ┌────────┼────────┐        ┌──────┴──────┐
-     │         │         │    │        │        │        │             │
- Computing     AI     Core  Books   Films  Vocabulary Diagrams      Glossary
- Concepts            Topics   │
-                              ├── Core
-							  ├── Finance
-							  ├── Growth
-							  ├── Mind
-							  ├── Society
-							  └── Book Notes
+               │                        │                        │
+     ┌─────────┼─────────┐     ┌────────┼────────┐        ┌──────┴──────┐
+     │         │         │     │        │        │        │             │
+ Computing     AI     Core   Books   Films  Vocabulary  Diagrams    Glossary
+ Concepts            Topics     │
+                                ├── Core
+                                ├── Finance
+                                ├── Growth
+                                ├── Mind
+                                ├── Society
+                                └── Book Notes
 ```
 
 ## Sections
