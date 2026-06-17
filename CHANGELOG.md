@@ -10,21 +10,23 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 
 #### Repository Structure
 
-- Introduced a high-level repository organization with dedicated sections for:
-  - `engineering/`
-  - `general/`
-  - `diagrams/`
-  - `glossary/`
+- `tech/`
+- `books/`
+- `learning/`
+- `entertainment/`
+- `wishlist/`
+- `diagrams/`
+- `glossary/`
 - Added section-level `README.md` files to improve navigation and discoverability.
 - Added placeholder structure and `.gitkeep` files for future content expansion.
 
-#### General Knowledge
+#### Knowledge Collections
 
-- Added `general/books/` for building a personal knowledge library with structured book notes.
-- Added `general/films/` for film and documentary collections.
-- Added `general/detective-stories/` for detective stories, characters, and adventure literature.
-- Added `general/vocabulary/` for English, Bengali, and phrase collections.
-- Added `general/wishlist/` for long-term learning goals, personal roadmaps, and curated lists.
+- Added `books/` for structured book notes, reading systems, and knowledge preservation.
+- Added `learning/` for vocabulary, language learning, and skill development resources.
+- Added `entertainment/films/` for films, documentaries, and watchlists.
+- Added `entertainment/stories/` for detective fiction, literature, characters, and story collections.
+- Added `wishlist/` for long-term learning goals, reading journeys, people to study, and future interests.
 
 #### Book Knowledge System
 
@@ -41,7 +43,7 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 
 #### Glossary & Diagrams
 
-- Added a centralized `glossary/` section for engineering terms, general terms, and abbreviations.
+- Added a centralized `glossary/` section for tech terms, common terms, and abbreviations.
 - Added a dedicated `diagrams/` section for visual learning resources and concept illustrations.
 
 #### AI Foundation
@@ -67,18 +69,25 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 
 #### AI Study Materials
 
-- Added `engineering/ai/README.md` with learning path and repository organization.
-- Added `engineering/ai/notes.md` for quick revision and memory reinforcement.
-- Added `engineering/ai/qna.md` for active recall and self-assessment.
+- Added `tech/ai/README.md` with learning path and repository organization.
+- Added `tech/ai/notes.md` for quick revision and memory reinforcement.
+- Added `tech/ai/qna.md` for active recall and self-assessment.
 
 ### Changed
 
 #### Repository Organization
 
-- Evolved the repository from an engineering-only knowledge base into a broader lifelong learning and foundations repository.
-- Replaced the old `non-engineering/` area with a structured `general/` section.
-- Reorganized content into domain-focused collections to improve scalability and long-term maintainability.
-- Updated the root `README.md` to present the repository as a personal knowledge system with engineering and general learning domains.
+- Evolved the repository from a technology-focused knowledge base into a broader lifelong learning and knowledge repository.
+- Reorganized content into dedicated domains:
+  - `tech/`
+  - `books/`
+  - `learning/`
+  - `entertainment/`
+  - `wishlist/`
+  - `glossary/`
+  - `diagrams/`
+- Improved repository navigation and long-term scalability through domain-oriented organization.
+- Updated the root `README.md` to present the repository as a personal knowledge system covering technology, books, learning, entertainment, and lifelong development.
 
 #### Books Organization
 
@@ -103,4 +112,4 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 
 ### Repository Goal
 
-- Continue building a beginner-friendly, long-term knowledge repository with simple explanations, curated collections, structured book notes, and a practical learning path across both engineering and general domains.
+- Continue building a beginner-friendly, long-term knowledge repository with simple explanations, structured notes, curated collections, visual learning resources, and practical learning paths across technology, books, learning, entertainment, and other lifelong interests.

@@ -88,8 +88,6 @@
 ## Repository
 
 - [ ] Complete root `README.md`.
-- [ ] Complete `engineering/README.md`.
-- [ ] Complete `general/README.md`.
 - [ ] Complete `glossary/` documentation.
 - [ ] Add diagrams across major topics.
 - [ ] Keep README structures synchronized with folder layout.

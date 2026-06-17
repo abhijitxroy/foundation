@@ -1,4 +1,4 @@
-# Engineering
+# Tech
 
 This section contains foundational engineering and computer science knowledge. The goal is to build a strong understanding of how modern software and computing systems work, from low-level hardware concepts to large-scale distributed architectures.
 

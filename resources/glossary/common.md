@@ -1,4 +1,4 @@
-# General Glossary
+# Common Glossary
 
 A collection of important non-engineering terms and concepts used throughout the repository. Definitions are intentionally concise and designed for quick reference and revision.
 
