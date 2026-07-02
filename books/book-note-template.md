@@ -17,6 +17,20 @@
 | **Status** | ⬜ To Read / 📖 Reading / ✅ Completed / 🔄 Revisit |
 | **Last Updated** | |
 
+## Reading Information
+
+| Field | Value |
+|--------|-------|
+| **Started On** | |
+| **Completed On** | |
+| **Reading Time** | |
+| **Reading Mode** | Physical / PDF / Kindle / Audiobook |
+| **Edition** | |
+| **ISBN** | |
+| **Publisher** | |
+| **Language** | |
+| **Rating (Personal)** | ⭐⭐⭐⭐⭐ |
+
 ## About the Book
 
 A short note about what the book is about, why it is worth reading, and the main ideas or problems it explores.
@@ -32,6 +46,12 @@ A few lines about the author, their background, and why they are worth reading.
 - 
 
 ## Why Keep This Book?
+
+- 
+- 
+- 
+
+## Who Should Read This?
 
 - 
 - 
@@ -95,8 +115,24 @@ A few lines about the author, their background, and why they are worth reading.
 - 
 - 
 
+## Key Quotes
+
+> ""
+
+> ""
+
+> ""
+
 ## Main Highlights
 
+- 
+- 
+- 
+- 
+
+## Key Takeaways
+
+- 
 - 
 - 
 - 
@@ -115,6 +151,20 @@ A few lines about the author, their background, and why they are worth reading.
 - [ ] 
 - [ ] 
 - [ ] 
+
+## Cross References
+
+### People
+
+-
+
+### Concepts
+
+-
+
+### Related Topics
+
+-
 
 ## Related Books
 

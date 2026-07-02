@@ -103,6 +103,13 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 
 #### AI Organization
 
+#### Repository Governance
+
+- Renamed the repository from **essentials** to **foundation** to better reflect its purpose within the Personal Knowledge Ecosystem (PKE).
+- Refined the root `README.md` to clearly define the repository's vision, role, and relationships with the `books` and `india` repositories while preserving existing content.
+- Added `ROADMAP.md` to document the repository's long-term strategic direction.
+- Established the Foundation repository as the governance and knowledge layer of the Personal Knowledge Ecosystem.
+
 - Reorganized AI content into logical learning groups:
   - `01-foundations`
   - `02-pytorch`
@@ -110,6 +117,6 @@ The format is based on the principles of **Keep a Changelog**, and this project 
   - `04-ai-ecosystem`
 - Updated the AI section structure to support progressive learning and long-term maintainability.
 
-### Repository Goal
+### Future Direction
 
 - Continue building a beginner-friendly, long-term knowledge repository with simple explanations, structured notes, curated collections, visual learning resources, and practical learning paths across technology, books, learning, entertainment, and other lifelong interests.

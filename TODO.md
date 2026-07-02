@@ -1,5 +1,22 @@
 # TODO
 
+## Personal Knowledge Ecosystem (PKE)
+
+### Foundation Repository
+
+- [x] Rename repository from `essentials` to `foundation`.
+- [x] Define repository identity.
+- [x] Review and improve the root `README.md`.
+- [x] Create `ROADMAP.md`.
+- [x] Update `CHANGELOG.md`.
+- [ ] Define repository standards.
+- [ ] Create reusable templates.
+- [ ] Document research methodology.
+- [ ] Document documentation methodology.
+- [ ] Establish metadata standards.
+
+---
+
 ## Engineering
 
 ### Computing
@@ -87,11 +104,10 @@
 
 ## Repository
 
-- [ ] Complete root `README.md`.
 - [ ] Complete `glossary/` documentation.
 - [ ] Add diagrams across major topics.
 - [ ] Keep README structures synchronized with folder layout.
 
-## Goal
+## Repository Goal
 
 Build a lifelong, beginner-friendly knowledge repository that explains engineering and general concepts in simple language, preserves curated collections, captures knowledge from books and other resources, and supports continuous learning through structured, easy-to-revise notes.
