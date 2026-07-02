@@ -2,18 +2,30 @@
 
 ## Personal Knowledge Ecosystem (PKE)
 
-### Foundation Repository
+### Foundation Milestone 1 (Completed)
 
 - [x] Rename repository from `essentials` to `foundation`.
 - [x] Define repository identity.
 - [x] Review and improve the root `README.md`.
 - [x] Create `ROADMAP.md`.
 - [x] Update `CHANGELOG.md`.
-- [ ] Define repository standards.
+- [x] Define repository standards.
 - [ ] Create reusable templates.
-- [ ] Document research methodology.
-- [ ] Document documentation methodology.
+- [x] Document research methodology.
+- [x] Document documentation methodology.
 - [ ] Establish metadata standards.
+
+### Foundation Milestone 2
+
+- [ ] Create reusable template library.
+- [ ] Create biography template.
+- [ ] Create city template.
+- [ ] Create state template.
+- [ ] Create timeline template.
+- [ ] Create event template.
+- [ ] Create documentary template.
+- [ ] Create metadata standard.
+- [ ] Expand repository standards.
 
 ---
 
