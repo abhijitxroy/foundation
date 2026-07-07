@@ -30,7 +30,7 @@
 - [ ] Macro
 - [ ] Action Mode
 - [ ] Cinematic Mode
-- [ ] Best Settings by Scenario
+- [ ] Best Settings by Situation
 - [ ] Field Notes
 
 ## Videography
@@ -72,7 +72,7 @@
 
 ## Projects
 
-- [ ] Create first photography project
+- [ ] Create first project from TEMPLATE.md
 - [ ] Review photos after each trip
 - [ ] Record lessons learned
 - [ ] Save best camera settings
