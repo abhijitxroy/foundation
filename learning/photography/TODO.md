@@ -69,3 +69,10 @@
 - [ ] Filters
 - [ ] Flash
 - [ ] Accessories
+
+## Projects
+
+- [ ] Create first photography project
+- [ ] Review photos after each trip
+- [ ] Record lessons learned
+- [ ] Save best camera settings
