@@ -4,7 +4,48 @@ All notable changes to this repository will be documented in this file.
 
 The format is based on the principles of **Keep a Changelog**, and this project follows a simple, human-readable changelog style.
 
-## [Unreleased]
+## [v1.4.0] - Photography Learning Foundation
+
+### Added
+
+- Added a dedicated `learning/photography/` knowledge base.
+- Added photography fundamentals, iPhone photography, videography, editing, and curated resources.
+- Added photography learning roadmap and TODO tracking.
+- Added photography project templates and project guidelines.
+- Added photography assets for visual learning.
+
+## [v1.3.0] - AI Learning Foundation
+
+### Added
+
+#### AI Foundation
+
+- Added a comprehensive AI learning track covering:
+  - AI Overview
+  - AI Fundamentals
+  - AI Training vs Inference
+  - Machine Learning
+  - Deep Learning
+  - Neural Networks
+  - PyTorch
+  - Tensors
+  - Autograd
+  - `torch.nn`
+  - `torch.optim`
+  - Training Loop
+  - Convolutional Neural Networks (CNNs)
+  - Transformers
+  - Large Language Models (LLMs)
+  - Hugging Face
+  - Model Deployment
+
+#### AI Study Materials
+
+- Added `tech/ai/README.md` with learning path and repository organization.
+- Added `tech/ai/notes.md` for quick revision and memory reinforcement.
+- Added `tech/ai/qna.md` for active recall and self-assessment.
+
+## [v1.2.0] - Repository Architecture and Knowledge System
 
 ### Added
 
@@ -46,33 +87,6 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 - Added a centralized `glossary/` section for tech terms, common terms, and abbreviations.
 - Added a dedicated `diagrams/` section for visual learning resources and concept illustrations.
 
-#### AI Foundation
-
-- Added a comprehensive AI learning track covering:
-  - AI Overview
-  - AI Fundamentals
-  - AI Training vs Inference
-  - Machine Learning
-  - Deep Learning
-  - Neural Networks
-  - PyTorch
-  - Tensors
-  - Autograd
-  - `torch.nn`
-  - `torch.optim`
-  - Training Loop
-  - Convolutional Neural Networks (CNNs)
-  - Transformers
-  - Large Language Models (LLMs)
-  - Hugging Face
-  - Model Deployment
-
-#### AI Study Materials
-
-- Added `tech/ai/README.md` with learning path and repository organization.
-- Added `tech/ai/notes.md` for quick revision and memory reinforcement.
-- Added `tech/ai/qna.md` for active recall and self-assessment.
-
 ### Changed
 
 #### Repository Organization
@@ -101,7 +115,9 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 - Replaced simple reading lists with structured knowledge collections backed by individual book note files.
 - Updated book collection `README.md` files to include reading roadmaps, category descriptions, and long-term learning guidance.
 
-#### AI Organization
+## [v1.1.0] - Foundation Standards, Templates, and Learning Methodology
+
+### Added
 
 #### Repository Governance
 
@@ -116,6 +132,10 @@ The format is based on the principles of **Keep a Changelog**, and this project 
   - `03-model-architectures`
   - `04-ai-ecosystem`
 - Updated the AI section structure to support progressive learning and long-term maintainability.
+
+## [Unreleased]
+
+No unreleased changes.
 
 ### Future Direction
 
