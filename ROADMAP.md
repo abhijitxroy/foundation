@@ -37,11 +37,14 @@ Build a structured, reusable, and evolving knowledge hub that captures, refines,
 ## Phase 2 — Knowledge
 
 - Expand technology knowledge.
+- Expand photography knowledge.
 - Expand book notes and learning resources.
+- Build practical learning guides.
 - Improve glossary, diagrams, and reference material.
 
 ## Phase 3 — Methodology
 
+- Learning methodologies
 - Reading methodologies
 - Research methodologies
 - Documentation methodologies
@@ -51,14 +54,16 @@ Build a structured, reusable, and evolving knowledge hub that captures, refines,
 
 - Strengthen integration with the `books` repository.
 - Strengthen integration with the `india` repository.
-- Improve cross-referencing and discoverability.
+- Improve cross-referencing between repositories.
+- Improve discoverability and navigation.
 
 ## Phase 5 — Evolution
 
-- Knowledge graph exploration.
-- Visual learning resources.
-- Improved navigation and search.
 - AI-assisted knowledge workflows.
+- Visual learning resources.
+- Knowledge graph exploration.
+- Better navigation and search.
+- Continuous repository improvement.
 
 ---
 
@@ -77,7 +82,9 @@ Books
    ↓
 Research (India)
    ↓
-Knowledge (Foundation)
+Learning (Foundation)
+   ↓
+Real-World Practice
 ```
 
 ---
@@ -86,4 +93,4 @@ Knowledge (Foundation)
 
 The roadmap evolves over time as the repository matures, but its primary mission remains unchanged:
 
-> Build a lifelong, organized, research-driven, and reusable knowledge foundation.
+> Build a lifelong, practical, organized, and reusable knowledge foundation.

@@ -15,17 +15,16 @@
 
 ### Foundation Milestone 2
 
-- [ ] Create reusable templates.
+- [x] Create reusable templates.
 - [ ] Establish metadata standards.
-- [ ] Create reusable template library.
 - [ ] Create biography template.
 - [ ] Create city template.
 - [ ] Create state template.
 - [ ] Create timeline template.
 - [ ] Create event template.
-- [ ] Create documentary template.
-- [ ] Create metadata standard.
-- [ ] Expand repository standards.
+- [x] Create documentary template.
+- [ ] Define metadata standards.
+- [x] Expand repository standards.
 
 ---
 
@@ -58,7 +57,13 @@
 
 ### AI
 
-- [x] AI Foundations (AI, ML, DL, PyTorch, CNNs, Transformers, LLMs)
+- [x] AI Learning Foundation
+
+### Photography
+
+- [x] Photography Learning Foundation
+- [ ] Build photography projects.
+- [ ] Add DSLR learning.
 
 ### Core Engineering Topics
 
@@ -119,7 +124,10 @@
 - [ ] Complete `glossary/` documentation.
 - [ ] Add diagrams across major topics.
 - [ ] Keep README structures synchronized with folder layout.
+- [ ] Create GitHub Releases for all versions.
+- [ ] Keep CHANGELOG and releases synchronized.
+- [ ] Keep tags, releases, and documentation synchronized.
 
 ## Repository Goal
 
-Build a lifelong, beginner-friendly knowledge repository that explains engineering and general concepts in simple language, preserves curated collections, captures knowledge from books and other resources, and supports continuous learning through structured, easy-to-revise notes.
+Build a lifelong, practical, beginner-friendly knowledge repository that explains engineering and general concepts in simple language, preserves curated knowledge, and supports continuous learning through structured, easy-to-revise notes and real-world experience.

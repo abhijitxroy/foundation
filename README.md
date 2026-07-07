@@ -7,13 +7,14 @@ A personal knowledge repository for building, organizing, and preserving long-te
 ## Structure
 
 ```text
-Foundations
+foundation
 │
 ├── Knowledge Domains
 │   ├── Tech
 │   ├── Books
 │   ├── Learning
-│   │   └── Vocabulary
+│   │   ├── Vocabulary
+│   │   └── Photography
 │   │
 │   ├── Entertainment
 │   │   ├── Stories
@@ -30,16 +31,17 @@ Foundations
 
 | **tech/** | Technology, AI, computing, cloud, databases, networking, operating systems, security, software architecture, and related topics. |
 | **books/** | Structured book notes, reading systems, and curated knowledge collections across multiple domains. |
-| **learning/** | Vocabulary, language learning resources, and skill development materials. |
+| **learning/** | Learning roadmaps, practical notes, photography, vocabulary, language learning, and skill development materials. |
 | **entertainment/** | Stories, films, characters, literature, and cultural collections. |
 | **wishlist/** | Long-term learning goals, reading journeys, people, places, and subjects to explore. |
-| **Resources/** | Shared repository resources including diagrams, visual learning assets, glossaries, abbreviations, and reference material. |
-| **Resources/diagrams/** | Visual learning resources, architecture diagrams, concept maps, and illustrations used across the repository. |
-| **Resources/glossary/** | Repository-wide terminology, abbreviations, and quick-reference definitions. |
+| **resources/** | Shared repository resources including diagrams, visual learning assets, glossaries, abbreviations, and reference material. |
+| **resources/diagrams/** | Visual learning resources, architecture diagrams, concept maps, and illustrations used across the repository. |
+| **resources/glossary/** | Repository-wide terminology, abbreviations, and quick-reference definitions. |
 
 ## What You Will Find
 
 - Technology, computing, AI, and software engineering fundamentals.
+- Photography, videography, editing workflows, and project-based learning notes.
 - Structured notes and knowledge distilled from books.
 - Personal finance, investing, business, and self-development resources.
 - Vocabulary, language, and learning materials.
@@ -112,6 +114,6 @@ This repository is actively evolving as the foundational layer of the Personal K
 Current focus areas include:
 
 - Standardizing repository structure and documentation.
-- Expanding knowledge across technology, books, learning, and related domains.
-- Improving consistency, navigation, and long-term maintainability.
-- Supporting research and knowledge sharing across the `books` and `india` repositories.
+- Expanding technology, photography, books, and lifelong learning content.
+- Improving consistency, navigation, and maintainability.
+- Building practical knowledge through structured learning and real-world experience.
