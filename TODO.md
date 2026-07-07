@@ -10,13 +10,13 @@
 - [x] Create `ROADMAP.md`.
 - [x] Update `CHANGELOG.md`.
 - [x] Define repository standards.
-- [ ] Create reusable templates.
 - [x] Document research methodology.
 - [x] Document documentation methodology.
-- [ ] Establish metadata standards.
 
 ### Foundation Milestone 2
 
+- [ ] Create reusable templates.
+- [ ] Establish metadata standards.
 - [ ] Create reusable template library.
 - [ ] Create biography template.
 - [ ] Create city template.
