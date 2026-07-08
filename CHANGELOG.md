@@ -4,6 +4,32 @@ All notable changes to this repository will be documented in this file.
 
 The format is based on the principles of **Keep a Changelog**, and this project follows a simple, human-readable changelog style.
 
+## [v1.5.0] - Games Learning Foundation
+
+### Added
+
+#### Games Foundation
+
+* Added a dedicated `games/` knowledge base.
+* Added foundational learning materials for:
+
+  * Football
+  * Cricket
+  * Chess
+* Added overview documentation for each game.
+* Added visual overview diagrams for football, cricket, and chess.
+* Added beginner-friendly learning paths covering:
+
+  * Playing areas
+  * Player positions
+  * Rules
+  * Formats (Cricket)
+  * Openings (Chess)
+  * Records
+  * Glossary
+* Added historical records for major international tournaments and championships.
+* Updated the root `README.md` to include the new Games section.
+
 ## [v1.4.0] - Photography Learning Foundation
 
 ### Added
