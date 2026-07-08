@@ -8,7 +8,7 @@ Unlike traditional machine learning, where humans often manually select importan
 
 Deep Learning powers many modern AI applications such as chatbots, image recognition, speech assistants, and Large Language Models (LLMs).
 
-## Simple Definition
+## Definition
 
 > **Deep Learning is a subset of Machine Learning that uses multi-layered neural networks to learn and solve complex problems.**
 
@@ -30,16 +30,16 @@ Neural Networks
 CNNs / Transformers / LLMs
 ```
 
-## Why Do We Need Deep Learning?
+## Objectives
 
-Traditional machine learning works well for structured data but often struggles with highly complex data such as:
-- Images.
-- Audio and speech.
-- Natural language.
-- Video.
-- Large unstructured datasets.
+Deep Learning enables machines to automatically learn complex patterns from large amounts of data using multi-layered neural networks.
 
-Deep learning can automatically identify hidden patterns and relationships in this data without requiring manual feature engineering.
+Key objectives of Deep Learning include:
+- Learn hierarchical representations from raw data.
+- Solve complex problems involving images, text, audio, and video.
+- Reduce the need for manual feature engineering.
+- Build highly accurate models for advanced AI applications.
+- Enable modern AI systems such as Generative AI and Large Language Models (LLMs).
 
 ## Traditional Machine Learning vs Deep Learning
 
@@ -268,7 +268,7 @@ Examples include:
 - Autonomous driving systems.
 - AI coding assistants.
 
-## Relationship to Other Topics
+## Related Topics
 
 ```text
 AI Overview
@@ -290,21 +290,17 @@ Neural Networks
             LLMs
 ```
 
-## Key Takeaways
-
-- Deep Learning is a subset of Machine Learning.
-- It uses multi-layered neural networks to automatically learn patterns from data.
-- Deep learning excels at image, text, speech, and other unstructured data tasks.
-- Modern AI systems such as ChatGPT and image generators are built using deep learning.
-- PyTorch is one of the most widely used frameworks for implementing deep learning models.
 
 ## Quick Revision
 
-- **Deep Learning (DL)** → Subset of Machine Learning.
-- **Neural Network** → Core building block of deep learning.
-- **Deep** → Multiple hidden layers.
-- **Backpropagation** → Learns by reducing prediction error.
-- **CNN** → Deep learning for images.
-- **Transformer** → Deep learning architecture for modern AI and LLMs.
-- **PyTorch** → Popular framework for building deep learning models.
-- **LLMs** → Large Language Models built using deep learning and transformers.
+- Deep Learning is a specialized subset of Machine Learning based on multi-layer neural networks.
+- Deep learning models automatically learn features from large amounts of data.
+- Neural networks consist of input layers, hidden layers, and output layers.
+- Training involves prediction, loss calculation, backpropagation, and weight updates.
+- CNNs are commonly used for computer vision, while Transformers power modern LLMs.
+- PyTorch provides tensors, autograd, neural network modules, and optimizers for deep learning development.
+- Modern Generative AI systems are largely built using deep learning architectures.
+
+## Next
+
+Continue with **06-neural-networks.md** to understand the fundamental building blocks of deep learning models, including neurons, layers, activation functions, and network architectures.

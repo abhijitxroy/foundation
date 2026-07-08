@@ -249,23 +249,25 @@ After training, the saved model can be loaded later and used only for inference.
 | Inference requires retraining. | A trained model can be reused many times without retraining. |
 | AI models continuously update themselves automatically. | Most production systems retrain periodically using separate workflows. |
 
-## Key Takeaways
 
-- AI development consists primarily of **training** and **inference** phases.
-- Training teaches a model by learning patterns from data.
-- Inference uses the trained model to make predictions on new data.
-- Training updates model weights; inference does not.
-- Training is computationally expensive because it includes backpropagation and weight updates.
-- Inference is optimized for speed and low latency.
-- Modern applications such as chatbots, recommendation engines, and image recognition systems all follow this basic workflow.
+## Related Topics
+
+- Artificial Intelligence Fundamentals
+- Machine Learning
+- Deep Learning
+- Neural Networks
+- Model Deployment
+- PyTorch
 
 ## Quick Revision
 
-- **Training = Learning from data.**
-- **Inference = Using a trained model.**
-- **Training updates weights.**
-- **Inference does not update weights.**
-- **Training requires forward pass + backward pass.**
-- **Inference requires only the forward pass.**
-- **Training is compute-intensive; inference is optimized for speed.**
-- **Every modern AI system goes through training first and inference later.**
+- AI systems mainly operate through two phases: training and inference.
+- Training teaches a model by adjusting parameters using data and optimization techniques.
+- Inference uses a trained model to generate predictions or outputs without changing parameters.
+- Training requires forward pass, loss calculation, backpropagation, and weight updates.
+- Inference generally performs only the forward pass and is optimized for speed and efficiency.
+- Production AI systems usually separate training workflows from inference workflows.
+
+## Next
+
+Continue with **04-machine-learning.md** to learn the core concepts of machine learning, including algorithms, data-driven learning approaches, and how models learn patterns from data.

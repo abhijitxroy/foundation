@@ -12,24 +12,20 @@ CNNs are widely used in:
 - Autonomous vehicles.
 - Video analytics.
 
-## Simple Definition
+## Definition
 
 > **A CNN is a neural network that automatically learns patterns from images by applying small filters across the input data.**
 
-## Why Do We Need CNNs?
+## Objectives
 
-Traditional neural networks can process images, but they become inefficient as image sizes grow.
+Convolutional Neural Networks (CNNs) enable machines to automatically learn visual features from images and videos for computer vision tasks.
 
-For example:
-- A grayscale image of **100 × 100** pixels contains **10,000** input values.
-- A color image of **100 × 100** pixels contains **30,000** input values (RGB).
-
-Connecting every pixel directly to every neuron would require a huge number of parameters, making training slow and memory intensive.
-
-CNNs solve this problem by:
-- Looking at small local regions of an image.
-- Reusing the same filters across the entire image.
-- Automatically learning useful visual features.
+Key objectives of CNNs include:
+- Extract meaningful visual features automatically.
+- Reduce computational complexity compared with fully connected networks.
+- Detect patterns such as edges, shapes, textures, and objects.
+- Enable advanced computer vision applications.
+- Provide efficient architectures for processing spatial data.
 
 ## How a CNN Works
 
@@ -350,23 +346,27 @@ Convolutional Neural Networks (CNNs)
 Computer Vision Applications
 ```
 
-## Key Takeaways
 
-- CNN stands for **Convolutional Neural Network**.
-- CNNs are specialized neural networks designed for image and video processing.
-- They automatically learn features such as edges, textures, and objects.
-- The main components are convolution, ReLU, pooling, flatten, and fully connected layers.
-- CNNs require far fewer parameters than traditional fully connected networks for image tasks.
-- CNNs are the backbone of many modern computer vision applications.
+## Related Topics
+
+- Deep Learning
+- Neural Networks
+- PyTorch
+- Transformers
+- Computer Vision
+- Model Architectures
 
 ## Quick Revision
 
-- **CNN** → Neural network for images.
-- **Filter (Kernel)** → Small matrix used to detect patterns.
-- **Convolution** → Applies filters to the input image.
-- **Feature Map** → Output of a convolution operation.
-- **ReLU** → Activation function that keeps positive values.
-- **Pooling** → Reduces feature map size.
-- **Flatten** → Converts feature maps into a vector.
-- **Fully Connected Layer** → Produces the final prediction.
-- **CNNs are primarily used for computer vision tasks.**
+- CNNs are deep learning architectures designed primarily for image and video processing.
+- CNNs use convolution filters to automatically detect visual patterns.
+- Convolution layers extract features such as edges, textures, and object parts.
+- ReLU introduces non-linearity and improves learning capability.
+- Pooling reduces feature map size while preserving important information.
+- Fully connected layers generate final predictions from extracted features.
+- CNNs are widely used in image classification, object detection, medical imaging, and autonomous systems.
+- PyTorch provides CNN components through `torch.nn` such as `nn.Conv2d`, `nn.ReLU`, and `nn.MaxPool2d`.
+
+## Next
+
+Continue with **02-transformers.md** to learn how Transformer architectures use attention mechanisms to process sequential data and power modern AI models such as Large Language Models (LLMs).

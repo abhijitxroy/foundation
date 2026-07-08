@@ -6,18 +6,20 @@ A **Transformer** is a deep learning architecture designed to process and unders
 
 Unlike older sequence models such as Recurrent Neural Networks (RNNs), Transformers can process many parts of the input simultaneously, making them faster and more effective.
 
-## Simple Definition
+## Definition
 
 > **A Transformer is a neural network architecture that uses an attention mechanism to understand relationships between different parts of the input data.**
 
-## Why Do We Need Transformers?
+## Objectives
 
-Traditional neural networks and CNNs work well for images, while RNNs were originally designed for sequential data such as text. However, RNNs have limitations:
-- Process data one step at a time.
-- Difficult to train on very long sequences.
-- Hard to capture long-range relationships.
+Transformers provide a scalable deep learning architecture for understanding relationships in sequential and multi-modal data using attention mechanisms.
 
-Transformers solve these problems by using **attention**, allowing the model to examine all parts of the input sequence simultaneously.
+Key objectives of Transformers include:
+- Capture long-range relationships between data elements.
+- Process sequences efficiently using parallel computation.
+- Replace limitations of traditional sequential models such as RNNs.
+- Provide the foundation for Large Language Models and Generative AI.
+- Enable advanced applications across text, vision, speech, and other domains.
 
 ## Where Transformers Fit
 
@@ -288,22 +290,28 @@ Hugging Face
 Model Deployment
 ```
 
-## Key Takeaways
 
-- Transformers are deep learning architectures designed for sequence processing.
-- They use an attention mechanism to understand relationships between tokens.
-- Self-attention is the core innovation behind Transformers.
-- Transformers process data in parallel, making them faster and more scalable than RNNs.
-- Modern LLMs such as ChatGPT and Llama are built using Transformer architectures.
-- PyTorch and Hugging Face are commonly used to build and deploy Transformer-based models.
+## Related Topics
+
+- Deep Learning
+- Neural Networks
+- CNNs
+- Large Language Models (LLMs)
+- Generative AI
+- Hugging Face
+- PyTorch
 
 ## Quick Revision
 
-- **Transformer** → Deep learning architecture for sequence data.
-- **Attention** → Focus on the most relevant input information.
-- **Self-Attention** → Tokens analyze relationships with other tokens.
-- **Token** → Basic unit of text processed by the model.
-- **Embedding** → Numerical vector representation of a token.
-- **Parallel Processing** → Processes multiple tokens simultaneously.
-- **LLMs** → Built using Transformer architectures.
-- **Transformers are the foundation of modern Generative AI.**
+- Transformers are deep learning architectures based on attention mechanisms.
+- Self-attention allows models to understand relationships between tokens.
+- Transformers process sequences in parallel, improving training efficiency and scalability.
+- Tokenization converts input data into tokens before processing.
+- Embeddings convert tokens into numerical representations.
+- Transformer blocks typically contain attention layers, feedforward networks, and normalization.
+- Large Language Models (LLMs) such as ChatGPT, Llama, Gemini, and Claude are built using Transformer architectures.
+- PyTorch and Hugging Face provide popular tools for implementing and deploying Transformer-based models.
+
+## Next
+
+Continue with **03-llms.md** to learn how Large Language Models are built using Transformer architectures and trained on massive datasets to generate human-like text and intelligent responses.

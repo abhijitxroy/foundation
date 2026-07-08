@@ -6,21 +6,17 @@
 
 Without deployment, an AI model remains only an experiment running on a developer's machine.
 
-## Simple Definition
+## Definition
 
 > **Model Deployment is the process of taking a trained AI model and making it available for real-world applications.**
 
-## Why Do We Need Model Deployment?
+## Objectives
 
-Training a model is only one part of the AI lifecycle. The real value comes when the model is used by people or software systems.
-
-Examples:
-- A chatbot answering customer questions.
-- A recommendation engine suggesting products.
-- A medical AI system analyzing X-rays.
-- A face recognition system unlocking a phone.
-
-All of these require the trained model to be deployed.
+- Understand the purpose of model deployment.
+- Learn how trained models are exposed for inference.
+- Explore deployment architectures and serving patterns.
+- Compare cloud and edge deployment.
+- Prepare for production AI engineering workflows.
 
 ## Where Model Deployment Fits
 
@@ -337,7 +333,15 @@ Model Deployment
 Real-World AI Applications
 ```
 
-## Key Takeaways
+## Related Topics
+
+- AI Engineering
+- LLM Applications
+- Hugging Face
+- Responsible AI
+- MLOps
+
+## Quick Revision
 
 - Model deployment makes a trained AI model available for real-world use.
 - Deployment usually follows training and evaluation.
@@ -346,13 +350,6 @@ Real-World AI Applications
 - PyTorch and Hugging Face provide tools for deploying AI models.
 - Monitoring and updating deployed models are important parts of the AI lifecycle.
 
-## Quick Revision
+## Next
 
-- **Model Deployment** → Making a trained model available for use.
-- **Inference** → Using the deployed model to make predictions.
-- **Model Serving** → Hosting a model to handle requests.
-- **API** → Common way applications interact with AI models.
-- **Cloud Deployment** → Model runs on remote servers.
-- **Edge Deployment** → Model runs on the local device.
-- **Monitoring** → Track performance and accuracy after deployment.
-- **Deployment turns an AI model into a real-world application.**
+Continue with **06-responsible-ai.md** to learn how fairness, transparency, privacy, security, and accountability are incorporated throughout the AI lifecycle to build trustworthy and production-ready AI systems.

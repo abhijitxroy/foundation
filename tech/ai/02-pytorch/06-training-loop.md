@@ -12,21 +12,20 @@ The training loop combines the major PyTorch components:
 
 Every deep learning model, from a simple classifier to a Large Language Model (LLM), follows the same basic training cycle.
 
-## Simple Definition
+## Definition
 
 > **A training loop is the repeated process of making predictions, calculating errors, updating model parameters, and improving the model.**
 
-## Why Do We Need a Training Loop?
+## Objectives
 
-A neural network starts with random weights, so its initial predictions are usually poor.
+A training loop provides the complete process required to train neural networks by repeatedly performing prediction, error calculation, gradient computation, and parameter updates.
 
-The training loop allows the model to:
-- Learn from examples.
-- Measure mistakes.
-- Adjust its weights.
-- Produce better predictions over time.
-
-Without a training loop, a model would never improve.
+Key objectives of a training loop include:
+- Train models by learning from data.
+- Automate forward pass, loss calculation, and backpropagation.
+- Update model parameters using optimization algorithms.
+- Improve model performance through repeated iterations.
+- Provide the foundation for training modern AI systems.
 
 ## Where the Training Loop Fits
 
@@ -369,24 +368,28 @@ PyTorch
      CNNs / Transformers / LLMs
 ```
 
-## Key Takeaways
 
-- A training loop is the repeated process that teaches a neural network.
-- The model performs a forward pass to make predictions.
-- A loss function measures prediction error.
-- Autograd computes gradients during the backward pass.
-- The optimizer updates the model weights.
-- The cycle repeats across batches and epochs until the model learns.
+## Related Topics
+
+- PyTorch Fundamentals
+- Tensor Operations
+- Autograd
+- torch.nn
+- torch.optim
+- Deep Learning
+- Model Training
 
 ## Quick Revision
 
-- **Training Loop** → Process that teaches the model.
-- **Forward Pass** → Generate prediction.
-- **Loss Function** → Measure prediction error.
-- **Backward Pass** → Compute gradients.
-- **`optimizer.zero_grad()`** → Clear old gradients.
-- **`loss.backward()`** → Calculate gradients.
-- **`optimizer.step()`** → Update model parameters.
-- **Batch** → Small subset of training data.
-- **Epoch** → One complete pass through the dataset.
-- **Training = Forward Pass + Backward Pass + Weight Update.**
+- A training loop is the repeated process used to teach neural networks.
+- The main steps are forward pass, loss calculation, backward pass, and optimizer update.
+- Tensors represent the input data and model parameters.
+- `torch.nn` defines the neural network architecture.
+- Autograd calculates gradients during backpropagation.
+- `torch.optim` updates model parameters using calculated gradients.
+- Batches divide datasets into smaller groups, while epochs represent complete passes through the dataset.
+- Training loops are the foundation for building CNNs, Transformers, and Large Language Models (LLMs).
+
+## Next
+
+Continue with **../03-model-architectures/01-cnn.md** to learn how Convolutional Neural Networks (CNNs) process visual data and power modern computer vision applications.

@@ -6,7 +6,7 @@ A **Neural Network** is a machine learning model inspired by the way neurons in 
 
 Neural networks are the foundation of **Deep Learning** and power many modern AI applications such as image recognition, speech recognition, recommendation systems, and Large Language Models (LLMs).
 
-## Simple Definition
+## Definition
 
 > **A Neural Network is a mathematical model made of interconnected layers that learns patterns from data by adjusting internal parameters called weights.**
 
@@ -32,16 +32,16 @@ Neural Networks
                     LLMs
 ```
 
-## Why Do We Need Neural Networks?
+## Objectives
 
-Traditional machine learning algorithms work well for structured data but often struggle with highly complex patterns found in:
-- Images.
-- Natural language.
-- Speech.
-- Videos.
-- Large unstructured datasets.
+Neural Networks provide the foundation for Deep Learning by enabling machines to learn complex patterns from data using interconnected computational layers.
 
-Neural networks can automatically learn these patterns from examples instead of requiring humans to manually define every rule.
+Key objectives of Neural Networks include:
+- Learn complex patterns from large and unstructured datasets.
+- Automatically extract meaningful features from data.
+- Enable advanced AI applications such as vision, language, and speech systems.
+- Support modern Deep Learning architectures including CNNs and Transformers.
+- Build adaptive models that improve through training.
 
 ## Inspiration from the Human Brain
 
@@ -322,25 +322,25 @@ Neural Networks
              LLMs
 ```
 
-## Key Takeaways
 
-- A neural network is a mathematical model inspired by the human brain.
-- It consists of input, hidden, and output layers.
-- The basic building block is the neuron.
-- Neurons use weights, biases, and activation functions to process information.
-- During training, backpropagation and optimizers adjust the network's weights.
-- Neural networks form the foundation of modern deep learning systems such as CNNs, Transformers, and LLMs.
+## Related Topics
+
+- Deep Learning
+- Machine Learning
+- AI Inference and Training
+- CNNs
+- Transformers
+- PyTorch
 
 ## Quick Revision
 
-- **Neural Network** → Learns patterns from data.
-- **Neuron** → Basic processing unit.
-- **Input Layer** → Receives data.
-- **Hidden Layer** → Learns intermediate patterns.
-- **Output Layer** → Produces prediction.
-- **Weight** → Importance of an input.
-- **Bias** → Extra adjustable parameter.
-- **Activation Function** → Controls neuron output.
-- **Forward Pass** → Generate prediction.
-- **Backpropagation** → Learn from errors.
-- **CNNs, Transformers, and LLMs are built on neural network principles.**
+- Neural Networks are mathematical models inspired by biological neurons.
+- Networks consist of input layers, hidden layers, and output layers.
+- Neurons use weights, biases, and activation functions to process information.
+- Training uses forward pass, loss calculation, backpropagation, and optimization.
+- Neural Networks are the foundation for Deep Learning architectures such as CNNs and Transformers.
+- Modern AI systems including Computer Vision, Speech Recognition, and Large Language Models (LLMs) rely on neural network principles.
+
+## Next
+
+Continue with **../02-pytorch/01-pytorch.md** to learn how PyTorch provides the tools and frameworks required to build, train, and deploy modern Deep Learning models.

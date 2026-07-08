@@ -265,46 +265,107 @@
 
 ---
 
+# Prompt Engineering
+
+142. What is Prompt Engineering?
+143. Why is Prompt Engineering important?
+144. What is a prompt?
+145. What is a system prompt?
+146. What is a user prompt?
+147. What is zero-shot prompting?
+148. What is one-shot prompting?
+149. What is few-shot prompting?
+150. What are prompt templates?
+151. How can good prompts improve AI responses?
+
+---
+
+# Embeddings
+
+152. What is an embedding?
+153. Why are embeddings needed?
+154. How do embeddings capture semantic meaning?
+155. What is vector similarity?
+156. What is cosine similarity?
+157. How are embeddings used in semantic search?
+158. Why are embeddings important for RAG?
+
+---
+
+# Vector Databases
+
+159. What is a vector database?
+160. Why can't a traditional SQL database efficiently perform semantic search?
+161. How are embeddings stored in a vector database?
+162. What is Approximate Nearest Neighbor (ANN) search?
+163. What is metadata filtering?
+164. Name some popular vector databases.
+
+---
+
+# Retrieval-Augmented Generation (RAG)
+
+165. What is RAG?
+166. Why is RAG used with LLMs?
+167. Explain the RAG workflow.
+168. What is the difference between RAG and fine-tuning?
+169. What role do embeddings play in RAG?
+170. What role does a vector database play in RAG?
+
+---
+
+# AI Agents
+
+171. What is an AI agent?
+172. How is an AI agent different from an LLM?
+173. What capabilities make an AI agent autonomous?
+174. What is tool calling?
+175. What is agent memory?
+176. What is planning in AI agents?
+177. Give examples of enterprise AI agents.
+
+---
+
 # Hugging Face
 
-142. What is Hugging Face?
-143. Why is Hugging Face popular?
-144. What is the Hugging Face Model Hub?
-145. What is the `transformers` library?
-146. What is the difference between using a pre-trained model and training from scratch?
-147. What is fine-tuning?
-148. How does Hugging Face work with PyTorch?
-149. Why does Hugging Face reduce AI development effort?
+178. What is Hugging Face?
+179. Why is Hugging Face popular?
+180. What is the Hugging Face Model Hub?
+181. What is the `transformers` library?
+182. What is the difference between using a pre-trained model and training from scratch?
+183. What is fine-tuning?
+184. How does Hugging Face work with PyTorch?
+185. Why does Hugging Face reduce AI development effort?
 
 ---
 
 # Model Deployment
 
-150. What is model deployment?
-151. Why is deployment important?
-152. What is model serving?
-153. What is inference after deployment?
-154. What is the role of an API in AI deployment?
-155. What is the difference between cloud and edge deployment?
-156. Why do deployed models need monitoring?
-157. What is model drift?
-158. Why might a deployed model need retraining?
+186. What is model deployment?
+187. Why is deployment important?
+188. What is model serving?
+189. What is inference after deployment?
+190. What is the role of an API in AI deployment?
+191. What is the difference between cloud and edge deployment?
+192. Why do deployed models need monitoring?
+193. What is model drift?
+194. Why might a deployed model need retraining?
 
 ---
 
 # Integration and Big Picture
 
-159. Explain the complete AI hierarchy.
-160. Explain the relationship between AI, ML, and DL.
-161. Explain how a neural network learns.
-162. Explain the relationship between tensors, Autograd, `torch.nn`, and `torch.optim`.
-163. Explain the complete PyTorch training workflow.
-164. Explain the difference between CNNs and Transformers.
-165. Explain how an LLM generates a response to a user prompt.
-166. Explain how Hugging Face and PyTorch work together.
-167. Explain the journey from raw data to a deployed AI application.
-168. Draw the complete AI learning path from memory.
-169. If someone asks "How does ChatGPT work?", how would you explain it in simple terms?
-170. If someone asks "What is PyTorch?", how would you explain it in simple terms?
+195. Explain the complete AI hierarchy.
+196. Explain the relationship between AI, ML, and DL.
+197. Explain how a neural network learns.
+198. Explain the relationship between tensors, Autograd, `torch.nn`, and `torch.optim`.
+199. Explain the complete PyTorch training workflow.
+200. Explain the difference between CNNs and Transformers.
+201. Explain how an LLM generates a response to a user prompt.
+202. Explain how Hugging Face and PyTorch work together.
+203. Explain the journey from raw data to a deployed AI application.
+204. Draw the complete AI learning path from memory.
+205. If someone asks "How does ChatGPT work?", how would you explain it in simple terms?
+206. If someone asks "What is PyTorch?", how would you explain it in simple terms?
 
 ---

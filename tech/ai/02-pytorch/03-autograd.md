@@ -6,20 +6,20 @@
 
 Without Autograd, developers would have to manually compute complex mathematical derivatives and update model parameters themselves. PyTorch handles this process automatically.
 
-### Simple Definition
+## Definition
 
 > **Autograd automatically computes how much each model parameter should change to reduce errors during training.**
 
-## Why Do We Need Autograd?
+## Objectives
 
-The goal of training a machine learning model is to minimize the difference between the model's prediction and the correct answer. This difference is called the **loss**.
+Autograd enables PyTorch to automatically calculate gradients required for training neural networks and optimizing model parameters.
 
-To reduce the loss, the model must determine:
-- Which parameters caused the error.
-- How much each parameter contributed.
-- How each parameter should be adjusted.
-
-Autograd performs these calculations automatically.
+Key objectives of Autograd include:
+- Automatically compute derivatives of tensor operations.
+- Enable efficient backpropagation during model training.
+- Reduce the need for manual gradient calculations.
+- Support dynamic computation graphs.
+- Provide the foundation for optimization-based deep learning workflows.
 
 ## The Basic Idea
 
@@ -248,22 +248,25 @@ The trained model only performs the forward pass to make predictions. Autograd i
 | Gradients must be calculated manually. | PyTorch computes them automatically. |
 | Autograd is only for deep learning. | It can compute gradients for any tracked tensor operations. |
 
-## Key Takeaways
+## Related Topics
 
-- Autograd is PyTorch's automatic differentiation engine.
-- It automatically computes gradients during training.
-- Tensors must have `requires_grad=True` to participate in gradient tracking.
-- PyTorch builds a dynamic computation graph during execution.
-- Calling `backward()` starts the backpropagation process.
-- Autograd computes gradients, while the optimizer updates the model parameters.
+- PyTorch Fundamentals
+- Tensor Operations
+- Neural Network Training
+- torch.nn
+- torch.optim
+- Deep Learning
 
 ## Quick Revision
 
-- **Autograd** → Automatic gradient calculation.
-- **Gradient** → Indicates how parameters should change.
-- **`requires_grad=True`** → Enable gradient tracking.
-- **Computation Graph** → Records tensor operations.
-- **Forward Pass** → Generate prediction.
-- **Backward Pass** → Compute gradients.
-- **`backward()`** → Starts backpropagation.
-- **Autograd computes gradients; optimizer updates weights.**
+- Autograd is PyTorch's automatic differentiation engine.
+- It calculates gradients required for neural network training.
+- Tensors with `requires_grad=True` are tracked by Autograd.
+- PyTorch creates a dynamic computation graph during execution.
+- `backward()` performs backpropagation and calculates gradients.
+- Autograd computes gradients, while optimizers update model parameters.
+- Autograd is a core component of every PyTorch training workflow.
+
+## Next
+
+Continue with **04-torch-nn.md** to learn how PyTorch defines neural network architectures using layers, modules, and model building components.

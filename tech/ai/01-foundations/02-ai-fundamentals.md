@@ -6,7 +6,21 @@ Artificial Intelligence (AI) is a branch of computer science that focuses on cre
 
 AI is a broad field that includes many specialized areas such as Machine Learning, Deep Learning, Natural Language Processing (NLP), and Computer Vision.
 
-## What is Intelligence?
+## Definition
+
+**Artificial Intelligence (AI)** is the engineering discipline of creating systems that can perceive, reason, learn, solve problems, make decisions, and interact intelligently with their environment.
+
+Modern AI combines computer science, mathematics, statistics, software engineering, and large-scale computing to build systems that improve through data and experience.
+
+## Objectives
+
+- Understand the engineering foundations of AI.
+- Learn the major characteristics of intelligent systems.
+- Explore the primary branches of AI.
+- Understand how AI systems are developed.
+- Prepare for Machine Learning and Deep Learning.
+
+## Core Concepts
 
 Intelligence is the ability to:
 - Learn from experience.
@@ -25,7 +39,7 @@ Artificial Intelligence is the capability of a machine or software system to mim
 
 > AI is the science and engineering of building machines that can perform tasks requiring human-like intelligence.
 
-## Goals of AI
+## Objectives of AI
 
 The main objectives of AI are:
 - Automate repetitive and complex tasks.
@@ -107,7 +121,7 @@ Examples:
 
 Expert systems simulate the decision-making ability of a human expert using a large collection of predefined rules and knowledge.
 
-## How an AI System Works
+## AI Lifecycle
 
 ```text
 Problem
@@ -180,6 +194,18 @@ Artificial Intelligence (AI)
 | Cybersecurity | Threat detection and anomaly analysis. |
 | Entertainment | Movie and music recommendations. |
 
+## AI Engineering Principles
+
+Modern AI systems are built around several engineering principles:
+
+- Data-driven learning
+- Generalization rather than memorization
+- Continuous model improvement
+- Automation through intelligent decision-making
+- Scalability using distributed computing
+- Responsible and ethical AI
+- Monitoring and continuous evaluation
+
 ## AI Development Lifecycle
 
 ```text
@@ -214,24 +240,36 @@ Monitor and Improve
 | AI is always accurate. | AI models can make mistakes and inherit biases from data. |
 | AI will replace all jobs. | AI is more likely to automate specific tasks while creating new opportunities. |
 
-## Key Takeaways
+## Interview Focus
 
-- Artificial Intelligence is the broad field of creating intelligent machines.
-- Machine Learning and Deep Learning are subsets of AI.
-- AI systems learn patterns from data or follow predefined rules.
-- Modern AI powers applications like chatbots, recommendation engines, and autonomous systems.
-- Training teaches a model using data, while inference uses the trained model to make predictions.
-- Most AI systems used today are examples of Artificial Narrow Intelligence (ANI).
+Be prepared to explain:
+
+- Artificial Intelligence
+- Artificial Narrow Intelligence (ANI)
+- Artificial General Intelligence (AGI)
+- Artificial Super Intelligence (ASI)
+- AI vs Machine Learning vs Deep Learning
+- AI Lifecycle
+- Rule-Based AI vs Learning-Based AI
+- Major Branches of AI
+
+## Related Topics
+
+- Artificial Intelligence Overview
+- Machine Learning
+- Deep Learning
+- Neural Networks
+- AI Inference and Training
 
 ## Quick Revision
 
-- **AI** → Building intelligent machines.
-- **ML** → AI systems that learn from data.
-- **DL** → ML using deep neural networks.
-- **NLP** → Understanding and generating human language.
-- **Computer Vision** → Understanding images and videos.
-- **Training** → Teaching the model.
-- **Inference** → Using the trained model.
-- **Model** → Learned mathematical representation of a problem.
-- **Dataset** → Collection of data used for AI.
-- **ANI → AGI → ASI** represents increasing levels of AI capability.
+- Artificial Intelligence enables machines to perform tasks requiring human intelligence.
+- AI includes Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, and Robotics.
+- Machine Learning allows systems to learn patterns from data.
+- Deep Learning uses neural networks to solve complex problems.
+- AI systems typically follow a lifecycle of data collection, training, evaluation, deployment, and inference.
+- ANI, AGI, and ASI represent different levels of AI capability.
+
+## Next
+
+Continue with **03-ai-inference-vs-training.md** to understand the difference between training AI models and using trained models for inference in real-world applications.

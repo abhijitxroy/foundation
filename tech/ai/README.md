@@ -1,179 +1,96 @@
-# Artificial Intelligence (AI)
+# Artificial Intelligence
 
 ## Overview
 
-This section provides a beginner-friendly and engineering-focused introduction to modern Artificial Intelligence. The goal is to build a strong conceptual foundation before diving into frameworks, models, and real-world AI applications.
+Artificial Intelligence (AI) is an engineering discipline focused on building systems that can perceive, learn, reason, and act autonomously. This module provides a framework-neutral foundation for understanding modern AI technologies and methodologies. Topics include Machine Learning, Deep Learning, Natural Language Processing (NLP), Computer Vision, Generative AI, Large Language Models (LLMs), AI Engineering, and MLOps.
 
-The topics are organized in a dependency-based order so that each concept naturally builds on the previous one. By the end of this section, you should understand:
-- What AI, Machine Learning, and Deep Learning are.
-- How neural networks learn from data.
-- The core concepts behind PyTorch.
-- How modern AI systems such as Transformers and Large Language Models (LLMs) work.
-- How AI models are trained, deployed, and used in production.
+## Scope
+
+This module covers the fundamental concepts, techniques, and tools that underpin AI systems. It emphasizes practical understanding and engineering principles applicable across modern AI systems, including Machine Learning, Deep Learning, PyTorch, Transformers, Large Language Models (LLMs), Prompt Engineering, Retrieval-Augmented Generation (RAG), AI Agents, AI Engineering, MLOps, and Enterprise AI.
 
 ## Learning Path
 
 ```text
-AI Overview
-      │
-      ▼
-AI Fundamentals
-      │
-      ▼
-AI Training vs Inference
-      │
-      ▼
-Machine Learning
-      │
-      ▼
-Deep Learning
-      │
-      ▼
-Neural Networks
-      │
-      ▼
-PyTorch
-      │
-      ▼
-Tensors
-      │
-      ▼
-Autograd
-      │
-      ▼
-torch.nn
-      │
-      ▼
-torch.optim
-      │
-      ▼
-Training Loop
-      │
-      ▼
-CNNs
-      │
-      ▼
-Transformers
-      │
-      ▼
-Large Language Models (LLMs)
-      │
-      ▼
-Hugging Face
-      │
-      ▼
-Model Deployment
+01. Foundations
+      ↓
+02. PyTorch
+      ↓
+03. Model Architectures
+      ↓
+04. Generative AI
+      ↓
+05. AI Engineering
+      ↓
+06. MLOps
+      ↓
+07. Enterprise AI
 ```
-
-## Recommended Reading Sequence
-
-| Order | Topic | File |
-|------:|--------|------|
-| 1 | AI Overview | `ai-overview.md` |
-| 2 | AI Fundamentals | `ai-fundamentals.md` |
-| 3 | AI Training vs Inference | `ai-inference-vs-training.md` |
-| 4 | Machine Learning | `machine-learning.md` |
-| 5 | Deep Learning | `deep-learning.md` |
-| 6 | Neural Networks | `neural-networks.md` |
-| 7 | PyTorch | `pytorch.md` |
-| 8 | Tensors | `tensors.md` |
-| 9 | Autograd | `autograd.md` |
-| 10 | `torch.nn` | `torch-nn.md` |
-| 11 | `torch.optim` | `torch-optim.md` |
-| 12 | Training Loop | `training-loop.md` |
-| 13 | Convolutional Neural Networks (CNNs) | `cnn.md` |
-| 14 | Transformers | `transformers.md` |
-| 15 | Large Language Models (LLMs) | `llms.md` |
-| 16 | Hugging Face | `hugging-face.md` |
-| 17 | Model Deployment | `model-deployment.md` |
 
 ## Repository Structure
 
 ```text
-engineering
-└── ai
-    ├── README.md
-    ├── ai-overview.md
-    ├── ai-fundamentals.md
-    ├── ai-inference-vs-training.md
-    ├── machine-learning.md
-    ├── deep-learning.md
-    ├── neural-networks.md
-    ├── pytorch.md
-    ├── tensors.md
-    ├── autograd.md
-    ├── torch-nn.md
-    ├── torch-optim.md
-    ├── training-loop.md
-    ├── cnn.md
-    ├── transformers.md
-    ├── llms.md
-    ├── hugging-face.md
-    └── model-deployment.md
+tech/ai
+├── 01-foundations
+├── 02-pytorch
+├── 03-model-architectures
+├── 04-generative-ai
+├── 05-ai-engineering
+├── 06-mlops
+└── 07-enterprise-ai
 ```
 
-## Topic Relationships
+## Module Overview
 
-```text
-                         Artificial Intelligence
-                                   │
-                                   ▼
-                         AI Fundamentals
-                                   │
-                                   ▼
-                     Training vs Inference
-                                   │
-                                   ▼
-                         Machine Learning
-                                   │
-                                   ▼
-                          Deep Learning
-                                   │
-                                   ▼
-                         Neural Networks
-                                   │
-                     ┌─────────────┴─────────────┐
-                     │                           │
-                     ▼                           ▼
-                 PyTorch                   CNN (Images)
-                     │
-         ┌───────────┼───────────┐
-         │           │           │
-         ▼           ▼           ▼
-      Tensors    Autograd    torch.nn
-                                   │
-                                   ▼
-                            torch.optim
-                                   │
-                                   ▼
-                            Training Loop
-                                   │
-                                   ▼
-                             Transformers
-                                   │
-                                   ▼
-                                 LLMs
-                                   │
-                                   ▼
-                            Hugging Face
-                                   │
-                                   ▼
-                           Model Deployment
-```
+| Module | Topics |
+|--------|--------|
+| 01 Foundations | AI Fundamentals, Machine Learning, Deep Learning, Neural Networks |
+| 02 PyTorch | Tensors, Autograd, torch.nn, torch.optim, Training Loop |
+| 03 Model Architectures | CNNs, Transformers, Large Language Models |
+| 04 Generative AI | Prompt Engineering, Embeddings, Vector Databases, RAG, AI Agents, Multimodal AI |
+| 05 AI Engineering | AI Engineering, Evaluation, Hugging Face, LLM Applications, Deployment, Responsible AI |
+| 06 MLOps | MLOps, Feature Store, Model Monitoring, Model Versioning, Pipelines |
+| 07 Enterprise AI | Enterprise AI, Governance, Security, Observability, AI Platform Engineering |
 
-## Study Goal
+## Target Audience
 
-After completing this section, you should be able to:
-- Explain the difference between AI, ML, and Deep Learning.
-- Understand how neural networks learn from data.
-- Describe the role of tensors, Autograd, `torch.nn`, and `torch.optim` in PyTorch.
-- Understand the purpose of the training loop.
-- Explain the basic ideas behind CNNs, Transformers, and LLMs.
-- Understand how Hugging Face simplifies working with modern AI models.
-- Understand how trained AI models are deployed and used in real-world applications.
+This module is intended for:
 
-## Notes
+- Students and self-learners
+- Software Engineers
+- AI Engineers
+- Machine Learning Engineers
+- Platform Engineers
+- DevOps and MLOps Engineers
+- Solution and Enterprise Architects
 
-- Read the topics in the recommended order for the best learning experience.
-- Focus on understanding the concepts before writing code.
-- The objective of this section is to build a strong engineering foundation for modern AI and PyTorch rather than provide an advanced mathematical treatment.
+## Prerequisites
+
+Recommended background:
+
+- Basic Python programming
+- Software engineering fundamentals
+- Basic mathematics
+- Linear algebra (helpful)
+- Probability and statistics (helpful)
+
+## Guiding Principles
+
+- Framework-neutral: Focus on concepts that transcend specific tools or libraries.  
+- Engineering-focused: Emphasize practical system design, implementation, and deployment.  
+- Modern and comprehensive: Cover both foundational ideas and emerging AI trends.  
+- Interdisciplinary: Highlight connections between AI and related fields.  
+
+## Relationship to Other Domains
+
+- **Mathematics:** Provides the theoretical foundation for algorithms and models used in AI.  
+- **Python:** The primary programming language used for AI development and experimentation.  
+- **Data Engineering:** Supplies the data pipelines and infrastructure necessary for training and serving AI models.  
+- **Software Engineering:** Enables the design, testing, and maintenance of reliable AI systems.  
+- **Cloud Computing:** Offers scalable resources for training and deploying AI workloads.  
+- **DevOps / MLOps:** Facilitates continuous integration, delivery, and monitoring of AI applications.  
+- **Platform Engineering:** Builds the tools and environments that support AI development at scale.  
+- **Observability:** Ensures AI systems are transparent, interpretable, and performant in production.  
+
+## Purpose
+
+This module provides a conceptual foundation for Artificial Intelligence that is independent of any single framework or library. Frameworks such as PyTorch, TensorFlow, JAX, Hugging Face Transformers, LangChain, LlamaIndex, OpenAI APIs, and cloud AI platforms are implementations of these foundational concepts. Understanding the core principles enables you to adapt and innovate across the evolving landscape of AI technologies. This repository follows a vendor-neutral, engineering-first approach that emphasizes enduring concepts over framework-specific implementations.

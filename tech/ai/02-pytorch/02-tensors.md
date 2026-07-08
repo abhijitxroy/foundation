@@ -6,20 +6,20 @@ A **Tensor** is the fundamental data structure used in PyTorch and many other de
 
 You can think of a tensor as a generalized form of a number, vector, or matrix.
 
-## Simple Definition
+## Definition
 
 > **A tensor is a multi-dimensional array used to store and process data in machine learning and deep learning.**
 
-## Why Do We Need Tensors?
+## Objectives
 
-Artificial intelligence models work with large amounts of numerical data:
-- Images.
-- Text.
-- Audio.
-- Videos.
-- Sensor readings.
+Tensors provide an efficient way to represent, store, and process the numerical data used by modern AI and deep learning systems.
 
-Tensors provide an efficient way to store and manipulate this data while taking advantage of hardware acceleration such as GPUs.
+Key objectives of tensors include:
+- Represent different types of data such as images, text, audio, and model parameters.
+- Enable efficient mathematical operations required by neural networks.
+- Support accelerated computation on CPUs and GPUs.
+- Provide the foundation for PyTorch deep learning workflows.
+- Enable automatic differentiation and model training.
 
 ## Where Tensors Fit
 
@@ -344,23 +344,25 @@ Autograd
 Neural Networks
 ```
 
-## Key Takeaways
+## Related Topics
 
-- A tensor is the fundamental data structure in PyTorch.
-- Tensors are generalized versions of scalars, vectors, and matrices.
-- Images, text, audio, and model parameters are all represented as tensors.
-- Tensors have shapes that describe their dimensions.
-- PyTorch tensors can run on CPUs and GPUs.
-- Autograd tracks operations performed on tensors to enable automatic differentiation.
+- PyTorch Fundamentals
+- Autograd
+- Neural Networks
+- Deep Learning
+- Tensor Operations
+- Model Training
 
 ## Quick Revision
 
-- **Tensor** → Multi-dimensional array.
-- **Scalar** → 0D tensor.
-- **Vector** → 1D tensor.
-- **Matrix** → 2D tensor.
-- **Shape** → Size of tensor dimensions.
-- **GPU** → Accelerates tensor computations.
-- **`torch.tensor()`** → Creates a tensor in PyTorch.
-- **`requires_grad=True`** → Enables gradient tracking.
-- **Tensors are the basic building blocks of all PyTorch models.**
+- Tensors are the fundamental data structures used in PyTorch and deep learning frameworks.
+- A tensor is a multi-dimensional array that represents numbers, images, text, audio, and model parameters.
+- Tensor dimensions include scalars, vectors, matrices, and higher-dimensional arrays.
+- Tensor shape defines the size of each dimension and must match neural network requirements.
+- PyTorch tensors support CPU and GPU execution for efficient AI computation.
+- Autograd tracks tensor operations to calculate gradients during training.
+- Neural networks process tensors as inputs, intermediate representations, and outputs.
+
+## Next
+
+Continue with **03-autograd.md** to learn how PyTorch automatically calculates gradients and enables neural network training through automatic differentiation.

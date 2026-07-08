@@ -6,22 +6,33 @@ Artificial Intelligence (AI) is a branch of computer science that focuses on cre
 
 Today, AI powers many everyday applications such as search engines, chatbots, recommendation systems, voice assistants, autonomous vehicles, and medical diagnosis tools.
 
-## Simple Definition
+## Definition
 
 > **Artificial Intelligence is the ability of a computer system to perform tasks that typically require human intelligence.**
 
 Rather than following only fixed instructions, AI systems can analyze information, identify patterns, and produce useful outputs.
 
-## Why AI Matters
+## Objectives
 
-Modern systems generate enormous amounts of data. AI helps process and understand this data faster and more accurately than traditional approaches.
+AI provides the foundation for building intelligent systems that can learn, reason, analyze information, and assist humans in solving complex problems.
 
-Some major goals of AI are:
-- Automate repetitive tasks.
-- Assist humans in decision-making.
-- Discover patterns hidden in data.
+Key objectives of AI include:
+- Understand and process information.
+- Learn patterns from data.
+- Automate intelligent decision-making.
 - Improve efficiency and productivity.
-- Build intelligent systems that can adapt and learn.
+- Build adaptive systems that can operate in real-world environments.
+## Quick Revision
+
+- Artificial Intelligence enables machines to perform tasks that normally require human intelligence.
+- AI includes Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, and Robotics.
+- Modern AI systems learn patterns from data instead of relying only on manually written rules.
+- AI workflows typically include data collection, preparation, training, evaluation, deployment, and inference.
+- Generative AI and Large Language Models (LLMs) represent recent advances in AI capabilities.
+
+## Next
+
+Continue with **02-ai-fundamentals.md** to understand the core concepts, terminology, history, and foundational principles behind Artificial Intelligence systems.
 
 ## Evolution of AI
 
@@ -183,7 +194,7 @@ AI is becoming a foundational technology similar to the internet or cloud comput
 
 Recent advances in Generative AI and Large Language Models (LLMs) have accelerated AI adoption across both consumer and enterprise applications.
 
-## Relationship to Other Topics
+## Related Topics
 
 This repository explores AI in a progressive manner:
 
@@ -215,22 +226,3 @@ Transformers
 Large Language Models (LLMs)
 ```
 
-## Key Takeaways
-
-- Artificial Intelligence enables machines to perform tasks that typically require human intelligence.
-- AI includes many areas such as Machine Learning, Deep Learning, NLP, and Computer Vision.
-- Most AI systems today are examples of Artificial Narrow Intelligence (ANI).
-- AI systems are generally built by collecting data, training models, and using those models for inference.
-- Modern applications like chatbots, recommendation systems, and image recognition are all powered by AI.
-
-## Quick Revision
-
-- **AI** → Building intelligent machines.
-- **ANI** → AI for a specific task.
-- **AGI** → Human-level AI (theoretical).
-- **ASI** → Superhuman AI (hypothetical).
-- **ML** → AI systems that learn from data.
-- **DL** → Machine Learning using deep neural networks.
-- **Training** → Teaching an AI model.
-- **Inference** → Using a trained model.
-- **LLMs** → Large Language Models built using deep learning and transformer architectures.

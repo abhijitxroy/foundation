@@ -8,7 +8,7 @@ Instead of writing fixed rules, developers provide examples (data), and the mach
 
 Machine Learning forms the foundation for many modern AI applications, including recommendation systems, spam filters, fraud detection, image recognition, and Large Language Models (LLMs).
 
-## Simple Definition
+## Definition
 
 > **Machine Learning is a method of teaching computers to learn from data instead of relying only on manually written rules.**
 
@@ -30,49 +30,16 @@ Neural Networks
 Transformers and LLMs
 ```
 
-## Why Do We Need Machine Learning?
+## Objectives
 
-Traditional software works well when all rules are known in advance.
+Machine Learning enables systems to learn patterns from data and make predictions or decisions without requiring explicit programming for every scenario.
 
-### Traditional Programming
-
-```text
-Data + Rules
-      │
-      ▼
-   Program
-      │
-      ▼
-    Output
-```
-
-Example:
-- If temperature > 38°C, show "Fever".
-- If email contains specific keywords, mark as spam.
-
-However, many real-world problems are too complex for manually writing rules:
-- Recognizing faces.
-- Translating languages.
-- Detecting fraud.
-- Predicting stock demand.
-- Recommending movies.
-
-Machine Learning solves these problems by learning patterns directly from data.
-
-### Machine Learning
-
-```text
-Data + Correct Answers
-          │
-          ▼
-    Learning Algorithm
-          │
-          ▼
-      Trained Model
-          │
-          ▼
-     Predictions
-```
+Key objectives of Machine Learning include:
+- Learn useful patterns from data.
+- Build predictive and decision-making models.
+- Automate complex tasks that are difficult to solve using fixed rules.
+- Improve performance through experience and additional data.
+- Enable intelligent applications across different domains.
 
 ## How Machine Learning Works
 
@@ -283,25 +250,23 @@ Transformers
 Large Language Models (LLMs)
 ```
 
-## Key Takeaways
+## Related Topics
 
-- Machine Learning is a subset of Artificial Intelligence.
-- It enables computers to learn patterns from data instead of relying only on manually written rules.
-- The three major types are supervised, unsupervised, and reinforcement learning.
-- Training teaches a model using data; inference uses the trained model for predictions.
-- Deep Learning is a specialized branch of Machine Learning based on neural networks.
-- Many modern AI applications are built using machine learning techniques.
+- Artificial Intelligence Fundamentals
+- AI Inference and Training
+- Deep Learning
+- Neural Networks
+- Model Deployment
 
 ## Quick Revision
 
-- **Machine Learning (ML)** → Learning from data.
-- **Dataset** → Collection of examples.
-- **Feature** → Input variable.
-- **Label** → Correct output.
-- **Model** → Learned mathematical representation.
-- **Training** → Teaching the model.
-- **Inference** → Using the trained model.
-- **Supervised Learning** → Labeled data.
-- **Unsupervised Learning** → Unlabeled data.
-- **Reinforcement Learning** → Learning through rewards and penalties.
-- **Deep Learning is a subset of Machine Learning.**
+- Machine Learning is a branch of Artificial Intelligence that learns patterns from data.
+- The three major categories are supervised learning, unsupervised learning, and reinforcement learning.
+- Training uses data to learn model parameters, while inference uses trained models to generate predictions.
+- Machine Learning workflows include data preparation, model training, evaluation, deployment, and monitoring.
+- Deep Learning is a specialized subset of Machine Learning based on neural networks.
+- Modern AI applications such as recommendations, fraud detection, search, and Generative AI rely heavily on Machine Learning.
+
+## Next
+
+Continue with **05-deep-learning.md** to learn how deep neural networks enable advanced AI capabilities such as image recognition, natural language processing, and modern Generative AI systems.

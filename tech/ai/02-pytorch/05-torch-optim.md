@@ -6,21 +6,20 @@
 
 Without an optimizer, a neural network would never improve, no matter how much data it sees.
 
-## Simple Definition
+## Definition
 
 > **`torch.optim` is the PyTorch module responsible for updating model parameters during training.**
 
-## Why Do We Need an Optimizer?
+## Objectives
 
-The goal of training is to reduce the difference between the model's prediction and the correct answer. This difference is called the **loss**.
+`torch.optim` provides optimization algorithms that update neural network parameters using gradients calculated during training.
 
-After each prediction:
-1. The model calculates the loss.
-2. Autograd computes the gradients.
-3. The optimizer updates the model parameters.
-4. The model becomes slightly better.
-
-This process is repeated many times until the model learns useful patterns.
+Key objectives of `torch.optim` include:
+- Update model parameters to reduce prediction errors.
+- Apply gradient-based optimization algorithms.
+- Control learning behavior through hyperparameters such as learning rate.
+- Work together with Autograd and `torch.nn` during training.
+- Improve model performance through iterative parameter updates.
 
 ## Where `torch.optim` Fits
 
@@ -330,23 +329,27 @@ PyTorch
       CNNs / Transformers / LLMs
 ```
 
-## Key Takeaways
 
-- `torch.optim` provides optimization algorithms for PyTorch models.
-- An optimizer updates model parameters after gradients are computed.
-- `SGD` and `Adam` are two of the most commonly used optimizers.
-- The learning rate controls how much parameters change during each update.
-- `optimizer.zero_grad()`, `loss.backward()`, and `optimizer.step()` are core parts of every PyTorch training loop.
-- `torch.optim` works together with `torch.nn` and Autograd to train neural networks.
+## Related Topics
+
+- PyTorch Fundamentals
+- Tensor Operations
+- Autograd
+- torch.nn
+- Neural Network Training
+- Deep Learning
 
 ## Quick Revision
 
-- **`torch.optim`** → Updates model parameters.
-- **Optimizer** → Algorithm that improves the model.
-- **Learning Rate (`lr`)** → Controls update size.
-- **SGD** → Simple gradient descent optimizer.
-- **Adam** → Popular adaptive optimizer.
-- **`optimizer.zero_grad()`** → Clear old gradients.
-- **`loss.backward()`** → Compute gradients.
-- **`optimizer.step()`** → Update model weights.
-- **`torch.nn` defines the model, Autograd computes gradients, and `torch.optim` updates the weights.**
+- `torch.optim` provides optimization algorithms used to update neural network parameters.
+- Optimizers use gradients calculated by Autograd to improve model predictions.
+- Common optimizers include SGD, Adam, AdamW, RMSprop, and Adagrad.
+- Learning rate controls the size of each parameter update.
+- `optimizer.zero_grad()` clears previous gradients.
+- `loss.backward()` calculates gradients through backpropagation.
+- `optimizer.step()` updates model parameters.
+- `torch.nn`, Autograd, and `torch.optim` together form the core PyTorch training workflow.
+
+## Next
+
+Continue with **06-training-loop.md** to learn how PyTorch combines data loading, forward pass, loss calculation, backpropagation, and optimization into a complete model training workflow.

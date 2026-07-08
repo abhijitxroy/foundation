@@ -259,14 +259,25 @@ CNNs / RNNs / Transformers
 Model Deployment
 ```
 
+## Related Topics
+
+- Deep Learning
+- Neural Networks
+- Tensor Fundamentals
+- Autograd
+- Neural Network Training
+- Model Deployment
+
 ## Quick Revision
 
-- PyTorch is an open-source deep learning framework from Meta AI.
-- Tensor is the fundamental data structure.
-- Autograd automatically computes gradients.
-- `torch.nn` is used to build neural networks.
-- `torch.optim` updates model parameters during training.
-- Supports both CPU and GPU execution.
-- Uses a dynamic computation graph.
-- Widely used for computer vision, NLP, LLMs, and generative AI.
-- Python-friendly and one of the most popular AI frameworks today.
+- PyTorch is an open-source deep learning framework widely used for research and production AI systems.
+- Tensors are the fundamental data structure used for numerical computation in PyTorch.
+- Autograd automatically calculates gradients required for model training.
+- `torch.nn` provides neural network layers and building blocks.
+- `torch.optim` provides optimization algorithms for updating model parameters.
+- PyTorch supports CPU and GPU execution for efficient model training.
+- PyTorch is widely used for Computer Vision, NLP, Large Language Models (LLMs), and Generative AI.
+
+## Next
+
+Continue with **02-tensors.md** to learn how PyTorch tensors work, including creation, operations, dimensions, data types, and GPU acceleration.

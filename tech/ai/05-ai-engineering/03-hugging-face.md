@@ -6,19 +6,17 @@
 
 Hugging Face has become one of the most popular platforms for working with **Natural Language Processing (NLP)**, **Large Language Models (LLMs)**, **Computer Vision**, and **Generative AI**.
 
-## Simple Definition
+## Definition
 
 > **Hugging Face is a platform and toolkit that makes it easy to use and share pre-trained AI models.**
 
-## Why Do We Need Hugging Face?
+## Objectives
 
-Training modern AI models can require:
-- Massive datasets.
-- Powerful GPUs.
-- Days or weeks of computation.
-- Deep machine learning expertise.
-
-Instead of building everything from scratch, developers can download a pre-trained model from Hugging Face and immediately use it for inference or fine-tune it for a specific task.
+- Understand the Hugging Face ecosystem.
+- Learn its core libraries and services.
+- Explore how pre-trained models accelerate AI development.
+- Understand the relationship between Hugging Face, PyTorch, and LLMs.
+- Prepare for practical AI engineering workflows.
 
 ## What Does Hugging Face Provide?
 
@@ -255,7 +253,15 @@ Hugging Face
 Fine-Tuning and Deployment
 ```
 
-## Key Takeaways
+## Related Topics
+
+- AI Evaluation
+- Large Language Models (LLMs)
+- PyTorch
+- Model Deployment
+- LLM Applications
+
+## Quick Revision
 
 - Hugging Face is an open-source AI platform and ecosystem.
 - It provides pre-trained models, datasets, and libraries.
@@ -264,13 +270,6 @@ Fine-Tuning and Deployment
 - It enables developers to use and fine-tune modern AI models without training from scratch.
 - Many popular open-source LLMs are distributed through the Hugging Face Hub.
 
-## Quick Revision
+## Next
 
-- **Hugging Face** → Platform for AI models and tools.
-- **Model Hub** → Repository of pre-trained AI models.
-- **`transformers`** → Library for transformer and LLM models.
-- **`datasets`** → Dataset management library.
-- **Inference** → Use a pre-trained model.
-- **Fine-Tuning** → Continue training for a custom task.
-- **PyTorch + Hugging Face** → Common combination for modern AI development.
-- **Hugging Face simplifies building, experimenting with, and deploying AI applications.**
+Continue with **04-llm-applications.md** to learn how Large Language Models (LLMs) are integrated into real-world applications such as chatbots, copilots, search, document processing, and enterprise AI solutions.

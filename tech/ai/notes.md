@@ -88,10 +88,58 @@ Transformers
 LLMs
       │
       ▼
+Prompt Engineering
+      │
+      ▼
+Embeddings
+      │
+      ▼
+Vector Databases
+      │
+      ▼
+RAG
+      │
+      ▼
+AI Agents
+      │
+      ▼
+Multimodal AI
+      │
+      ▼
+AI Engineering
+      │
+      ▼
+Evaluation
+      │
+      ▼
 Hugging Face
       │
       ▼
+LLM Applications
+      │
+      ▼
 Model Deployment
+      │
+      ▼
+Responsible AI
+      │
+      ▼
+MLOps
+      │
+      ▼
+Feature Store
+      │
+      ▼
+Model Versioning
+      │
+      ▼
+Model Monitoring
+      │
+      ▼
+Pipelines
+      │
+      ▼
+Enterprise AI
 ```
 
 ---
@@ -268,6 +316,18 @@ Output Layer
 
 ---
 
+## Modern Generative AI Stack
+
+| Component | Purpose |
+|-----------|---------|
+| Prompt | Instructs the LLM what to do. |
+| Embedding | Converts information into semantic vectors. |
+| Vector Database | Stores and retrieves embeddings efficiently. |
+| RAG | Retrieves external knowledge before generation. |
+| AI Agent | Uses reasoning, memory, and tools to complete tasks. |
+
+---
+
 ## LLM Quick Facts
 
 - LLM = **Large Language Model**.
@@ -327,6 +387,12 @@ User or Application
 - Inference.
 - Model.
 - Dataset.
+- Prompt Engineering.
+- Embeddings.
+- Vector Database.
+- Retrieval-Augmented Generation (RAG).
+- AI Agent.
+- MLOps.
 
 ### PyTorch Building Blocks
 
@@ -430,10 +496,28 @@ These can always be looked up when needed.
                                  LLMs
                                    │
                                    ▼
-                            Hugging Face
+                        Prompt Engineering
                                    │
                                    ▼
-                           Model Deployment
+                              Embeddings
+                                   │
+                                   ▼
+                          Vector Databases
+                                   │
+                                   ▼
+                                  RAG
+                                   │
+                                   ▼
+                               AI Agents
+                                   │
+                                   ▼
+                            AI Engineering
+                                   │
+                                   ▼
+                                 MLOps
+                                   │
+                                   ▼
+                            Enterprise AI
 ```
 
 ---

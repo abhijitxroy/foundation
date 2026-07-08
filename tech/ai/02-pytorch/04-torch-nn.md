@@ -6,22 +6,20 @@
 
 Almost every deep learning model built with PyTorch uses the `torch.nn` package.
 
-## Simple Definition
+## Definition
 
 > **`torch.nn` is the PyTorch library used to build neural networks from reusable components.**
 
-## Why Do We Need `torch.nn`?
+## Objectives
 
-A neural network consists of many common components:
-- Layers.
-- Neurons.
-- Activation functions.
-- Loss functions.
-- Model definitions.
+`torch.nn` provides reusable building blocks for creating, defining, and training neural networks in PyTorch.
 
-Without `torch.nn`, developers would need to manually implement these components using low-level tensor operations.
-
-`torch.nn` simplifies model development by providing pre-built modules that can be combined to create complex neural networks.
+Key objectives of `torch.nn` include:
+- Build neural network architectures using reusable modules.
+- Provide standard layers, activation functions, and loss functions.
+- Simplify model development using high-level abstractions.
+- Integrate seamlessly with Autograd and optimizers.
+- Support development of modern deep learning models.
 
 ## Where `torch.nn` Fits
 
@@ -313,23 +311,26 @@ PyTorch
       CNNs / Transformers / LLMs
 ```
 
-## Key Takeaways
 
-- `torch.nn` is the PyTorch module used to build neural networks.
-- It provides ready-made layers, activation functions, and loss functions.
-- `nn.Module` is the base class for all PyTorch models.
-- The `forward()` method defines how data moves through the model.
-- `torch.nn` works together with Autograd and `torch.optim` during training.
-- Most modern AI models built with PyTorch are created using `torch.nn`.
+## Related Topics
+
+- PyTorch Fundamentals
+- Tensor Operations
+- Autograd
+- torch.optim
+- Neural Network Training
+- Deep Learning Architectures
 
 ## Quick Revision
 
-- **`torch.nn`** → Build neural networks.
-- **`nn.Module`** → Base class for PyTorch models.
-- **`nn.Linear`** → Fully connected layer.
-- **`nn.Conv2d`** → Convolution layer.
-- **`nn.ReLU`** → Common activation function.
-- **`nn.CrossEntropyLoss`** → Common classification loss.
-- **`forward()`** → Defines data flow through the network.
-- **`nn.Sequential`** → Simple way to stack layers.
-- **`torch.nn` defines the model; Autograd computes gradients; `torch.optim` updates the weights.**
+- `torch.nn` is the PyTorch module used to define and build neural networks.
+- `nn.Module` is the base class for creating custom models.
+- Layers such as `nn.Linear` and `nn.Conv2d` provide reusable neural network components.
+- Activation functions introduce non-linearity and allow models to learn complex patterns.
+- Loss functions measure prediction errors during training.
+- `torch.nn` works with Autograd for gradient calculation and `torch.optim` for parameter updates.
+- CNNs, Transformers, and many LLM components are built using neural network modules.
+
+## Next
+
+Continue with **05-torch-optim.md** to learn how PyTorch optimizers update model parameters using gradients calculated during training.
