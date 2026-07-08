@@ -65,4 +65,8 @@ Understanding computer architecture helps you:
 - Computer architecture is the way a computer is designed and organized.
 - Different hardware components have different responsibilities.
 - CPU, Memory, Storage, GPU, Input, and Output devices work together.
-- Every application you use depends on these components communicating with each other.
+
+
+## Next
+
+Continue with **02-cpu.md** to learn how the Central Processing Unit executes instructions, manages computation, and controls the operations of modern computer systems.

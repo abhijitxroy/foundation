@@ -42,3 +42,7 @@ A CPU is responsible for:
 - Executes instructions and controls system operations.
 - Uses powerful cores for complex and sequential tasks.
 - Works together with components like memory, storage, and GPU to run applications.
+
+## Next
+
+Continue with **03-gpu.md** to learn how Graphics Processing Units accelerate parallel computing and modern workloads such as AI and scientific computing.

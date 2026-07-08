@@ -49,3 +49,8 @@ While playing a game, the CPU handles game logic and player input, while the GPU
 - CPU handles complex, sequential tasks.
 - GPU handles many similar tasks at the same time.
 - Modern applications often use both together for the best performance.
+
+
+## Next
+
+Continue with **05-memory.md** to learn how computer memory systems support CPU and GPU execution through storage hierarchy and efficient data movement.

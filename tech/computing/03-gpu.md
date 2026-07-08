@@ -42,3 +42,7 @@ A GPU is responsible for:
 - Designed to perform many similar tasks simultaneously.
 - Ideal for graphics rendering, AI, and large-scale computations.
 - Works alongside the CPU rather than replacing it.
+
+## Next
+
+Continue with **04-cpu-vs-gpu.md** to understand the differences between CPU and GPU architectures, workloads, and performance characteristics.

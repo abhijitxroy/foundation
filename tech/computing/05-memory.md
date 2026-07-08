@@ -41,3 +41,7 @@ Memory is responsible for:
 - It stores the data and applications currently in use.
 - RAM is much faster than storage but is temporary.
 - The CPU constantly reads from and writes to memory while executing programs.
+
+## Conclusion
+
+Memory is a fundamental component of computer systems that enables efficient data access, processing, and execution. Understanding memory hierarchy is essential for system design, performance optimization, and modern computing architectures.
