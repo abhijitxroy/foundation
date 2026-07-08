@@ -29,7 +29,7 @@ This module covers the fundamental concepts, techniques, and tools that underpin
 ## Repository Structure
 
 ```text
-tech/ai
+tech/14-ai
 ├── 01-foundations
 ├── 02-pytorch
 ├── 03-model-architectures
