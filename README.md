@@ -11,6 +11,23 @@ foundation
 │
 ├── Knowledge Domains
 │   ├── Tech
+│   │   ├── 01-computing
+│   │   ├── 02-programming-languages
+│   │   ├── 03-operating-systems
+│   │   ├── 04-networking
+│   │   ├── 05-databases
+│   │   ├── 06-software-engineering
+│   │   ├── 07-application-architecture
+│   │   ├── 08-system-design
+│   │   ├── 09-cloud
+│   │   ├── 10-devops
+│   │   ├── 11-platform-engineering
+│   │   ├── 12-security
+│   │   ├── 13-observability
+│   │   ├── 14-ai
+│   │   ├── 15-git
+│   │   └── 16-testing
+│   │
 │   ├── Books
 │   ├── Learning
 │   │   ├── Vocabulary
@@ -36,7 +53,7 @@ foundation
 
 | Section                 | Description                                                                                                                      |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **tech/**               | Technology, AI, computing, cloud, databases, networking, operating systems, security, software architecture, and related topics. |
+| **tech/**               | Structured technology foundations covering computing, programming languages, operating systems, networking, databases, software engineering, architecture, cloud, DevOps, security, AI, and related engineering topics. |
 | **books/**              | Structured book notes, reading systems, and curated knowledge collections across multiple domains.                               |
 | **learning/**           | Learning roadmaps, practical notes, photography, vocabulary, language learning, and skill development materials.                 |
 | **entertainment/**      | Stories, films, characters, literature, and cultural collections.                                                                |
