@@ -1,6 +1,6 @@
-# Modern C++ Interview Preparation
+# Modern C++ (AMD SMTS) Interview Preparation
 
-> Purpose: This module focuses on Senior Modern C++ engineering discussions, semiconductor industry interviews, production-quality software engineering practices, and platform engineering concepts.
+> Purpose: This module focuses on AMD SMTS oriented Modern C++ interview preparation, semiconductor industry interviews, production-quality software engineering practices, and platform engineering concepts.
 >
 > Target Roles:
 > - AMD SMTS
@@ -38,6 +38,10 @@ This module focuses on:
 - Leadership and Senior Engineer Discussions
 - Production Failure Scenarios
 - System-Level Engineering Discussions
+- Systems Thinking
+- Platform Engineering Discussions
+- Senior Interview Communication
+- AMD SMTS Interview Preparation
 
 ---
 
@@ -47,13 +51,13 @@ This module focuses on:
 08-interview-preparation
 │
 ├── README.md
+├── CPP-INTERVIEW.md          <-- Single Point of C++ Interview Preparation
 ├── AMD-SMTS-NOTES.md
-├── COMMON-INTERVIEW-QUESTIONS.md
 ├── CPP-CODING-PATTERNS.md
 ├── DEBUGGING.md
 ├── GOOGLETEST.md
 ├── MOCK-INTERVIEW.md
-└── qna.md
+└── SENIOR-ENGINEERING-NOTES.md
 ```
 
 ---
@@ -89,6 +93,26 @@ Always ask:
 6. What are the engineering trade-offs?
 7. Will this approach work reliably in production?
 
+### SMTS Thinking Model
+
+Always try to think in three layers:
+
+```text
+Technical Impact
+        ↓
+Engineering Impact
+        ↓
+Business Impact
+```
+
+Whenever possible ask:
+
+- Why was this introduced?
+- What problem does it solve?
+- What are the trade-offs?
+- How does it impact production systems?
+- How does it improve engineering productivity?
+
 ---
 
 ## Semiconductor Interview Expectations
@@ -111,16 +135,20 @@ The focus is usually less about memorizing definitions and more about explaining
 
 ## Suggested Revision Order
 
-Before interviews:
+### One Day Before Interview
 
-1. ../QUICK-REVISION.md
-2. Phase QUICK-REVISION.md files.
-3. COMMON-INTERVIEW-QUESTIONS.md
-4. AMD-SMTS-NOTES.md
-5. DEBUGGING.md
-6. GOOGLETEST.md
-7. MOCK-INTERVIEW.md
-8. qna.md
+1. CPP-INTERVIEW.md
+2. AMD-SMTS-NOTES.md
+3. DEBUGGING.md
+4. GOOGLETEST.md
+5. MOCK-INTERVIEW.md
+6. SENIOR-ENGINEERING-NOTES.md
+
+### Thirty Minutes Before Interview
+
+1. CPP-INTERVIEW.md
+2. AMD-SMTS-NOTES.md
+3. SENIOR-ENGINEERING-NOTES.md
 
 ---
 
@@ -129,19 +157,19 @@ Before interviews:
 ```text
 Modern C++ Fundamentals
             ↓
+Systems Thinking
+            ↓
 Production Quality Engineering
             ↓
-Senior Engineer Thinking
+Platform Engineering Concepts
             ↓
 Production Debugging
             ↓
+Senior Interview Communication
+            ↓
 Engineering Trade-offs
             ↓
-Mock Interviews
-            ↓
-Semiconductor Interview Preparation
-            ↓
-Senior Modern C++ Engineer
+AMD SMTS Preparation
             ↓
 Interview Ready
 ```
@@ -151,6 +179,7 @@ Interview Ready
 ## Status
 
 - Repository Structure: Frozen.
-- Primary Focus: Content Quality and Interview Preparation.
-- Goal: Senior Modern C++ Engineering Excellence.
-- Outcome: Semiconductor and Senior Platform Engineering Interview Ready.
+- Primary Focus: AMD SMTS Interview Preparation.
+- Learning Approach: Mental Models + Systems Thinking + Modern C++.
+- Goal: Senior Platform Engineering and Modern C++ Interview Excellence.
+- Outcome: AMD SMTS Interview Ready.

@@ -6,6 +6,34 @@
 
 ## What is the Goal?
 
+### Three Layer Thinking Model
+
+Always think in three layers:
+
+```text
+Technical Impact
+      ↓
+Engineering Impact
+      ↓
+Business Impact
+```
+
+Examples:
+
+```text
+Better API Design
+      ↓
+Better Maintainability
+      ↓
+Higher Engineering Productivity
+      ↓
+Faster Development
+      ↓
+Better Production Quality
+```
+
+Senior engineers are expected to discuss more than syntax and implementations.
+
 The goal is NOT to memorize syntax.
 
 The goal is to learn:
@@ -19,6 +47,26 @@ The goal is to learn:
 ---
 
 ## Pattern 1 - Start Simple
+
+### Senior Thinking Pattern
+
+```text
+WHAT?
+ ↓
+WHY?
+ ↓
+HOW?
+ ↓
+BENEFITS?
+ ↓
+TRADE-OFFS?
+ ↓
+ENGINEERING IMPACT?
+ ↓
+BUSINESS IMPACT?
+```
+
+Never jump immediately to language features or optimizations.
 
 Always think:
 
@@ -108,6 +156,24 @@ What are the trade-offs?
 
 Do not optimize prematurely.
 
+### Performance Thinking
+
+Always ask:
+
+```text
+Do we really need this optimization?
+            ↓
+What problem are we solving?
+            ↓
+What are the trade-offs?
+            ↓
+Will this improve production quality?
+            ↓
+Will this improve engineering productivity?
+```
+
+Prefer measurable improvements over premature optimizations.
+
 ---
 
 ## Pattern 5 - Think About Memory
@@ -164,6 +230,24 @@ Memory Problem?
 
 Debugging is a major focus area for AMD SMTS interviews.
 
+### Production Quality Thinking
+
+Always ask:
+
+```text
+Can I test this?
+       ↓
+Can I debug this?
+       ↓
+Can I automate this?
+       ↓
+Can I prevent regressions?
+       ↓
+Can I maintain this easily?
+```
+
+Production-quality code is easier to test, debug, and maintain.
+
 ---
 
 ## Production Thinking
@@ -194,6 +278,20 @@ Difficult to Debug
 
 ---
 
+## Biggest Learnings
+
+Remember:
+
+- Prefer readability over cleverness.
+- Prefer maintainability over unnecessary optimizations.
+- Prefer production-quality thinking over syntax memorization.
+- Prefer requirements and trade-offs discussions during interviews.
+- Prefer simple and correct solutions before optimized solutions.
+
+The goal is NOT to write the most clever Modern C++ code. The goal is to write understandable, maintainable, and production-quality code.
+
+---
+
 ## Repository Philosophy
 
 Remember:
@@ -206,6 +304,11 @@ We are optimizing for:
 - Production Thinking
 - Debugging Skills
 - AMD SMTS Interviews
+- Systems Thinking
+- Platform Engineering Thinking
+- Production Quality Engineering
+- Senior Interview Communication
+- AMD SMTS Preparation
 
 ---
 

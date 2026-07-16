@@ -67,6 +67,62 @@ Do not immediately jump to the technology.
 
 ---
 
+### Three Layer Thinking Model
+
+For every design decision, interview answer, or trade-off discussion think in three layers:
+
+```text
+Technical Impact
+      ↓
+Engineering Impact
+      ↓
+Business Impact
+```
+
+Examples:
+
+```text
+Build Performance
+      ↓
+Developer Productivity
+      ↓
+CI/CD Performance
+      ↓
+Faster Feedback Loop
+      ↓
+Release Velocity
+      ↓
+Infrastructure Cost
+      ↓
+Engineering Efficiency
+```
+
+Avoid stopping at only the technical implementation details.
+
+---
+
+### Interview Thinking Framework
+
+Always try to reason in the following order:
+
+```text
+WHAT?
+ ↓
+WHY?
+ ↓
+HOW?
+ ↓
+BENEFITS?
+ ↓
+ENGINEERING IMPACT?
+ ↓
+BUSINESS IMPACT?
+```
+
+Do not immediately jump to syntax or implementation details.
+
+---
+
 ## Modern C++ Focus Areas
 
 High Priority:
@@ -148,6 +204,25 @@ You do NOT need to know every feature of Modern C++.
 
 ---
 
+### Interview Communication Notes
+
+Prefer:
+
+- Better suited for.
+- Preferred when.
+- Depends on requirements.
+- Depends on constraints and trade-offs.
+
+Avoid:
+
+- Java is better.
+- C++ is better.
+- This technology is always faster.
+
+Senior engineers usually communicate requirements, trade-offs, and impacts rather than absolute statements.
+
+---
+
 ## Repository Philosophy
 
 ```text
@@ -169,6 +244,42 @@ Remember:
 > Easy > Layered > Connected > Interview Ready.
 
 ---
+
+## Personal Learning Notes
+
+### Biggest Strengths
+
+- WHY-driven reasoning.
+- Systems thinking.
+- Problem-solving mindset.
+- Ability to connect concepts with production systems.
+
+### Biggest Improvement Areas
+
+- Breadth of thinking.
+- Correct C++ terminology.
+- Answering exactly what was asked.
+- Knowing when to stop at the appropriate level of detail.
+
+### Learning Philosophy
+
+Remember:
+
+```text
+Mental Models
+      ↓
+Concepts
+      ↓
+Production Thinking
+      ↓
+Interview Communication
+      ↓
+SMTS Thinking
+      ↓
+Interview Ready
+```
+
+The goal is NOT to memorize Modern C++. The goal is to build correct mental models and communicate like a Senior/SMTS engineer during interviews.
 
 ## Status
 

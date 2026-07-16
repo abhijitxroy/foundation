@@ -38,6 +38,34 @@ Can this be automated?
 
 Good tests focus on behaviour rather than implementation details.
 
+### Three Layer Testing Model
+
+Always think in three layers:
+
+```text
+Technical Impact
+      ↓
+Engineering Impact
+      ↓
+Business Impact
+```
+
+Examples:
+
+```text
+Better Test Coverage
+      ↓
+Higher Code Quality
+      ↓
+Fewer Production Issues
+      ↓
+Faster Releases
+      ↓
+Better Customer Experience
+```
+
+Testing discussions should not stop at writing assertions. Think about production quality and engineering productivity.
+
 ---
 
 ## Start With Simple Questions
@@ -104,6 +132,24 @@ Can I debug failures?
 
 Testing is an important part of production-quality software.
 
+### Production Quality Thinking
+
+Ask yourself:
+
+```text
+Can this fail in production?
+        ↓
+Can we reproduce it?
+        ↓
+Can we automate the test?
+        ↓
+Can we debug failures efficiently?
+        ↓
+Can we prevent regressions?
+```
+
+The goal is not merely passing tests. The goal is building reliable and maintainable production systems.
+
 ---
 
 ## Interview Pattern
@@ -124,6 +170,20 @@ How would you debug failures?
 
 Interviewers care more about your testing approach than memorized syntax.
 
+### Senior Interview Communication
+
+Prefer discussing:
+
+- Requirements.
+- Constraints.
+- Trade-offs.
+- Testing strategies.
+- Production failures.
+- CI/CD integration.
+- Maintainability.
+
+Avoid focusing only on GoogleTest macros and syntax during interviews.
+
 ---
 
 ## AMD SMTS Focus Areas
@@ -137,6 +197,26 @@ High Priority:
 - Production Testing Discussions
 - Debugging Test Failures
 - Build System Integration
+
+### SMTS Thinking Model
+
+Whenever possible discuss:
+
+```text
+Testing Strategy
+        ↓
+Automation Strategy
+        ↓
+Debugging Strategy
+        ↓
+CI/CD Integration
+        ↓
+Production Quality
+        ↓
+Engineering Productivity
+```
+
+Senior engineers are expected to reason about the complete testing lifecycle rather than individual test cases.
 
 ---
 
@@ -165,6 +245,19 @@ Maintain
 ```
 
 ---
+
+## Biggest Learnings
+
+Remember:
+
+- Good tests are readable.
+- Good tests are maintainable.
+- Good tests are reproducible.
+- Good tests are easy to debug.
+- Good tests improve engineering productivity.
+- Good tests improve release confidence.
+
+GoogleTest is only a tool. Production quality thinking is the actual goal.
 
 ## Status
 

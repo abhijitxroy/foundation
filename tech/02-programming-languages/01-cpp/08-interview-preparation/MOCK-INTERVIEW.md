@@ -62,6 +62,26 @@ Trade-offs?
 Summary
 ```
 
+### Interview Thinking Framework
+
+Before answering any question, always ask yourself:
+
+```text
+WHAT?
+ ↓
+WHY?
+ ↓
+HOW?
+ ↓
+BENEFITS?
+ ↓
+ENGINEERING IMPACT?
+ ↓
+BUSINESS IMPACT?
+```
+
+Do not rush to syntax or implementation details.
+
 ---
 
 ## Senior-Level Thinking Pattern
@@ -86,6 +106,36 @@ Maintainability
 
 Do not immediately jump to the technology or syntax.
 
+### Three Layer Thinking Model
+
+```text
+Technical Impact
+      ↓
+Engineering Impact
+      ↓
+Business Impact
+```
+
+Examples:
+
+```text
+Faster Builds
+      ↓
+Developer Productivity
+      ↓
+CI/CD Performance
+      ↓
+Faster Feedback Loop
+      ↓
+Release Velocity
+      ↓
+Infrastructure Cost
+      ↓
+Engineering Efficiency
+```
+
+Senior engineers are expected to discuss more than implementation details whenever appropriate.
+
 ---
 
 ## What Will Be Evaluated?
@@ -101,6 +151,15 @@ We will evaluate:
 - Testing mindset.
 - Leadership discussions.
 
+Additional evaluation areas:
+
+- Systems thinking.
+- Breadth of thinking.
+- Question accuracy.
+- Engineering reasoning.
+- Ability to justify trade-offs.
+- Ability to communicate requirements and constraints.
+
 ---
 
 ## Scoring Pattern
@@ -111,10 +170,11 @@ Each mock interview will be scored on:
 |------|-------|
 | Technical Understanding | /10 |
 | Communication | /10 |
+| Systems Thinking | /10 |
+| Engineering Reasoning | /10 |
+| Question Accuracy | /10 |
 | Production Thinking | /10 |
-| Trade-off Discussions | /10 |
-| Debugging Mindset | /10 |
-| Total | /50 |
+| Total | /60 |
 
 ---
 
@@ -137,6 +197,41 @@ Senior-Level Discussion
       ↓
 Final Score
 ```
+
+### Common Improvement Areas
+
+We will continuously improve:
+
+- Correct terminology.
+- Answering exactly what was asked.
+- Thinking deeply while knowing when to stop.
+- Connecting technical discussions with production systems.
+- Communicating requirements, constraints, and trade-offs clearly.
+- Building Senior/SMTS level interview communication skills.
+
+---
+
+## Personal Mock Interview Philosophy
+
+Remember:
+
+```text
+Mental Models
+      ↓
+Technical Understanding
+      ↓
+Systems Thinking
+      ↓
+Production Thinking
+      ↓
+Interview Communication
+      ↓
+SMTS Thinking
+      ↓
+Interview Ready
+```
+
+The goal of mock interviews is not to provide perfect answers immediately. The goal is to continuously improve technical depth, breadth of thinking, and interview communication throughout the learning journey.
 
 ---
 

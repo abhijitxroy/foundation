@@ -41,6 +41,34 @@ Root Cause?
 
 Never start by guessing.
 
+### Three Layer Debugging Model
+
+Always think in three layers:
+
+```text
+Technical Impact
+      ↓
+Engineering Impact
+      ↓
+Business Impact
+```
+
+Examples:
+
+```text
+Production Crash
+      ↓
+Service Instability
+      ↓
+Delayed Releases
+      ↓
+Engineering Productivity Impact
+      ↓
+Customer Impact
+```
+
+Senior engineers are expected to discuss more than the immediate technical failure.
+
 ---
 
 ## Start With Simple Questions
@@ -80,6 +108,24 @@ Can we test it?
        ↓
 Can we monitor it?
 ```
+
+### Production Quality Thinking
+
+Always ask:
+
+```text
+Can we reproduce it?
+        ↓
+Can we automate its detection?
+        ↓
+Can we monitor it?
+        ↓
+Can we prevent regressions?
+        ↓
+Can we improve debugging efficiency?
+```
+
+The goal is not merely fixing bugs. The goal is building reliable production systems.
 
 ---
 
@@ -142,6 +188,21 @@ How did you prevent it from happening again?
 
 Interviewers care more about your debugging process than memorized commands.
 
+### Senior Interview Communication
+
+Prefer discussing:
+
+- Requirements.
+- Constraints.
+- Trade-offs.
+- Root cause analysis.
+- Production failures.
+- CI/CD implications.
+- Prevention strategies.
+- Maintainability.
+
+Avoid focusing only on debugging commands and tools during interviews.
+
 ---
 
 ## AMD SMTS Focus Areas
@@ -156,31 +217,42 @@ High Priority:
 - CI/CD failures
 - Production debugging discussions
 
+### SMTS Thinking Model
+
+Whenever possible discuss:
+
+```text
+Failure Analysis
+       ↓
+Root Cause Analysis
+       ↓
+Debugging Strategy
+       ↓
+Testing Strategy
+       ↓
+Automation Strategy
+       ↓
+Production Quality
+       ↓
+Engineering Productivity
+```
+
+Senior engineers are expected to reason about complete failure lifecycles rather than isolated bugs.
+
 ---
 
-## Repository Philosophy
+## Biggest Learnings
 
 Remember:
 
-> Good debugging starts with asking good questions.
+- Good debugging starts with good observations.
+- Good debugging is reproducible.
+- Good debugging is systematic.
+- Good debugging prevents future failures.
+- Good debugging improves engineering productivity.
+- Good debugging improves release confidence.
 
-Prefer:
-
-```text
-Observe
- ↓
-Understand
- ↓
-Reproduce
- ↓
-Debug
- ↓
-Fix
- ↓
-Validate
- ↓
-Prevent
-```
+Debugging is not merely fixing bugs. It is understanding why failures happen and preventing them from happening again.
 
 ---
 
