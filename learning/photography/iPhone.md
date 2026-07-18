@@ -63,3 +63,9 @@ This document contains practical notes for taking better photos and videos with 
 ## Field Notes
 
 Write down useful tips, camera settings, and lessons learned.
+
+
+# Temp Dump content 
+
+## How to use and when to use apple log video (available iPhone 15 onward )
+https://www.youtube.com/watch?v=mbtijUVIYdE&list=PLjEKtPLQuhKiYah__JJMt1RWeJjp0ACv1&index=19
