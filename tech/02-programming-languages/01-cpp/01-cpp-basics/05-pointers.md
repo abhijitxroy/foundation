@@ -325,5 +325,5 @@ STOP
 
 ## Navigation
 
-- Previous: Topic 5 - References
-- Next: Topic 6 - Const Correctness
+- Previous: [Topic 4 - References](./04-references.md)
+- Next: [Topic 6 - const-correctness](./06-const-correctness.md)

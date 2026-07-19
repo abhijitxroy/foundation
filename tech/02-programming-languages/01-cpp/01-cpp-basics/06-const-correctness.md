@@ -2,14 +2,13 @@
 
 ## What is Const Correctness?
 
-Const correctness is the practice of explicitly stating that a value or object should not be modified.
+In easy English:
 
-It improves:
+> `const` means Read Only.
 
-- Safety
-- Readability
-- Maintainability
-- API design
+If something should not be modified, we should make it `const`.
+
+Const correctness helps us communicate our design decisions clearly.
 
 ---
 
@@ -18,48 +17,78 @@ It improves:
 It helps us to:
 
 - Prevent accidental modifications.
-- Communicate programmer intent.
+- Communicate design intent.
 - Write safer code.
-- Improve API design.
+- Design better APIs.
+- Make code easier to understand.
 
 ---
 
-## Remember
+## Requirement First Thinking
 
 ```text
-Can this change?
-      ↓
-     YES
-      ↓
- Do NOT use const.
+Should this value change?
+          ↓
+         YES
+          ↓
+     Do NOT use const.
 
 
-Can this change?
-      ↓
-      NO
-      ↓
-   Use const.
+Should this value change?
+          ↓
+          NO
+          ↓
+       Use const.
 ```
 
 Remember:
 
-> const = Promise Not to Modify
+> Requirement → Design Choice → Reason
+
+For example:
+
+```text
+Requirement
+      ↓
+Should not change.
+      ↓
+Design Choice
+      ↓
+Use const.
+      ↓
+Reason
+      ↓
+Read Only.
+```
 
 ---
 
 ## Simple Examples
 
 ```cpp
-const int age = 36;
-```
-
-The value cannot be modified.
-
-```cpp
 int age = 36;
 ```
 
-The value can be modified.
+Question:
+
+> Can it be modified?
+
+Answer:
+
+> YES.
+
+
+```cpp
+const int age = 36;
+```
+
+Question:
+
+> Can it be modified?
+
+Answer:
+
+> NO. It is read only.
 
 ---
 
@@ -71,16 +100,74 @@ void display(const int value)
 }
 ```
 
-Using `const` communicates that the function will not modify the value.
+This API communicates:
 
-We will revisit `const` with:
+> The value is read only and will not be modified.
 
-- References
-- Pointers
-- Classes
-- Move semantics
+---
 
-in later topics.
+## High ROI Mental Models
+
+```text
+Mandatory?
+     ↓
+ Reference (&)
+
+
+Optional?
+     ↓
+ Pointer (*)
+
+
+Read Only?
+     ↓
+ const
+
+
+Mandatory + Read Only?
+     ↓
+ const T&
+
+
+Optional + Read Only?
+     ↓
+ const T*
+```
+
+Do NOT memorize the syntax.
+
+Always ask:
+
+> What is the requirement?
+
+---
+
+## Production Examples
+
+```cpp
+const GPUInfo& info;
+```
+
+Communicates:
+
+> GPU information is mandatory and read only.
+
+
+```cpp
+const GPUInfo* info;
+```
+
+Communicates:
+
+> GPU information is optional and read only.
+
+Const correctness is widely used in:
+
+- Modern C++ APIs
+- STL
+- GoogleTest
+- Production systems
+- Performance-critical applications
 
 ---
 
@@ -97,104 +184,100 @@ C++
 const
 ```
 
-Although similar in intent, `const` and `final` are different language features.
-
----
-
-## Production Examples
-
-Const correctness is widely used in:
-
-- Modern C++ APIs
-- Libraries
-- STL
-- GoogleTest
-- Performance-critical applications
-
-Using `const` correctly improves both safety and code readability.
+Both communicate that something should not be modified, although they are different language features.
 
 ---
 
 ## Common Mistakes
 
 - Ignoring const correctness.
-- Using const unnecessarily.
-- Assuming const means compile-time constants in every situation.
-- Removing const without understanding the implications.
+- Making everything mutable by default.
+- Using non-const objects when modification is unnecessary.
+- Thinking const is only a syntax feature instead of an API design decision.
 
 ---
 
-## Interview Questions
+## High ROI Interview Questions
 
-1. What is const correctness?
+1. What is const?
 2. Why does const exist?
-3. What are the advantages of using const?
-4. How does const improve API design?
-5. Why is const correctness important in Modern C++?
+3. Why is const correctness important?
+4. What does `const T&` communicate?
+5. What does `const T*` communicate?
+6. Why does const improve API design?
 
 ---
 
-## Interview Tips
+## Interview Ready Answers
+
+> What is const?
+>
+> `const` means the value is read only and should not be modified.
+
+
+> Why use const?
+>
+> I use `const` when an object should not be modified. It improves safety and communicates the API requirements clearly.
+
+
+> What does `const T&` communicate?
+>
+> The object is mandatory and read only.
+
+
+> What does `const T*` communicate?
+>
+> The object is optional and read only.
 
 Remember:
 
-```text
-Should this change?
-      ↓
-      NO
-      ↓
-   Use const
-      ↓
-Safer and Clearer Code
-```
-
-Interviewers frequently ask:
-
-- const variables.
-- const function parameters.
-- const references.
-- const pointers.
-- const member functions.
-
-We will learn these progressively throughout the course.
+> Requirement → Design Choice → Reason → STOP
 
 ---
 
 ## Senior-Level Thinking
 
-Ask yourself:
+Don't ask:
 
-```text
-Should this value change?
-      ↓
-      NO
-      ↓
-Use const.
-```
+> Which keyword should I use?
 
-Const correctness communicates design intent and helps prevent bugs in large code bases.
+Ask:
+
+> Should this object be modified?
+
+If the answer is:
+
+> NO.
+
+Then immediately think:
+
+> const
+
+This is requirement-driven Modern C++ thinking.
 
 ---
 
 ## 5 Minutes Revision
 
-- const means "do not modify".
-- const improves safety and readability.
-- Use const whenever modification is not intended.
-- Const correctness is an important Modern C++ design practice.
-- We will revisit const with references, pointers and classes later.
+- `const` means Read Only.
+- Use `const` when modification is not intended.
+- `const T&` means Mandatory + Read Only.
+- `const T*` means Optional + Read Only.
+- Think Requirements first, then syntax.
+- Prefer short and requirement-driven interview answers.
 
 ---
 
 ## Status
 
-- Topic Status: Pending Discussion
+- Topic Status: Completed
 - Difficulty: Easy
 - Interview Frequency: Very High
+- ROI: Very High
 
 ---
 
 ## Navigation
 
-- Previous: [Topic 15 - Static Members](./15-static-members.md)
-- Next: [Topic 17 - Encapsulation](../02-oop/17-encapsulation.md)
+- Previous: [Topic 5 - Pointer](./05-pointers.md)
+- Next: [Topic 7 - Functions](07-functions.md)
