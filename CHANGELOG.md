@@ -6,6 +6,41 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 
 ---
 
+## [v1.25.0] - Personal Finance Foundations: ESPP & RSU
+
+### Highlights
+
+This release introduces the Personal Finance - Employee Equity Compensation module covering Employee Stock Purchase Plans (ESPP) and Restricted Stock Units (RSUs). It provides practical guidance on compensation planning, contribution strategies, career discussions, taxation considerations, portfolio diversification, and long-term wealth creation.
+
+### Added
+
+- Added comprehensive Employee Stock Purchase Plan (ESPP) learning materials.
+- Added Restricted Stock Units (RSU) fundamentals and employee compensation guides.
+- Added practical frameworks for ESPP contribution strategies and Look-back feature evaluation.
+- Added guidance covering RSU negotiations, performance expectations, annual refreshers, promotions, and compensation discussions.
+- Added employee-focused decision-making frameworks for vesting, taxation, selling strategies, and portfolio diversification.
+- Added quick revision guides and enrollment checklists for both ESPP and RSU modules.
+
+### Changed
+
+- Expanded Personal Finance foundations to include employee equity compensation planning.
+- Improved coverage of long-term wealth creation strategies involving ESPP, RSUs, and portfolio diversification principles.
+- Strengthened practical career and compensation planning guidance for employees across different organizations.
+- Enhanced repository-wide focus on timeless, company-agnostic financial decision-making frameworks.
+
+### What's Next?
+
+Future work will focus on:
+
+- Personal finance fundamentals and investment principles.
+- Tax planning concepts for employees and investors.
+- Retirement and long-term financial planning.
+- Asset allocation and portfolio management strategies.
+- Compensation planning and wealth creation frameworks.
+- Practical financial decision-making guides for lifelong learning.
+
+---
+
 ## [v1.24.0] - Semiconductor Engineering Foundation
 
 ### Highlights
