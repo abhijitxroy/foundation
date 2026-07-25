@@ -203,7 +203,7 @@ Explain:
 ## Previous and Next Topics
 - Previous: [25. Smart Pointers](25-smart-pointers.md)
 - Current: **26. Move Semantics**
-- Next: [27. Rvalue References](27-rvalue-references.md)
+- Next: [27. Rvalue References](27-lvalue-rvalue-references.md)
 
 ## Summary
 - Move semantics is a foundational Modern C++ concept.
