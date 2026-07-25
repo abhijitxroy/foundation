@@ -50,6 +50,7 @@ foundation
 │   │
 │   ├── learning/
 │   │   ├── Communication
+|   |   ├── Finance
 │   │   ├── Methodology
 │   │   ├── Photography
 │   │   └── Prompt Engineering
@@ -83,7 +84,7 @@ foundation
 |-------|-------------|
 | **tech/** | Technology foundations spanning computing, software engineering, AI, cloud, platform engineering, semiconductor engineering, and enterprise-scale systems. |
 | **books/** | Structured notes distilled from books across finance, mindset, growth, society, and foundational topics. |
-| **learning/** | Learning methodologies, communication skills, photography, and practical learning frameworks. |
+| **learning/** | Learning methodologies, personal finance, communication skills, photography, prompt engineering, and practical lifelong learning frameworks. |
 | **games/** | Fundamentals of football, cricket, and chess including terminology, rules, strategies, and records. |
 | **entertainment/** | Curated collections of stories, films, literature, and cultural references. |
 | **wishlist/** | Long-term learning goals, reading journeys, skills, travel plans, and subjects to explore. |
@@ -163,6 +164,7 @@ Interview Preparation (where applicable)
 
 ### Learning
 
+- Personal Finance Foundations
 - Communication Skills
 - Knowledge Curation
 - Documentation Methodologies
@@ -357,7 +359,8 @@ Current focus areas include:
 - Expanding technology modules.
 - Building Semiconductor Engineering foundations.
 - Strengthening Artificial Intelligence and Platform Engineering content.
-- Developing practical learning frameworks.
+- Developing Personal Finance learning frameworks.
+- Developing practical learning methodologies.
 - Standardizing documentation practices.
 - Improving repository navigation and maintainability.
 - Preserving practical engineering experience and methodologies.
@@ -372,6 +375,7 @@ The long-term goal of Foundation is to become a structured and reusable lifelong
 - Technology
 - Engineering
 - Learning Methodologies
+- Personal Finance
 - Books and Research
 - Creativity
 - Personal Growth
