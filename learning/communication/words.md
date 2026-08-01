@@ -103,3 +103,18 @@ A word should be added only if at least one of the following is true:
 | Procrastination | Delaying necessary work unnecessarily. | Personal growth | Stop procrastinating and get started. | Lifetime value |
 | Mind-boggling | Extremely surprising, complex, or difficult to understand. | Daily and professional communication | The scale of the project is mind-boggling. | Frequently useful |
 | Boastful | Showing excessive pride in one's achievements or abilities. | Daily communication | He sounded boastful during the discussion. | Frequently useful |
+| Withhold | To keep back or refuse to give something. | Professional communication | The company may withhold payment until the work is approved. | Frequently useful |
+| Genesis | The beginning or origin of something. | Writing and discussions | This meeting marked the genesis of the project. | Lifetime value |
+| Sabbatical | An extended break from work, usually for learning or rest. | Career discussions | She is on a sabbatical to pursue higher studies. | Frequently useful |
+| Sabotage | To deliberately damage or obstruct something. | Professional and security discussions | A configuration mistake could sabotage the deployment. | Frequently useful |
+| Sue | To take legal action against someone. | Legal and business discussions | The company may sue for breach of contract. | Frequently useful |
+| Stealth | Done secretly or without attracting attention. | Technology and security discussions | The aircraft operates in stealth mode. | Frequently useful |
+| Stimulate | To encourage or increase activity or growth. | Business and learning discussions | Good feedback stimulates improvement. | Frequently useful |
+| Scrupulous | Very careful, honest, and attentive to detail. | Professional communication | She is scrupulous about code quality. | Lifetime value |
+| Supernova | The explosive death of a massive star. | Science discussions | Astronomers observed a distant supernova. | Personally meaningful |
+| Supernatural | Beyond the laws of nature or science. | Books and discussions | The novel explores supernatural events. | Frequently useful |
+| Superstitious | Believing that certain actions bring good or bad luck. | Daily communication | He is superstitious about walking under ladders. | Frequently useful |
+| Supremacy | The state of being the most powerful or dominant. | Business and history discussions | The company achieved market supremacy. | Frequently useful |
+| Perquisite (Perk) | An extra benefit received in addition to salary. | Career discussions | Flexible working hours are a valuable perquisite. | Professional value |
+| Attributable | Caused by or credited to something. | Professional writing | The delay was attributable to a network outage. | Professional value |
+| Disrupt | To interrupt or prevent normal operation. | Technical and business discussions | The outage disrupted customer services. | Frequently useful |
