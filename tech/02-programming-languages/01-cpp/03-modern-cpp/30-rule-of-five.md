@@ -8,6 +8,7 @@
 ## Why Should You Learn This Topic?
 The Rule of Five extends the Rule of Three by incorporating move semantics introduced in Modern C++. It teaches developers how resources should behave when objects are copied, moved, assigned, and destroyed. Understanding the Rule of Five is extremely valuable for production-quality Modern C++ development and interviews.
 
+
 ## Learning Objectives
 - Understand what the Rule of Five is.
 - Learn why it exists.
@@ -15,19 +16,52 @@ The Rule of Five extends the Rule of Three by incorporating move semantics intro
 - Understand its relationship with move semantics.
 - Prepare for common interview questions.
 
+## Prerequisites
+
+Before learning the Rule of Five, you should already understand:
+
+```text
+Object Lifecycle
+        ↓
+Constructors vs Assignment
+        ↓
+Resource Ownership
+        ↓
+Move Semantics
+        ↓
+Move Constructor
+        ↓
+Move Assignment
+```
+
+The Rule of Five is not five unrelated functions. It is one complete story about how a resource-owning object behaves throughout its lifetime.
+
 ## Beginner Level – What is the Rule of Five?
-The Rule of Five states:
 
-> If a class requires one of the special member functions for resource management, it will often require all five to be considered.
+Imagine you are designing a class that owns a resource such as:
 
-The five special member functions are:
+- Heap memory
+- File handles
+- Network sockets
+- GPU resources
+
+The compiler will eventually ask five lifecycle questions:
+
+1. How should I destroy this object?
+2. How should I copy-create a new object?
+3. How should I copy into an existing object?
+4. How should I move-create a new object?
+5. How should I move into an existing object?
+
+These five questions correspond to the five special member functions:
+
 - Destructor
 - Copy Constructor
 - Copy Assignment Operator
 - Move Constructor
 - Move Assignment Operator
 
-These functions work together to manage resource ownership safely and efficiently.
+The Rule of Five teaches that if you manually manage a resource, you should carefully consider all five operations so that ownership remains safe and predictable.
 
 ## Why Does the Rule of Five Exist?
 The Rule of Three was designed before move semantics existed.
@@ -80,18 +114,82 @@ public:
 
 For now, focus on understanding the responsibilities of these functions rather than their implementation details.
 
+## Object Lifecycle View
+
+Instead of memorizing five functions independently, view them as one object lifecycle:
+
+```text
+Object Created
+      │
+      ▼
+Constructor
+      │
+      ▼
+Copy Constructor
+      │
+      ▼
+Move Constructor
+      │
+      ▼
+Copy Assignment
+      │
+      ▼
+Move Assignment
+      │
+      ▼
+Destructor
+```
+
+Every function answers a different compiler question during the lifetime of an object.
+
 ## Engineer Level Thinking
-Whenever a class owns a resource, ask:
 
-> How should it behave when copied?
+Do not think of the Rule of Five as five APIs.
 
-and
+Think of it as one ownership policy.
 
-> How should it behave when moved?
+```text
+Acquire Resource
+        ↓
+Own Resource
+        ↓
+Copy?
+        ↓
+Move?
+        ↓
+Release Resource
+```
 
-Ownership semantics remain the central idea.
+A senior engineer designs these five operations so that:
 
-The Rule of Five helps developers design predictable and safe resource-managing classes.
+- Ownership is always clear.
+- Resources are never leaked.
+- Double deletion is impossible.
+- Moving is efficient.
+- Copying is safe.
+## Compiler Thinking
+
+Whenever a resource-owning class is involved, the compiler effectively asks:
+
+```text
+Is a new object being created?
+        │
+        ├── YES
+        │      │
+        │      ├── Copy Constructor
+        │      └── Move Constructor
+        │
+        └── NO
+               │
+               ├── Copy Assignment
+               └── Move Assignment
+
+Object lifetime ends
+        ↓
+Destructor
+```
+
+The Rule of Five is simply the complete set of answers to these lifecycle questions.
 
 ## Production Examples
 The Rule of Five becomes important when working with:

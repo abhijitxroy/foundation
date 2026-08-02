@@ -135,6 +135,204 @@ Interviewers frequently ask:
 
 ---
 
+## Constructor vs Assignment (Compiler Decision Tree)
+
+Before thinking about copy, move, performance, or ownership, the compiler asks only one question:
+
+```text
+Does the destination object already exist?
+
+        │
+        ├── NO
+        │
+        │   Constructor
+        │
+        └── YES
+            │
+            │ Assignment
+```
+
+This single question determines whether the compiler uses a constructor or an assignment operator.
+
+### The Four Cases
+
+#### Case 1 - Default Constructor
+
+```cpp
+Image img;
+```
+
+Compiler Thinking:
+
+```text
+Does img exist?
+
+↓
+
+NO
+
+↓
+
+Create a new object.
+
+↓
+
+Default Constructor
+```
+
+---
+
+#### Case 2 - Copy Constructor
+
+```cpp
+Image img2 = img1;
+```
+
+Compiler Thinking:
+
+```text
+Does img2 exist?
+
+↓
+
+NO
+
+↓
+
+Create a new object.
+
+↓
+
+Source is an lvalue.
+
+↓
+
+Copy Constructor
+```
+
+> Even though `=` appears in the syntax, this is **initialization**, not assignment.
+
+---
+
+#### Case 3 - Move Constructor
+
+```cpp
+Image img2 = std::move(img1);
+```
+
+Compiler Thinking:
+
+```text
+Does img2 exist?
+
+↓
+
+NO
+
+↓
+
+Create a new object.
+
+↓
+
+Source is an rvalue.
+
+↓
+
+Move Constructor
+```
+
+---
+
+#### Case 4 - Move Assignment
+
+```cpp
+Image img1;
+Image img2;
+
+img2 = std::move(img1);
+```
+
+Compiler Thinking:
+
+```text
+Does img2 exist?
+
+↓
+
+YES
+
+↓
+
+Object already exists.
+
+↓
+
+Replace its current resources.
+
+↓
+
+Source is an rvalue.
+
+↓
+
+Move Assignment Operator
+```
+
+### Visual Summary
+
+```text
+                 NEW OBJECT?
+
+                    │
+         ┌──────────┴──────────┐
+         │                     │
+        YES                   NO
+         │                     │
+         ▼                     ▼
+
+  Constructors          Assignment Operators
+
+         │                     │
+    ┌────┴────┐           ┌────┴────┐
+    │         │           │         │
+   Copy      Move       Copy      Move
+Constructor Constructor Assignment Assignment
+```
+
+### Interview Shortcut
+
+Always ask this question first:
+
+```text
+Does the destination object already exist?
+
+        │
+        ├── NO
+        │      ↓
+        │  Constructor
+        │
+        └── YES
+               ↓
+          Assignment
+```
+
+Only after answering that should you ask:
+
+```text
+Source is an lvalue?
+        ↓
+      Copy
+
+Source is an rvalue?
+        ↓
+      Move
+```
+
+This simple decision tree explains all four operations and is one of the most useful mental models for understanding Modern C++ object lifecycle.
+
+---
+
 ## Senior-Level Thinking
 
 A constructor represents the beginning of an object's lifetime.

@@ -52,6 +52,32 @@ The important point is that **the object does not change**. Only the **expressio
 
 ### The Permission Analogy (Remember This Forever)
 
+## std::move() Does NOT Move Anything
+
+One of the biggest misconceptions in Modern C++ is the name `std::move`.
+
+Remember this sequence:
+
+```text
+Object
+   ↓
+std::move(object)
+   ↓
+Returns T&&
+   ↓
+Expression becomes an rvalue
+   ↓
+Move Constructor or Move Assignment may be selected
+   ↓
+Ownership is transferred
+```
+
+The important point is:
+
+- `std::move()` does **not** transfer ownership.
+- `std::move()` does **not** destroy the object.
+- `std::move()` simply gives the compiler permission to treat the expression as movable.
+
 Think of an object as a house that owns valuable resources.
 
 ```text
@@ -171,6 +197,83 @@ Object B
 
 ## Simple Examples
 
+## Move Constructor vs Move Assignment
+
+Both transfer ownership, but they are used in different situations.
+
+### Move Constructor
+
+Used when a **new object** is being created.
+
+```cpp
+Image img2 = std::move(img1);
+```
+
+Compiler Thinking:
+
+```text
+Does img2 already exist?
+
+↓
+
+NO
+
+↓
+
+Create new object.
+
+↓
+
+Move Constructor
+```
+
+---
+
+### Move Assignment
+
+Used when the destination object already exists.
+
+```cpp
+Image img1;
+Image img2;
+
+img2 = std::move(img1);
+```
+
+Compiler Thinking:
+
+```text
+Does img2 already exist?
+
+↓
+
+YES
+
+↓
+
+Release old resources.
+
+↓
+
+Transfer ownership.
+
+↓
+
+Move Assignment Operator
+```
+
+Remember:
+
+```text
+New Object
+      ↓
+Move Constructor
+
+Existing Object
+      ↓
+Move Assignment
+```
+
 ### Copy Operation
 
 ```cpp
@@ -196,6 +299,34 @@ After moving:
 > Never assume a moved-from object retains its previous value.
 
 ## Engineer Level Thinking
+
+## Moved-From Objects
+
+After a successful move:
+
+```text
+Object
+
+✓ Still exists
+
+✓ Safe to destroy
+
+✓ Safe to assign a new value
+
+✓ Safe to reuse
+
+✗ Do not rely on its previous value
+```
+
+The C++ Standard describes this as:
+
+> **Valid but unspecified state.**
+
+As a production engineer, adopt this habit:
+
+- Stop using the object's previous contents.
+- Or immediately assign it a new value.
+- Never write logic that depends on its previous state.
 Ask yourself:
 
 > Does this object still need its resources?
@@ -245,6 +376,36 @@ Interviewers may ask:
 - Forgetting ownership considerations.
 
 ## Common Confusions
+
+## Self Move Assignment
+
+Although uncommon, the following code is legal:
+
+```cpp
+img = std::move(img);
+```
+
+This is called **self-move assignment**.
+
+A robust move assignment operator should detect this situation before releasing resources.
+
+Conceptually:
+
+```text
+Is source and destination the same object?
+
+YES
+    ↓
+Do nothing.
+
+NO
+    ↓
+Release current resources.
+    ↓
+Transfer ownership.
+```
+
+Production-quality classes usually guard against self-move assignment to avoid accidentally operating on resources that have just been released.
 
 ### Confusion 1
 
@@ -382,6 +543,11 @@ Explain:
 - rvalue means: "I am about to disappear."
 - Moved-from objects remain valid but should not be relied upon.
 - Think Ownership -> Permission -> Transfer whenever you see Move Semantics.
+- Constructors create new objects; assignment operators modify existing objects.
+- Move Constructor is used for new objects.
+- Move Assignment is used for existing objects.
+- Moved-from objects remain valid but their previous value is unspecified.
+- The best mental model is: Ownership → Permission → Transfer → Safe Destruction.
 
 ## Previous and Next Topics
 - Previous: [27. Lvalue & Rvalue References](27-lvalue-rvalue-references.md)

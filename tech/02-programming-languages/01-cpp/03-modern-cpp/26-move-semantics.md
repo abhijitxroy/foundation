@@ -8,12 +8,33 @@
 ## Why Should You Learn This Topic?
 Move semantics is one of the biggest performance improvements introduced in Modern C++. It allows resources to be transferred efficiently instead of unnecessarily copied. Understanding move semantics is essential before learning `std::move`, the Rule of Five, and writing production-quality Modern C++ code.
 
+
 ## Learning Objectives
 - Understand what move semantics is.
 - Learn why move semantics exists.
 - Understand copy versus move operations at a high level.
 - Recognize where move semantics improves performance.
 - Prepare for common interview questions.
+
+## Prerequisites
+
+Before diving into Move Semantics, make sure you understand these concepts in order:
+
+```text
+Object Lifecycle
+        ↓
+Constructors vs Assignment
+        ↓
+Resource Ownership
+        ↓
+lvalue / rvalue
+        ↓
+T& and T&&
+        ↓
+std::move()
+```
+
+Move Semantics is not an isolated feature. It is the result of understanding object lifetime, ownership, and compiler decisions.
 
 ## Beginner Level – What is Move Semantics?
 Move semantics allows resources to be transferred from one object to another instead of creating expensive copies.
@@ -27,6 +48,7 @@ Move semantics is primarily about:
 - Resource ownership
 - Efficient object transfers
 
+
 ## Why Does Move Semantics Exist?
 Before Modern C++, large objects were frequently copied unnecessarily.
 
@@ -37,6 +59,28 @@ Problems included:
 - Reduced scalability in large applications.
 
 Move semantics exists to make object transfers safer and more efficient.
+
+## Modern C++ Philosophy
+
+Throughout this chapter, remember these four ideas:
+
+```text
+Ownership
+        ↓
+Lifetime
+        ↓
+Programmer Intent
+        ↓
+Safe Resource Transfer
+```
+
+The compiler is conservative by default.
+
+It assumes:
+
+> "The programmer still needs this object's resources."
+
+Only when the programmer explicitly permits moving can move operations be selected.
 
 ## Real World Analogy
 Imagine moving to a new apartment.
@@ -107,18 +151,59 @@ The resource is transferred to `second`.
 > Note: We will study `std::move` in detail in Topic 28.
 
 ## Engineer Level Thinking
-Whenever large objects are involved, ask:
 
-> Does this object need to be copied or can ownership be transferred?
+Do not think about Move Semantics as a language feature.
 
-Examples include:
-- Containers.
-- Strings.
-- Smart pointers.
-- File handlers.
-- Production libraries.
+Instead think about the compiler's decision-making process:
 
-Move semantics significantly reduces unnecessary allocations and copies.
+```text
+Resource Ownership
+        ↓
+Object Lifetime
+        ↓
+Can ownership be transferred?
+        ↓
+YES
+        ↓
+Move Semantics
+        ↓
+Avoid expensive copies
+```
+
+As a production engineer, the first question should never be:
+
+> "Should I use std::move()?"
+
+Instead ask:
+
+> "Does this object still need its current resources, or can ownership be transferred safely?"
+## Learning Roadmap
+
+This topic is the entry point for the rest of Modern C++ move semantics.
+
+```text
+Move Semantics
+        ↓
+lvalue / rvalue
+        ↓
+T& and T&&
+        ↓
+std::move()
+        ↓
+Move Constructor
+        ↓
+Moved-from Object
+        ↓
+Move Assignment
+        ↓
+Rule of Five
+        ↓
+Rule of Zero
+```
+
+Do not try to memorize these topics independently.
+
+Think of them as one continuous story about object lifetime and resource ownership.
 
 ## Production Examples
 Move semantics is widely used by:
@@ -206,10 +291,11 @@ Explain:
 - Next: [27. Rvalue References](27-lvalue-rvalue-references.md)
 
 ## Summary
-- Move semantics is a foundational Modern C++ concept.
-- It enables efficient resource transfers and improves performance.
-- Understanding ownership is more important than memorizing syntax.
-- Move semantics forms the foundation for `std::move` and the Rule of Five.
+- Move semantics is fundamentally about resource ownership and object lifetime.
+- Performance is a consequence of avoiding unnecessary copies.
+- The compiler prefers safe behavior unless the programmer explicitly permits moving.
+- lvalue, rvalue, `T&&`, `std::move()`, move constructors, and move assignment are all parts of the same ownership story.
+- Understanding the compiler's decision process is more valuable than memorizing syntax.
 
 ## Status
 Status: Topic 26 Completed (Revisit after Topics 27, 28 and 30 for Rvalue References, std::move and the Rule of Five).

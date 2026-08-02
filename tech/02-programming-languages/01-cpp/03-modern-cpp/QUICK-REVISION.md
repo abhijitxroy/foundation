@@ -4,6 +4,130 @@
 
 ---
 
+## Interview Mental Models (Read This First)
+
+### Compiler Decision Tree
+
+```text
+Is a NEW object being created?
+
+        │
+        ├── YES
+        │      │
+        │      ├── Source is lvalue
+        │      │        ↓
+        │      │   Copy Constructor
+        │      │
+        │      └── Source is rvalue
+        │               ↓
+        │        Move Constructor
+        │
+        └── NO
+               │
+               ├── Source is lvalue
+               │        ↓
+               │   Copy Assignment
+               │
+               └── Source is rvalue
+                        ↓
+                 Move Assignment
+```
+
+### Ownership Thinking
+
+```text
+Acquire Resource
+        ↓
+Own Resource
+        ↓
+Need another object?
+        ↓
+Copy OR Move
+        ↓
+Release Resource
+```
+
+### Object Lifecycle
+
+```text
+Object Created
+      ↓
+Constructor
+      ↓
+Copy Constructor
+      ↓
+Move Constructor
+      ↓
+Copy Assignment
+      ↓
+Move Assignment
+      ↓
+Destructor
+```
+
+### Object vs Expression
+
+```text
+Object
+↓
+Actual memory
+
+Expression
+↓
+Compiler evaluates
+
+Value Category
+↓
+lvalue / rvalue
+```
+
+### T& vs T&&
+
+| Syntax | Meaning |
+|--------|---------|
+| `T&` | Reference to an lvalue expression |
+| `T&&` | Reference to an rvalue expression |
+
+### std::move() in One Picture
+
+```text
+Object
+      ↓
+std::move()
+      ↓
+Returns T&&
+      ↓
+Expression becomes movable
+      ↓
+Move operation selected
+      ↓
+Ownership transferred
+```
+
+Remember:
+
+> **Permission ≠ Moving**
+
+### Moved-From Object
+
+```text
+✓ Valid
+✓ Safe to destroy
+✓ Safe to assign
+✓ Safe to reuse
+✗ Previous value is unspecified
+```
+
+### Rule Comparison
+
+| Rule | Focus |
+|------|-------|
+| Rule of Three | Copy semantics |
+| Rule of Five | Copy + Move semantics |
+| Rule of Zero | Let RAII types manage resources |
+
+---
+
 ## Modern C++ Resource Management Journey
 
 ```text
@@ -370,6 +494,44 @@ Prefer Not Managing Resources Manually
 
 ---
 
+## Common Interview Traps
+
+❌ `=` always means assignment.
+
+✔ It may be object initialization, which calls a constructor.
+
+---
+
+❌ `std::move()` moves an object.
+
+✔ It only enables move operations by returning an rvalue expression.
+
+---
+
+❌ Moved-from objects are destroyed.
+
+✔ They remain valid but their previous value is unspecified.
+
+---
+
+❌ `T&&` means "double reference".
+
+✔ It means rvalue reference.
+
+---
+
+❌ Move Constructor and Move Assignment are the same.
+
+✔ Move Constructor creates a new object; Move Assignment modifies an existing object.
+
+---
+
+❌ Modern C++ is about smart pointers.
+
+✔ Modern C++ is fundamentally about ownership and object lifetime.
+
+---
+
 ## AMD SMTS Interview Checklist
 
 Be able to confidently explain:
@@ -388,13 +550,17 @@ Be able to confidently explain:
 ## Modern C++ Philosophy
 
 ```text
-Write Cleaner Code
-        +
-Write Safer Code
-        +
-Write Faster Code
-        ↓
-Modern C++
+Ownership
+      ↓
+Object Lifetime
+      ↓
+RAII
+      ↓
+Smart Pointers
+      ↓
+Move Semantics
+      ↓
+Efficient & Safe Modern C++
 ```
 
 ---
