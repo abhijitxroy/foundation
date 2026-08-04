@@ -1,0 +1,1 @@
+# 📍 Uyuni Salt Flat
