@@ -6,6 +6,48 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 
 ---
 
+## [v1.26.0] - Local AI Foundations & Projects
+
+### Highlights
+
+This release introduces comprehensive Local AI documentation covering the complete journey from setting up an offline AI platform to building production-style Local AI applications. It provides a structured, privacy-first learning path for understanding and developing Local AI systems using open-source technologies.
+
+### Added
+
+- Added Local AI Setup module covering offline AI architecture and ecosystem.
+- Added comprehensive guides for Ollama, Open WebUI, RAG, Memory, Tool Calling, MCP, AI Agents, performance tuning, and troubleshooting.
+- Added Local AI Projects module with a progressive learning path from an Offline Chatbot to a complete Local AI Workstation.
+- Added practical project guides for:
+  - Offline Chatbot
+  - Document Chat (RAG)
+  - Code Assistant
+  - Git Assistant
+  - Developer Assistant
+  - Terminal Agent
+  - Multi-Agent System
+  - Local AI Workstation
+- Added project roadmap, curated resources, and supporting scripts for Local AI development.
+
+### Changed
+
+- Expanded the AI knowledge base with a structured Local AI learning path.
+- Improved organization by separating conceptual learning from implementation-focused AI engineering projects.
+- Enhanced repository coverage of privacy-first, offline AI architectures using open-source technologies.
+- Established a progressive project roadmap that incrementally builds a complete Local AI platform.
+
+### What's Next?
+
+Future work will focus on:
+
+- Advanced AI engineering implementations in the dedicated AI Engineering repository.
+- Agent orchestration frameworks and production AI workflows.
+- Voice AI and multimodal capabilities.
+- Local model optimization and benchmarking.
+- Fine-tuning, evaluation, monitoring, and production deployment patterns.
+- Continued expansion of AI foundations and engineering best practices.
+
+---
+
 ## [v1.25.0] - Personal Finance Foundations: ESPP & RSU
 
 ### Highlights
