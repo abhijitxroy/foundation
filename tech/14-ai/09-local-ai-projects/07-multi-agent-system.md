@@ -351,4 +351,4 @@ This project transforms a single AI assistant into a collaborative system of spe
 
 # Next
 
-Continue with **08-ov-ai-workstation.md**.
+Continue with **08-local-ai-workstation.md**.
