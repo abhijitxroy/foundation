@@ -21,6 +21,8 @@
 | 15 | *A Bridge Too Far* | 1977 | William Goldman | Richard Attenborough | Non-Fiction Based / War | Sean Connery / Michael Caine |
 | 16 | *The Flowers of War* | 2011 | Liu Heng | Zhang Yimou | Historical / War | Christian Bale |
 | 17 | *War Horse* | 2011 | Lee Hall / Richard Curtis | Steven Spielberg | Novel Based / War | Jeremy Irvine |
+| 18 | *Top Gun* | 1986 | Military / Aviation / Action | Tom Cruise |
+| 19 | *Top Gun: Maverick* | 2022 | Military / Aviation / Action | Tom Cruise |
 
 ## Tier-2 — Worth Watching
 
