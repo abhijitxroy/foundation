@@ -2,7 +2,7 @@
 
 Lifetime collection of foreign films watched by me.
 
-| SL. No. | Film Name | Release Date | Writer Name | Director Name | Type |
+| # | Film Name | Release | Writer | Director | Type |
 |---:|---|---|---|---|---|
 | 1 | *Metropolis* | 1927 | Thea von Harbou | Fritz Lang | Novel Based |
 | 2 | *Wings* | 1927 | John Monk Saunders | William A. Wellman | Original |
@@ -219,3 +219,33 @@ Lifetime collection of foreign films watched by me.
 | 213 | *Mystic River* | 2003 | Brian Helgeland / Dennis Lehane | Clint Eastwood | Novel Based |
 | 214 | *A Prophet* | 2009 | Jacques Audiard / Thomas Bidegain / Abdel Raouf Dafri / Nicolas Peufaillit | Jacques Audiard | Original |
 | 215 | *The Hunt* | 2012 | Thomas Vinterberg / Tobias Lindholm | Thomas Vinterberg | Original |
+| 216 | *Cast Away* | 2000 | William Broyles Jr. | Robert Zemeckis | Original / Survival | Tom Hanks |
+| 217 | *Life of Pi* | 2012 | David Magee | Ang Lee | Novel Based / Survival | Suraj Sharma |
+| 218 | *Kon-Tiki* | 2012 | Petter Skavlan / Allan Scott | Joachim Rønning / Espen Sandberg | True Story / Survival | Pål Sverre Hagen — Thor Heyerdahl |
+| 219 | *North Face* | 2008 | Philipp Stölzl / Christoph Silber | Philipp Stölzl | True Story / Survival | Benno Fürmann — Toni Kurz |
+| 220 | *Rabbit-Proof Fence* | 2002 | Doris Pilkington / Christine Olsen | Phillip Noyce | True Story | Everlyn Sampi — Molly Craig |
+| 221 | *Rescue Dawn* | 2006 | Werner Herzog | Werner Herzog | True Story / War | Christian Bale — Dieter Dengler |
+| 222 | *Unbroken* | 2014 | Joel Coen / Ethan Coen / Richard LaGravenese / William Nicholson | Angelina Jolie | True Story / War | Jack O'Connell — Louis Zamperini |
+| 223 | *Lone Survivor* | 2013 | Peter Berg | Peter Berg | True Story / War | Mark Wahlberg — Marcus Luttrell |
+| 224 | *12 Years a Slave* | 2013 | John Ridley | Steve McQueen | True Story | Chiwetel Ejiofor — Solomon Northup |
+| 225 | *The 33* | 2015 | Mikko Alanne / Craig Borten / Michael Thomas | Patricia Riggen | True Story / Survival | Antonio Banderas — Mario Sepúlveda |
+| 226 | *127 Hours* | 2010 | Danny Boyle / Simon Beaufoy / Aron Ralston | Danny Boyle | True Story / Survival | James Franco — Aron Ralston |
+| 227 | *Into the Wild* | 2007 | Sean Penn | Sean Penn | True Story / Survival | Emile Hirsch — Christopher McCandless |
+| 228 | *The Road* | 2009 | Joe Penhall | John Hillcoat | Novel Based / Survival / Sci-Fi | Viggo Mortensen |
+| 229 | *I Am Legend* | 2007 | Mark Protosevich / Akiva Goldsman | Francis Lawrence | Novel Based / Sci-Fi / Survival | Will Smith |
+| 230 | *Into the White* | 2012 | Ole Meldgaard / Dave Mango / Petter Næss | Petter Næss | True Story / War / Survival | Rupert Grint / Florian Lukas |
+| 231 | *The Snow Walker* | 2003 | Charles Martin Smith | Charles Martin Smith | Short Story Based / Survival | Barry Pepper |
+| 232 | *Jungle* | 2017 | Justin Monjo | Greg McLean | True Story / Survival | Daniel Radcliffe — Yossi Ghinsberg |
+| 233 | *Tracks* | 2013 | Marion Nelson | John Curran | True Story / Survival | Mia Wasikowska — Robyn Davidson |
+| 234 | *As Far as My Feet Will Carry Me* | 2001 | Hardy Martins / Bastian Clevé | Hardy Martins | True Story / War / Survival | Bernhard Bettermann — Clemens Forell |
+| 235 | *Sully* | 2016 | Todd Komarnicki | Clint Eastwood | True Story | Tom Hanks — Chesley Sullenberger |
+| 236 | *The Flowers of War* | 2011 | Liu Heng | Zhang Yimou | Historical / War | Christian Bale |
+| 237 | *The Railway Man* | 2013 | Frank Cottrell Boyce / Andy Paterson | Jonathan Teplitzky | True Story / War | Colin Firth — Eric Lomax |
+| 238 | *War Horse* | 2011 | Lee Hall / Richard Curtis | Steven Spielberg | Novel Based / War | Jeremy Irvine |
+| 239 | *Against the Sun* | 2014 | Brian Peter Falk | Brian Peter Falk | True Story / Survival / War | Tom Felton / Jake Abel / Garrett Dillahunt |
+| 240 | *Grizzly Man* | 2005 | Werner Herzog | Werner Herzog | True Story / Documentary | Timothy Treadwell |
+| 241 | *Chasing Mavericks* | 2012 | Kario Salem / Jim Meenaghan | Curtis Hanson / Michael Apted | True Story / Inspiring | Gerard Butler — Frosty Hesson |
+| 242 | *The Himalayas* | 2015 | Soo-jin Kim / Lee Seok-hoon | Lee Seok-hoon | True Story / Survival | Hwang Jung-min — Um Hong-gil |
+| 243 | *The Last King* | 2016 | Ravn Laneskog | Nils Gaup | Historical / War | Jakob Oftebro / Kristofer Hivju |
+| 244 | *A Bag of Marbles* | 2017 | Christian Duguay / Jonathan Duguay | Christian Duguay | True Story / War | Dorian Le Clech — Joseph Joffo |
+| 245 | *The Wave* | 2015 | John Kåre Raake / Harald Rosenløw-Eeg | Roar Uthaug | Disaster / Survival | Kristoffer Joner |

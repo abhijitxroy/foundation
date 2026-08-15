@@ -11,6 +11,7 @@
 | 05 | *Braveheart* | 1995 | Randall Wallace | Mel Gibson | Historical | Mel Gibson |
 | 06 | *The Messenger: The Story of Joan of Arc* | 1999 | Andrew Birkin / Luc Besson / Eric Serra | Luc Besson | Historical | Milla Jovovich — Joan of Arc |
 | 07 | *Gladiator* | 2000 | David Franzoni / John Logan / William Nicholson | Ridley Scott | Historical | Russell Crowe |
+| 08 | *Gladiator II* | 2024 | David Scarpa | Ridley Scott | Historical | Paul Mescal / Denzel Washington |
 | 08 | *Enemy at the Gates* | 2001 | Jean-Jacques Annaud / Alain Godard | Jean-Jacques Annaud | Historical | Jude Law — Vasily Zaytsev |
 | 09 | *Troy* | 2004 | David Benioff | Wolfgang Petersen | Mythology | Brad Pitt |
 | 10 | *Alexander* | 2004 | Oliver Stone / Christopher Kyle / Laeta Kalogridis | Oliver Stone | Historical | Colin Farrell — Alexander the Great |
@@ -19,29 +20,8 @@
 | 13 | *Apocalypto* | 2006 | Mel Gibson / Farhad Safinia | Mel Gibson | Historical | Rudy Youngblood |
 | 14 | *Immortals* | 2011 | Vlas Parlapanides / Charley Parlapanides | Tarsem Singh | Mythology | Henry Cavill |
 | 15 | *Pan's Labyrinth* | 2006 | Guillermo del Toro | Guillermo del Toro | Original | Ivana Baquero |
-| 16 | *Braveheart* | 1995 | Randall Wallace | Mel Gibson | Historical | Mel Gibson |
-| 17 | *The Messenger: The Story of Joan of Arc* | 1999 | Andrew Birkin / Luc Besson / Eric Serra | Luc Besson | Historical | Milla Jovovich — Joan of Arc |
-| 18 | *Gladiator* | 2000 | David Franzoni / John Logan / William Nicholson | Ridley Scott | Historical | Russell Crowe |
 | 19 | *The Patriot* | 2000 | Robert Rodat | Roland Emmerich | Historical | Mel Gibson |
-| 20 | *Enemy at the Gates* | 2001 | Jean-Jacques Annaud / Alain Godard | Jean-Jacques Annaud | Historical | Jude Law — Vasily Zaytsev |
-| 21 | *Troy* | 2004 | David Benioff | Wolfgang Petersen | Mythology | Brad Pitt |
-| 22 | *Alexander* | 2004 | Oliver Stone / Christopher Kyle / Laeta Kalogridis | Oliver Stone | Historical | Colin Farrell — Alexander the Great |
-| 23 | *Kingdom of Heaven* | 2005 | William Monahan | Ridley Scott | Historical | Orlando Bloom |
-| 24 | *300* | 2006 | Zack Snyder / Kurt Johnstad / Michael B. Gordon | Zack Snyder | Historical / Graphic Novel | Gerard Butler — King Leonidas |
-| 25 | *Apocalypto* | 2006 | Mel Gibson / Farhad Safinia | Mel Gibson | Historical | Rudy Youngblood |
-| 26 | *Immortals* | 2011 | Vlas Parlapanides / Charley Parlapanides | Tarsem Singh | Mythology | Henry Cavill |
-| 27 | *Pan's Labyrinth* | 2006 | Guillermo del Toro | Guillermo del Toro | Original | Ivana Baquero |
-| 28 | *Braveheart* | 1995 | Randall Wallace | Mel Gibson | Historical | Mel Gibson |
-| 29 | *The Messenger: The Story of Joan of Arc* | 1999 | Andrew Birkin / Luc Besson / Eric Serra | Luc Besson | Historical | Milla Jovovich — Joan of Arc |
-| 30 | *Gladiator* | 2000 | David Franzoni / John Logan / William Nicholson | Ridley Scott | Historical | Russell Crowe |
-| 31 | *The Patriot* | 2000 | Robert Rodat | Roland Emmerich | Historical | Mel Gibson |
-| 32 | *Enemy at the Gates* | 2001 | Jean-Jacques Annaud / Alain Godard | Jean-Jacques Annaud | Historical | Jude Law — Vasily Zaytsev |
-| 33 | *Troy* | 2004 | David Benioff | Wolfgang Petersen | Mythology | Brad Pitt |
-| 34 | *Alexander* | 2004 | Oliver Stone / Christopher Kyle / Laeta Kalogridis | Oliver Stone | Historical | Colin Farrell — Alexander the Great |
-| 35 | *Kingdom of Heaven* | 2005 | William Monahan | Ridley Scott | Historical | Orlando Bloom |
-| 36 | *300* | 2006 | Zack Snyder / Kurt Johnstad / Michael B. Gordon | Zack Snyder | Historical / Graphic Novel | Gerard Butler — King Leonidas |
-| 37 | *Apocalypto* | 2006 | Mel Gibson / Farhad Safinia | Mel Gibson | Historical | Rudy Youngblood |
-| 38 | *Immortals* | 2011 | Vlas Parlapanides / Charley Parlapanides | Tarsem Singh | Mythology | Henry Cavill |
+| 28 | *Braveheart* | 1995  Randall Wallace | Mel Gibson | Historical | Mel Gibson |
 | 39 | *Noah* | 2014 | Darren Aronofsky / Ari Handel | Darren Aronofsky | Biblical / Mythology | Russell Crowe |
 | 40 | *Hercules* | 2014 | Ryan J. Condal / Evan Spiliotopoulos | Brett Ratner | Mythology | Dwayne Johnson |
 | 41 | *King Arthur: Legend of the Sword* | 2017 | Joby Harold / Guy Ritchie / Lionel Wigram | Guy Ritchie | Legend | Charlie Hunnam |
@@ -60,14 +40,9 @@
 | 54 | *The New World* | 2005 | Terrence Malick | Terrence Malick | Historical | Colin Farrell |
 | 55 | *Downfall* | 2004 | Bernd Eichinger / Joachim Fest / Traudl Junge | Oliver Hirschbiegel | Historical | Bruno Ganz — Adolf Hitler |
 | 56 | *The Last King* | 2016 | Ravn Laneskog | Nils Gaup | Historical / War | Jakob Oftebro / Kristofer Hivju |
-
-## Tier-2 — Worth Watching
-
-| # | Film Name | Release | Writer | Director | Type | Lead Cast / Real Person |
-|---:|---|---|---|---|---|---|
-| 01 | *The 13th Warrior* | 1999 | William Wisher Jr. / Warren Lewis / John McTiernan | John McTiernan | Novel Based | Antonio Banderas |
-| 02 | *Noah* | 2014 | Darren Aronofsky / Ari Handel | Darren Aronofsky | Biblical / Mythology | Russell Crowe |
-| 03 | *Hercules* | 2014 | Ryan J. Condal / Evan Spiliotopoulos | Brett Ratner | Mythology | Dwayne Johnson |
-| 04 | *King Arthur: Legend of the Sword* | 2017 | Joby Harold / Guy Ritchie / Lionel Wigram | Guy Ritchie | Legend | Charlie Hunnam |
-| 05 | *The Northman* | 2022 | Robert Eggers / Sjón | Robert Eggers | Historical / Mythology | Alexander Skarsgård |
-| 06 | *Napoleon* | 2023 | David Scarpa | Ridley Scott | Historical | Joaquin Phoenix — Napoleon Bonaparte |
+| 57 | *Unforgiven* | 1992 | David Webb Peoples | Clint Eastwood | Original | Clint Eastwood / Gene Hackman |
+| 58 | *The Adventures of Robin Hood* | 1938 | Norman Reilly Raine / Seton I. Miller | Michael Curtiz / William Keighley | Legend / Adventure | Errol Flynn |
+| 59 | *Robin Hood: Prince of Thieves* | 1991 | Pen Densham / John Watson | Kevin Reynolds | Legend / Adventure | Kevin Costner / Morgan Freeman |
+| 60 | *Robin Hood* | 2010 | Brian Helgeland | Ridley Scott | Historical / Adventure | Russell Crowe |
+| 61 | *The 13th Warrior* | 1999 | William Wisher Jr. / Warren Lewis / John McTiernan | John McTiernan | Novel Based | Antonio Banderas |
+| 62 | *Napoleon* | 2023 | David Scarpa | Ridley Scott | Historical | Joaquin Phoenix — Napoleon Bonaparte |

@@ -1,18 +1,16 @@
 # Bengali Films
 
-Lifetime collection of Bengali films watched by me.
-
-| SL. No. | Film Name | Release Date | Writer Name | Director Name | Type |
+| # | Film Name | Release | Writer | Director | Type |
 |---:|---|---:|---|---|---|
-| 1 | *Pather Panchali* | 1955 | Satyajit Ray | Satyajit Ray | Novel Based |
-| 2 | *Aparajito* | 1956 | Satyajit Ray | Satyajit Ray | Novel Based |
-| 3 | *Parash Pathar* | 1958 | Satyajit Ray | Satyajit Ray | Short Story Based |
-| 4 | *Jalsaghar* | 1958 | Satyajit Ray | Satyajit Ray | Short Story Based |
-| 5 | *Apur Sansar* | 1959 | Satyajit Ray | Satyajit Ray | Novel Based |
-| 6 | *Devi* | 1960 | Satyajit Ray | Satyajit Ray | Short Story Based |
-| 7 | *Teen Kanya* | 1961 | Satyajit Ray | Satyajit Ray | Short Story Based |
-| 8 | *Kanchanjungha* | 1962 | Satyajit Ray | Satyajit Ray | Original |
-| 9 | *Abhijan* | 1962 | Satyajit Ray | Satyajit Ray | Novel Based |
+| 01 | *Pather Panchali* | 1955 | Satyajit Ray | Satyajit Ray | Novel Based |
+| 02 | *Aparajito* | 1956 | Satyajit Ray | Satyajit Ray | Novel Based |
+| 03 | *Parash Pathar* | 1958 | Satyajit Ray | Satyajit Ray | Short Story Based |
+| 04 | *Jalsaghar* | 1958 | Satyajit Ray | Satyajit Ray | Short Story Based |
+| 05 | *Apur Sansar* | 1959 | Satyajit Ray | Satyajit Ray | Novel Based |
+| 06 | *Devi* | 1960 | Satyajit Ray | Satyajit Ray | Short Story Based |
+| 07 | *Teen Kanya* | 1961 | Satyajit Ray | Satyajit Ray | Short Story Based |
+| 08 | *Kanchanjungha* | 1962 | Satyajit Ray | Satyajit Ray | Original |
+| 09 | *Abhijan* | 1962 | Satyajit Ray | Satyajit Ray | Novel Based |
 | 10 | *Mahanagar* | 1963 | Satyajit Ray | Satyajit Ray | Short Story Based |
 | 11 | *Charulata* | 1964 | Satyajit Ray | Satyajit Ray | Novel Based |
 | 12 | *Kapurush* | 1965 | Satyajit Ray | Satyajit Ray | Short Story Based |
@@ -70,37 +68,50 @@ Lifetime collection of Bengali films watched by me.
 
 ### Satyajit Ray
 
-| SL. No. | Film Name | Release Date | Writer Name | Director Name | Type |
+| # | Film Name | Release | Writer | Director | Type |
 |---:|---|---:|---|---|---|
-| 1 | *Rabindranath Tagore* | 1961 | Satyajit Ray | Satyajit Ray | Documentary |
-| 2 | *Two* | 1964 | Satyajit Ray | Satyajit Ray | Short Film |
-| 3 | *Sikkim* | 1971 | Satyajit Ray | Satyajit Ray | Documentary |
-| 4 | *The Inner Eye* | 1972 | Satyajit Ray | Satyajit Ray | Documentary |
-| 5 | *Pikoo* | 1980 | Satyajit Ray | Satyajit Ray | Short Film |
-| 6 | *Bala* | 1976 | Satyajit Ray | Satyajit Ray | Documentary |
-| 7 | *Sukumar Ray* | 1987 | Satyajit Ray | Satyajit Ray | Documentary |
+| 01 | *Rabindranath Tagore* | 1961 | Satyajit Ray | Satyajit Ray | Documentary |
+| 02 | *Two* | 1964 | Satyajit Ray | Satyajit Ray | Short Film |
+| 03 | *Sikkim* | 1971 | Satyajit Ray | Satyajit Ray | Documentary |
+| 04 | *The Inner Eye* | 1972 | Satyajit Ray | Satyajit Ray | Documentary |
+| 05 | *Pikoo* | 1980 | Satyajit Ray | Satyajit Ray | Short Film |
+| 06 | *Bala* | 1976 | Satyajit Ray | Satyajit Ray | Documentary |
+| 07 | *Sukumar Ray* | 1987 | Satyajit Ray | Satyajit Ray | Documentary |
 
 ### Ritwik Ghatak
 
-| SL. No. | Film Name | Release Date | Writer Name | Director Name | Type |
+| # | Film Name | Release | Writer | Director | Type |
 |---:|---|---:|---|---|---|
-| 1 | *The Life of the Adivasis* | 1955 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
-| 2 | *Places of Historic Interest in Bihar* | 1955 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
-| 3 | *Oraon* | 1957 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
-| 4 | *Scissors* | 1962 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
-| 5 | *Ustad Alauddin Khan* | 1963 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
-| 6 | *Fear* | 1965 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
-| 7 | *Rendezvous* | 1965 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
-| 8 | *Civil Defence* | 1965 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
-| 9 | *Scientists of Tomorrow* | 1967 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
+| 01 | *The Life of the Adivasis* | 1955 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
+| 02 | *Places of Historic Interest in Bihar* | 1955 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
+| 03 | *Oraon* | 1957 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
+| 04 | *Scissors* | 1962 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
+| 05 | *Ustad Alauddin Khan* | 1963 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
+| 06 | *Fear* | 1965 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
+| 07 | *Rendezvous* | 1965 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
+| 08 | *Civil Defence* | 1965 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
+| 09 | *Scientists of Tomorrow* | 1967 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
 | 10 | *Yeh Kyon* | 1970 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
 | 11 | *Amar Lenin* | 1970 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
 | 12 | *Puruliar Chhau* | 1970 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
 | 13 | *Durbar Gati Padma* | 1971 | Ritwik Ghatak | Ritwik Ghatak | Documentary |
 
-## Notes
 
-- `Nagarik` was completed in 1952 but released posthumously in 1977; the table uses 1952 as the film year.
-- `Goopy Bagha Phire Elo` was directed by Sandip Ray, with screenplay and music by Satyajit Ray.
-- Use `—` where the writer or classification has not yet been verified.
+## Web Series
 
+| # | Series Name | Season | Release | Genre | Director | Producer | Lead Cast |
+|---:|---|---|---:|---|---|---|---|
+| 01 | *Gora* | Season 1 | 2022 | Detective / Comedy | Sayantan Ghosal | Missing Screw | Ritwick Chakraborty / Suhotra Mukhopadhyay / Ananya Sen / Abhijit Guha / Ishaa Saha |
+| 02 | *Gora* | Season 2 | 2023 | Detective / Comedy | Sayantan Ghosal | Missing Screw | Ritwick Chakraborty / Suhotra Mukhopadhyay / Ananya Sen / Abhijit Guha / Ishaa Saha |
+| 03 | *Advocate Achinta Aich* | Season 1 | 2024 | Drama / Courtroom | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Ritwick Chakraborty / Saswata Chatterjee / Surangana Bandopadhyay / Dulal Lahiri / Loknath Dey / Alakananda Roy / Debraj Bhattacharya / Kheya Chattopadhyay |
+| 04 | *Advocate Achinta Aich* | Season 2 | — | Drama / Courtroom | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Ritwick Chakraborty / Saswata Chatterjee / Surangana Bandopadhyay / Dulal Lahiri / Loknath Dey / Alakananda Roy / Debraj Bhattacharya / Kheya Chattopadhyay |
+| 05 | *Advocate Achinta Aich* | Season 3 | — | Drama / Courtroom | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Ritwick Chakraborty / Saswata Chatterjee / Surangana Bandopadhyay / Dulal Lahiri / Loknath Dey / Alakananda Roy / Debraj Bhattacharya / Kheya Chattopadhyay |
+| 06 | *Eken Babu* | Season 1 | 2018 | Detective / Comedy | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Anirban Chakrabarti / Suhotra Mukhopadhyay / Somak Ghosh / Saoli Chattopadhyay / Shankar Chakraborty / Sumanta Mukherjee |
+| 07 | *Eken Babu* | Season 2 | — | Detective / Comedy | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Anirban Chakrabarti / Suhotra Mukhopadhyay / Somak Ghosh / Saoli Chattopadhyay / Shankar Chakraborty / Sumanta Mukherjee |
+| 08 | *Eken Babu* | Season 3 | — | Detective / Comedy | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Anirban Chakrabarti / Suhotra Mukhopadhyay / Somak Ghosh / Saoli Chattopadhyay / Shankar Chakraborty / Sumanta Mukherjee |
+| 09 | *Eken Babu* | Season 4 | — | Detective / Comedy | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Anirban Chakrabarti / Suhotra Mukhopadhyay / Somak Ghosh / Saoli Chattopadhyay / Shankar Chakraborty / Sumanta Mukherjee |
+| 10 | *Eken Babu* | Season 5 | — | Detective / Comedy | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Anirban Chakrabarti / Suhotra Mukhopadhyay / Somak Ghosh / Saoli Chattopadhyay / Shankar Chakraborty / Sumanta Mukherjee |
+| 11 | *Eken Babu* | Season 6 | — | Detective / Comedy | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Anirban Chakrabarti / Suhotra Mukhopadhyay / Somak Ghosh / Saoli Chattopadhyay / Shankar Chakraborty / Sumanta Mukherjee |
+| 12 | *Eken Babu* | Season 7 | — | Detective / Comedy | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Anirban Chakrabarti / Suhotra Mukhopadhyay / Somak Ghosh / Saoli Chattopadhyay / Shankar Chakraborty / Sumanta Mukherjee |
+| 13 | *Eken Babu* | Season 8 | — | Detective / Comedy | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Anirban Chakrabarti / Suhotra Mukhopadhyay / Somak Ghosh / Saoli Chattopadhyay / Shankar Chakraborty / Sumanta Mukherjee |
+| 14 | *Eken Babu* | Season 9 | — | Detective / Comedy | Joydeep Mukherjee | SVF Entertainment Pvt. Ltd. | Anirban Chakrabarti / Suhotra Mukhopadhyay / Somak Ghosh / Saoli Chattopadhyay / Shankar Chakraborty / Sumanta Mukherjee |

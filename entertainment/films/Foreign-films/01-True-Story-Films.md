@@ -43,10 +43,5 @@
 | 41 | *Chasing Mavericks* | 2012 | Kario Salem / Jim Meenaghan | Curtis Hanson / Michael Apted | True Story / Inspiring | Gerard Butler — Frosty Hesson |
 | 42 | *The Himalayas* | 2015 | Soo-jin Kim / Lee Seok-hoon | Lee Seok-hoon | True Story / Survival | Hwang Jung-min — Um Hong-gil |
 | 43 | *A Bag of Marbles* | 2017 | Christian Duguay / Jonathan Duguay | Christian Duguay | True Story / War | Dorian Le Clech — Joseph Joffo |
-
-## Tier-2 — Worth Watching
-
-| # | Film Name | Release | Writer | Director | Type | Lead Cast / Real Person |
-|---:|---|---|---|---|---|---|
-| 01 | *North Face* | 2008 | Philipp Stölzl / Christoph Silber | Philipp Stölzl | True Story / Survival | Benno Fürmann — Toni Kurz |
-| 02 | *The 33* | 2015 | Mikko Alanne / Craig Borten / Michael Thomas | Patricia Riggen | True Story / Survival | Antonio Banderas — Mario Sepúlveda |
+| 44 | *North Face* | 2008 | Philipp Stölzl / Christoph Silber | Philipp Stölzl | True Story / Survival | Benno Fürmann — Toni Kurz |
+| 45 | *The 33* | 2015 | Mikko Alanne / Craig Borten / Michael Thomas | Patricia Riggen | True Story / Survival | Antonio Banderas — Mario Sepúlveda |
