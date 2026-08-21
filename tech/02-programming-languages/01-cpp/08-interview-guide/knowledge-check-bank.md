@@ -3049,4 +3049,768 @@ If `push_back()` causes reallocation, the pointer becomes dangling.
 
 ---
 
-###### part-4 is WIP...
+# C++ Interview Coaching (Part-4) — Knowledge Check Bank
+## Phase-2: STL Through Ownership
+
+---
+
+# Lesson-4 — `reserve()` vs `resize()`
+
+## Q1. After executing:
+
+```cpp
+std::vector<int> numbers;
+
+numbers.reserve(10);
+```
+
+What are `size()` and `capacity()` and why?
+
+### Answer
+
+```text
+size()     = 0
+capacity() = 10
+```
+
+`reserve(10)` only prepares memory for 10 elements.
+
+It does **not create 10 elements**.
+
+Think of booking 10 hotel rooms.
+
+The rooms are available, but no guests have arrived yet.
+
+---
+
+## Q2. After executing:
+
+```cpp
+std::vector<int> numbers;
+
+numbers.resize(10);
+```
+
+What are `size()` and `capacity()` and what actually happened internally?
+
+### Answer
+
+```text
+size()     = 10
+capacity() >= 10
+```
+
+`resize(10)` changes the vector's actual number of elements to 10.
+
+For `int`, the newly created elements are value-initialized to `0`.
+
+So conceptually:
+
+```text
+0 0 0 0 0 0 0 0 0 0
+```
+
+Now 10 elements actually exist.
+
+---
+
+## Q3. When reading a file that you know contains exactly 5 million records, would you use `reserve()` or `resize()` first?
+
+Why?
+
+### Answer
+
+I would use:
+
+```cpp
+records.reserve(5000000);
+```
+
+if I am going to add the records using operations such as:
+
+```cpp
+records.push_back(record);
+```
+
+The reason is that I know approximately how many records will be added, so I can allocate enough memory upfront and reduce repeated reallocations.
+
+I would **not** use `resize()` unless I actually need 5 million elements to exist immediately.
+
+---
+
+## Q4. Complete the sentence.
+
+> `reserve()` prepares __________.
+
+> `resize()` creates __________.
+
+### Answer
+
+> `reserve()` prepares **memory/storage for future elements**.
+
+> `resize()` creates **or removes actual elements to change the vector's size**.
+
+---
+
+## Q5. Why is calling `reserve()` before many `push_back()` operations usually faster?
+
+### Answer
+
+Without `reserve()`, the vector may repeatedly become full and reallocate:
+
+```text
+allocate
+↓
+move/copy elements
+↓
+release old memory
+↓
+repeat
+```
+
+If we already know the expected number of elements, `reserve()` can allocate enough memory upfront.
+
+This reduces the number of reallocations and therefore improves performance.
+
+---
+
+# Lesson-5 — `operator[]` vs `.at()`
+
+## Q6. What is the difference between:
+
+```cpp
+numbers[5]
+```
+
+and
+
+```cpp
+numbers.at(5)
+```
+
+when the vector has only 3 elements?
+
+### Answer
+
+```cpp
+numbers[5]
+```
+
+does not perform bounds checking.
+
+Accessing an invalid index results in **undefined behavior**.
+
+```cpp
+numbers.at(5)
+```
+
+performs bounds checking.
+
+If the index is invalid, it throws:
+
+```cpp
+std::out_of_range
+```
+
+Simple mental model:
+
+> `[]` trusts you.
+
+> `.at()` checks you.
+
+---
+
+## Q7. Why does `operator[]` not automatically throw an exception when the index is invalid?
+
+### Answer
+
+Because `operator[]` is designed for fast, unchecked access.
+
+The programmer is expected to ensure that the index is valid.
+
+Adding a bounds check every time would introduce additional runtime overhead.
+
+So C++ provides both choices:
+
+```cpp
+numbers[index];       // unchecked
+numbers.at(index);    // checked
+```
+
+---
+
+## Q8. Suppose the index comes from user input.
+
+Would you prefer:
+
+```cpp
+numbers[index]
+```
+
+or
+
+```cpp
+numbers.at(index)
+```
+
+Why?
+
+### Answer
+
+I would generally prefer:
+
+```cpp
+numbers.at(index)
+```
+
+if the index may be invalid.
+
+The index comes from an external/untrusted source, so bounds checking helps prevent undefined behavior.
+
+Another option is to explicitly validate the index first.
+
+---
+
+## Q9. Is `.at()` always better than `operator[]`?
+
+Explain the trade-off.
+
+### Answer
+
+No.
+
+`.at()` is safer because it performs bounds checking, but that check has some runtime cost.
+
+If the program has already established that the index is valid, `operator[]` can be appropriate and avoids the bounds-checking overhead.
+
+So the choice is based on the situation:
+
+```text
+Known valid index
+    ↓
+operator[]
+
+Potentially invalid index
+    ↓
+at()
+```
+
+---
+
+## Q10. Production Thinking
+
+Suppose:
+
+```cpp
+std::vector<int> numbers = {10, 20, 30};
+
+int index = getIndexFromNetwork();
+
+std::cout << numbers[index];
+```
+
+What production risk do you see?
+
+How would you make this safer?
+
+### Answer
+
+The network can provide an invalid index.
+
+If:
+
+```cpp
+index >= numbers.size()
+```
+
+then:
+
+```cpp
+numbers[index]
+```
+
+causes undefined behavior.
+
+A safer option is:
+
+```cpp
+std::cout << numbers.at(index);
+```
+
+and handle `std::out_of_range`.
+
+Or explicitly validate:
+
+```cpp
+if (index < numbers.size())
+{
+    std::cout << numbers[index];
+}
+```
+
+---
+
+# Lesson-6 — `std::vector` vs `std::list`
+
+## Q11. What is the basic difference between `std::vector` and `std::list`?
+
+### Answer
+
+`std::vector` stores elements in **contiguous memory**.
+
+Think:
+
+```text
+[10][20][30][40][50]
+```
+
+`std::list` stores elements as separate nodes connected together.
+
+Think:
+
+```text
+[10] → [20] → [30] → [40] → [50]
+```
+
+---
+
+## Q12. Why is random access fast in `std::vector` but slow in `std::list`?
+
+### Answer
+
+Vector elements are contiguous.
+
+So the location of an element can be calculated directly.
+
+Therefore:
+
+```cpp
+numbers[100]
+```
+
+is approximately:
+
+```text
+O(1)
+```
+
+A list has to follow nodes one by one to reach the required element.
+
+Therefore accessing an arbitrary element is:
+
+```text
+O(n)
+```
+
+---
+
+## Q13. Why can inserting into the middle of a `std::list` be cheaper than inserting into a `std::vector`?
+
+### Answer
+
+If we already have an iterator pointing to the insertion position:
+
+```text
+10 → 20 → 30 → 40
+          ↑
+        insert
+```
+
+A list can create a new node and update the nearby links.
+
+The existing elements don't need to be shifted.
+
+With a vector, inserting into the middle may require shifting subsequent elements.
+
+---
+
+## Q14. Is `std::list` always faster for insertion?
+
+### Answer
+
+No.
+
+The insertion itself can be cheap if we already have the correct iterator.
+
+But finding the insertion position in a list may require walking through the nodes.
+
+Also, vector has excellent cache locality because its elements are contiguous.
+
+Therefore, even when theoretical complexity favors `list`, `vector` can often perform better in real applications.
+
+---
+
+## Q15. Which container would you choose by default?
+
+### Answer
+
+Usually:
+
+```cpp
+std::vector
+```
+
+unless the application's access and insertion/removal patterns specifically justify another container.
+
+Vector generally provides:
+
+- excellent cache locality
+- fast random access
+- low memory overhead
+- efficient iteration
+- good STL compatibility
+
+---
+
+# Lesson-7 — `std::map` vs `std::unordered_map`
+
+## Q16. What is the main difference between `std::map` and `std::unordered_map`?
+
+### Answer
+
+`std::map` keeps its keys **sorted**.
+
+`std::unordered_map` does **not** maintain sorted order.
+
+Conceptually:
+
+```text
+map
+    ↓
+ordered tree
+
+unordered_map
+    ↓
+hash table
+```
+
+---
+
+## Q17. Why is `std::unordered_map` usually faster for lookup?
+
+### Answer
+
+`unordered_map` uses hashing.
+
+Conceptually:
+
+```text
+key
+ ↓
+hash function
+ ↓
+bucket
+ ↓
+value
+```
+
+This allows average-case lookup of approximately:
+
+```text
+O(1)
+```
+
+A `std::map` typically uses a balanced tree, giving:
+
+```text
+O(log n)
+```
+
+lookup.
+
+---
+
+## Q18. Why would we use `std::map` instead of `std::unordered_map`?
+
+### Answer
+
+When we need the keys to remain sorted or need ordered traversal.
+
+For example:
+
+```text
+100
+200
+400
+404
+500
+```
+
+`std::map` naturally provides ordered iteration.
+
+If ordering doesn't matter and fast lookup is the main requirement, `std::unordered_map` is usually a better choice.
+
+---
+
+## Q19. Is `std::unordered_map` always `O(1)`?
+
+### Answer
+
+No.
+
+The correct statement is:
+
+> `std::unordered_map` provides **average-case O(1)** lookup.
+
+The worst case can be:
+
+```text
+O(n)
+```
+
+for example, when many keys collide into the same bucket.
+
+---
+
+## Q20. Production Thinking
+
+Suppose we need:
+
+> Given a user ID, find the user as quickly as possible.
+
+We don't care about the order of users.
+
+Which would you generally choose?
+
+### Answer
+
+```cpp
+std::unordered_map<UserId, User>
+```
+
+because the requirement is:
+
+- fast lookup
+- ordering is not important
+
+---
+
+# Lesson-8 — `std::set` vs `std::unordered_set`
+
+## Q21. What does `std::set` store?
+
+### Answer
+
+A `std::set` stores **unique values**.
+
+For example:
+
+```cpp
+std::set<int> numbers = {30, 10, 20, 10};
+```
+
+The result contains:
+
+```text
+10
+20
+30
+```
+
+Duplicates are automatically removed.
+
+The values are also kept sorted.
+
+---
+
+## Q22. What is the difference between `std::set` and `std::unordered_set`?
+
+### Answer
+
+`std::set` provides:
+
+```text
+Unique + Sorted
+```
+
+`std::unordered_set` provides:
+
+```text
+Unique + Fast Lookup
+```
+
+but does not maintain sorted order.
+
+---
+
+## Q23. When would you use `std::unordered_set`?
+
+### Answer
+
+When I need:
+
+- unique values
+- fast lookup
+- no requirement for sorted order
+
+For example, maintaining a set of unique error codes where ordering doesn't matter.
+
+---
+
+## Q24. When would you use `std::set`?
+
+### Answer
+
+When I need:
+
+- unique values
+- sorted order
+
+For example, if error codes must be processed in ascending order.
+
+---
+
+# Lesson-9 — `std::string`
+
+## Q25. Why use `std::string` instead of C-style strings?
+
+### Answer
+
+`std::string` provides:
+
+- automatic memory management
+- dynamic sizing
+- convenient string operations
+- safer handling compared with manual C-style memory management
+- natural integration with the C++ standard library
+
+It follows RAII instead of requiring manual allocation and deallocation.
+
+---
+
+## Q26. How is `std::string` conceptually similar to `std::vector`?
+
+### Answer
+
+Both manage dynamically sized sequences.
+
+Conceptually:
+
+```text
+std::vector<int>
+    ↓
+dynamic sequence of integers
+
+std::string
+    ↓
+dynamic sequence of characters
+```
+
+Both:
+
+- own their storage
+- track their size
+- can grow
+- manage lifetime automatically
+- can move their resources efficiently
+
+---
+
+## Q27. Is `std::string` just `std::vector<char>`?
+
+### Answer
+
+No.
+
+They are separate types with different interfaces and semantics.
+
+A better way to describe the relationship is:
+
+> `std::string` and `std::vector` both manage dynamically sized sequences using ownership and RAII, but `std::string` is specifically designed for character/text data.
+
+---
+
+## Q28. Can `std::string` reallocate?
+
+### Answer
+
+Yes.
+
+If the string doesn't have enough capacity for additional characters, it may allocate a larger memory block and move its characters there.
+
+Conceptually:
+
+```text
+Old memory
+
+O p e n
+
+↓
+
+New memory
+
+O p e n A I
+
+↓
+
+Old memory released
+```
+
+Therefore, pointers, references, and iterators to characters can become invalid when the string reallocates.
+
+---
+
+## Q29. What is Small String Optimization (SSO)?
+
+### Answer
+
+SSO is an optimization where a C++ standard library implementation may store a small string directly inside the `std::string` object instead of allocating separate heap memory.
+
+Conceptually:
+
+```text
+std::string object
+
++----------------------+
+| small characters     |
+| stored directly      |
++----------------------+
+```
+
+This can avoid a heap allocation for small strings.
+
+The exact implementation is library-dependent.
+
+---
+
+## Q30. Why is SSO useful in production?
+
+### Answer
+
+If an application creates many small strings, avoiding a separate heap allocation for every small string can reduce allocation overhead and improve performance.
+
+---
+
+# Quick Revision Map
+
+```text
+STL Through Ownership
+│
+├── vector
+│   ├── size vs capacity
+│   ├── reallocation
+│   ├── dangling pointers
+│   ├── reserve vs resize
+│   └── [] vs at()
+│
+├── vector vs list
+│   ├── contiguous vs node-based
+│   ├── random access
+│   └── insertion/removal
+│
+├── map vs unordered_map
+│   ├── ordered vs unordered
+│   ├── tree vs hash table
+│   └── O(log n) vs average O(1)
+│
+├── set vs unordered_set
+│   ├── unique + ordered
+│   └── unique + fast lookup
+│
+└── string
+    ├── dynamic characters
+    ├── RAII
+    ├── reallocation
+    └── SSO
+```
+```
