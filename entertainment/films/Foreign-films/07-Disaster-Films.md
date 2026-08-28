@@ -9,14 +9,11 @@
 | 03 | *Armageddon* | 1998 | Jonathan Hensleigh / J.J. Abrams / Tony Gilroy / Shane Salerno / Robert Roy Pool | Michael Bay | Disaster / Asteroid / Space | Bruce Willis / Ben Affleck |
 | 04 | *Deep Impact* | 1998 | Bruce Joel Rubin / Michael Tolkin | Mimi Leder | Disaster / Comet / Space | Robert Duvall / Téa Leoni / Elijah Wood / Morgan Freeman |
 | 05 | *The Day After Tomorrow* | 2004 | Roland Emmerich / Jeffrey Nachmanoff | Roland Emmerich | Disaster / Climate / Ice Age | Dennis Quaid / Jake Gyllenhaal |
-| 06 | *2012* | 2009 | Roland Emmerich / Harald Kloser | Roland Emmerich | Disaster / Global Catastrophe | John Cusack / Amanda Peet / Chiwetel Ejiofor |
-| 07 | *Poseidon* | 2006 | Mark Protosevich / Paul Gallico | Wolfgang Petersen | Disaster / Maritime / Tsunami | Josh Lucas / Kurt Russell / Richard Dreyfuss |
+| 06 | *Poseidon* | 2006 | Mark Protosevich / Paul Gallico | Wolfgang Petersen | Disaster / Maritime / Tsunami | Josh Lucas / Kurt Russell / Richard Dreyfuss |
+| 07 | *2012* | 2009 | Roland Emmerich / Harald Kloser | Roland Emmerich | Disaster / Global Catastrophe | John Cusack / Amanda Peet / Chiwetel Ejiofor |
 | 08 | *San Andreas* | 2015 | Carlton Cuse / Andre Fabrizio / Jeremy Passmore | Brad Peyton | Disaster / Earthquake | Dwayne Johnson / Carla Gugino |
-| 09 | *The Core* | 2003 | Jon Amiel / Cooper Layne | Jon Amiel | Disaster / Geophysical / Science Fiction | Aaron Eckhart / Hilary Swank |
-| 10 | *Sunshine* | 2007 | Alex Garland | Danny Boyle | Disaster / Solar / Space / Science Fiction | Cillian Murphy / Rose Byrne / Chris Evans |
-| 11 | *Knowing* | 2009 | Ryne Douglas Pearson / Juliet Snowden / Stiles White | Alex Proyas | Disaster / Global Catastrophe / Science Fiction | Nicolas Cage / Rose Byrne |
-| 12 | *Greenland* | 2020 | Chris Sparling / Mitchell Lafortune | Ric Roman Waugh | Disaster / Comet / Global Catastrophe | Gerard Butler / Morena Baccarin |
-| 13 | *Moonfall* | 2022 | Roland Emmerich / Harald Kloser / Spenser Cohen | Roland Emmerich | Disaster / Lunar / Global Catastrophe / Science Fiction | Halle Berry / Patrick Wilson |
+| 09 | *The Core* | 2003 | John Rogers / Cooper Layne / John W. Hensleigh | Jon Amiel | Disaster / Geophysical / Science Fiction | Aaron Eckhart / Hilary Swank |
+| 10 | *Greenland* | 2020 | Chris Sparling / Mitchell Lafortune | Ric Roman Waugh | Disaster / Comet / Global Catastrophe | Gerard Butler / Morena Baccarin |
 
 ## Tier-2 — Worth Watching
 
