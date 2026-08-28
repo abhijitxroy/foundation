@@ -12,8 +12,8 @@
 | 06 | *Stalker* | 1979 | Arkady Strugatsky / Boris Strugatsky / Andrei Tarkovsky | Andrei Tarkovsky | Novel Based | Alexander Kaidanovsky |
 | 07 | *Blade Runner* | 1982 | Hampton Fancher / David Peoples | Ridley Scott | Novel Based | Harrison Ford |
 | 08 | *The Thing* | 1982 | Bill Lancaster / John W. Campbell Jr. | John Carpenter | Novel Based | Kurt Russell |
-| 09 | *Back to the Future* | 1985 | Robert Zemeckis / Bob Gale | Robert Zemeckis | Original | Michael J. Fox / Christopher Lloyd |
-| 10 | *The Terminator* | 1984 | James Cameron / Gale Anne Hurd | James Cameron | Original | Arnold Schwarzenegger / Michael Biehn |
+| 09 | *The Terminator* | 1984 | James Cameron / Gale Anne Hurd | James Cameron | Original | Arnold Schwarzenegger / Michael Biehn |
+| 10 | *Back to the Future* | 1985 | Robert Zemeckis / Bob Gale | Robert Zemeckis | Original | Michael J. Fox / Christopher Lloyd |
 | 11 | *The Abyss* | 1989 | James Cameron | James Cameron | Original / Deep Sea / Science Fiction | Ed Harris / Mary Elizabeth Mastrantonio |
 | 12 | *Ghost in the Shell* | 1995 | Kazunori Itō | Mamoru Oshii | Manga Based | Atsuko Tanaka |
 | 13 | *Contact* | 1997 | Ann Druyan / Carl Sagan / Michael Goldenberg | Robert Zemeckis | Novel Based | Jodie Foster |
@@ -22,7 +22,7 @@
 | 16 | *The Matrix* | 1999 | Lana Wachowski / Lilly Wachowski | Lana Wachowski / Lilly Wachowski | Original | Keanu Reeves |
 | 17 | *The Lord of the Rings: The Fellowship of the Ring* | 2001 | Fran Walsh / Philippa Boyens / Peter Jackson | Peter Jackson | Novel Based / Fantasy | Elijah Wood / Ian McKellen |
 | 18 | *The Lord of the Rings: The Two Towers* | 2002 | Fran Walsh / Philippa Boyens / Stephen Sinclair / Peter Jackson | Peter Jackson | Novel Based / Fantasy | Elijah Wood / Ian McKellen |
-| 19 | *The Core* | 2003 | John Rogers / Cooper Layne / Johnathan Hensleigh | Jon Amiel | Science Fiction / Disaster | Aaron Eckhart / Hilary Swank |
+| 19 | *The Core* | 2003 | John Rogers / Cooper Layne / John W. Hensleigh | Jon Amiel | Science Fiction / Disaster | Aaron Eckhart / Hilary Swank |
 | 20 | *The Lord of the Rings: The Return of the King* | 2003 | Fran Walsh / Philippa Boyens / Peter Jackson | Peter Jackson | Novel Based / Fantasy | Elijah Wood / Ian McKellen |
 | 21 | *Children of Men* | 2006 | Alfonso Cuarón / Timothy J. Sexton / David Arata / Mark Fergus / Hawk Ostby | Alfonso Cuarón | Novel Based | Clive Owen |
 | 22 | *I Am Legend* | 2007 | Mark Protosevich / Akiva Goldsman | Francis Lawrence | Novel Based / Sci-Fi / Survival | Will Smith |
@@ -48,3 +48,5 @@
 | 05 | *Independence Day* | 1996 | Dean Devlin / Roland Emmerich | Roland Emmerich | Science Fiction / Alien Invasion | Will Smith / Jeff Goldblum |
 | 06 | *Space Cowboys* | 2000 | Ken Kaufman / Howard Klausner | Clint Eastwood | Science Fiction / Space / Adventure | Clint Eastwood / Tommy Lee Jones |
 | 07 | *Battleship* | 2012 | Jon Hoeber / Erich Hoeber | Peter Berg | Science Fiction / Alien / Action | Taylor Kitsch / Liam Neeson |
+| 08 | *War of the Worlds* | 2005 | Josh Friedman / David Koepp | Steven Spielberg | Science Fiction / Alien Invasion | Tom Cruise / Dakota Fanning |
+| 09 | *Oblivion* | 2013 | Joseph Kosinski / Karl Gajdusek / Michael Arndt | Joseph Kosinski | Science Fiction / Post-Apocalyptic | Tom Cruise / Morgan Freeman |
