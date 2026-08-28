@@ -13,11 +13,15 @@
 | 07 | *Poseidon* | 2006 | Mark Protosevich / Paul Gallico | Wolfgang Petersen | Disaster / Maritime / Tsunami | Josh Lucas / Kurt Russell / Richard Dreyfuss |
 | 08 | *San Andreas* | 2015 | Carlton Cuse / Andre Fabrizio / Jeremy Passmore | Brad Peyton | Disaster / Earthquake | Dwayne Johnson / Carla Gugino |
 | 09 | *The Core* | 2003 | Jon Amiel / Cooper Layne | Jon Amiel | Disaster / Geophysical / Science Fiction | Aaron Eckhart / Hilary Swank |
+| 10 | *Sunshine* | 2007 | Alex Garland | Danny Boyle | Disaster / Solar / Space / Science Fiction | Cillian Murphy / Rose Byrne / Chris Evans |
+| 11 | *Knowing* | 2009 | Ryne Douglas Pearson / Juliet Snowden / Stiles White | Alex Proyas | Disaster / Global Catastrophe / Science Fiction | Nicolas Cage / Rose Byrne |
+| 12 | *Greenland* | 2020 | Chris Sparling / Mitchell Lafortune | Ric Roman Waugh | Disaster / Comet / Global Catastrophe | Gerard Butler / Morena Baccarin |
+| 13 | *Moonfall* | 2022 | Roland Emmerich / Harald Kloser / Spenser Cohen | Roland Emmerich | Disaster / Lunar / Global Catastrophe / Science Fiction | Halle Berry / Patrick Wilson |
 
 ## Tier-2 — Worth Watching
 
 | # | Film Name | Release | Writer | Director | Type | Lead Cast / Real Person |
-|---:|---|---|---|---|---|---|
+|---:|---|---:|---|---|---|---|
 | 01 | *Volcano* | 1997 | Jerome Armstrong / Billy Ray | Mick Jackson | Disaster / Volcanic | Tommy Lee Jones / Anne Heche |
 | 02 | *2012: Supernova* | 2009 | Anthony Fankhauser / Jon Macy / John Willis III | Anthony Fankhauser | Disaster / Global Catastrophe | Brian Krause / Heather McComb |
 | 03 | *Polar Storm* | 2009 | Paul Ziller / Jason Bourque | Paul Ziller | Disaster / Climate / Weather | Jack Coleman / Holly Elissa |
