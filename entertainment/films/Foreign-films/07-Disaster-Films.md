@@ -12,6 +12,7 @@
 | 06 | *2012* | 2009 | Roland Emmerich / Harald Kloser | Roland Emmerich | Disaster / Global Catastrophe | John Cusack / Amanda Peet / Chiwetel Ejiofor |
 | 07 | *Poseidon* | 2006 | Mark Protosevich / Paul Gallico | Wolfgang Petersen | Disaster / Maritime / Tsunami | Josh Lucas / Kurt Russell / Richard Dreyfuss |
 | 08 | *San Andreas* | 2015 | Carlton Cuse / Andre Fabrizio / Jeremy Passmore | Brad Peyton | Disaster / Earthquake | Dwayne Johnson / Carla Gugino |
+| 09 | *The Core* | 2003 | Jon Amiel / Cooper Layne | Jon Amiel | Disaster / Geophysical / Science Fiction | Aaron Eckhart / Hilary Swank |
 
 ## Tier-2 — Worth Watching
 
