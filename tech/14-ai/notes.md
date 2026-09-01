@@ -524,14 +524,203 @@ These can always be looked up when needed.
 
 ## Final Goal
 
-After completing this AI section, you should be able to comfortably explain:
 
-- What AI, ML, and Deep Learning are.
-- How neural networks learn.
-- What tensors are and why they exist.
-- The role of Autograd, `torch.nn`, and `torch.optim`.
-- How the PyTorch training loop works.
-- The difference between CNNs and Transformers.
-- How LLMs work at a high level.
-- What Hugging Face provides.
-- How AI models are deployed and used in real-world applications.
+---
+
+## What Is Involved When I Ask an AI Question?
+
+A useful mental model is:
+
+```text
+You
+ │
+ ▼
+Your Question
+ │
+ ▼
+┌─────────────────────────────┐
+│        AI System            │
+│                             │
+│  1. Instructions            │
+│  2. Conversation Context    │
+│  3. LLM                     │
+│  4. Tools, if needed        │
+│     ├─ Web Search           │
+│     ├─ Code / Python        │
+│     ├─ Connectors           │
+│     ├─ Image Generation     │
+│     └─ Other Tools          │
+└─────────────────────────────┘
+ │
+ ▼
+Answer
+```
+
+### Main Components
+
+| Component | Always Involved? | What It Does |
+|-----------|------------------|--------------|
+| **LLM** | Yes | Understands the question, reasons about the available information, and generates the response. |
+| **Conversation Context** | Usually | Provides relevant information from the current conversation. |
+| **System / Developer Instructions** | Yes | Define behavior, constraints, and rules the AI must follow. |
+| **RAG / Retrieval** | No | Retrieves external or stored information when a retrieval mechanism is used. |
+| **Web Search** | Sometimes | Retrieves current or external information from the internet. |
+| **Tools** | Sometimes | Performs tasks such as calculations, code execution, GitHub operations, or other external actions. |
+| **Human Intervention** | Normally No | A human does not normally manually write or review an individual answer before it is returned. |
+| **Training Data** | Indirectly | Provides the knowledge and patterns learned by the model during training; the model does not normally query the training dataset for every question. |
+
+### LLM vs RAG vs Tools
+
+**LLM = reasoning and language generation engine**
+
+The LLM interprets the question and produces the final response.
+
+**RAG = Retrieval-Augmented Generation**
+
+RAG retrieves relevant information and provides it to the LLM so the LLM can use that information when generating the answer.
+
+```text
+Question
+   │
+   ▼
+Retrieve Information
+   │
+   ▼
+LLM
+   │
+   ▼
+Generated Answer
+```
+
+**Tool Calling = LLM using an external capability**
+
+The LLM can decide that it needs a tool, use the tool, receive the result, and then incorporate that result into the final answer.
+
+```text
+Question
+   │
+   ▼
+LLM
+   │
+   ├── Tool needed? ── Yes ──► Tool
+   │                           │
+   │                           ▼
+   │                      Tool Result
+   │                           │
+   └───────────────────────────┘
+               │
+               ▼
+          Final Answer
+```
+
+### Examples
+
+#### Simple Knowledge Question
+
+For a question such as:
+
+> What is RAII in C++?
+
+The answer may primarily involve:
+
+```text
+Question
+   ↓
+LLM + Context + Instructions
+   ↓
+Answer
+```
+
+External retrieval is not necessarily required.
+
+#### Current / External Information
+
+For a question such as:
+
+> What are the latest developments about a historical event or current technology?
+
+The system may use web search or another retrieval mechanism:
+
+```text
+Question
+   ↓
+LLM
+   ↓
+Web Search / Retrieval
+   ↓
+External Sources
+   ↓
+LLM analyzes retrieved information
+   ↓
+Answer + Citations
+```
+
+#### GitHub Task
+
+For a repository or pull-request task:
+
+```text
+Question
+   ↓
+LLM
+   ↓
+GitHub Tool / Connector
+   ↓
+Repository / PR / CI Data
+   ↓
+LLM analyzes the result
+   ↓
+Answer
+```
+
+#### Python / Calculation Task
+
+```text
+Question
+   ↓
+LLM
+   ↓
+Python / Calculator Tool
+   ↓
+Result
+   ↓
+LLM explains the result
+   ↓
+Answer
+```
+
+### Human Intervention
+
+For a normal AI conversation:
+
+```text
+You → AI System → Answer
+```
+
+There is normally no human sitting behind the conversation and manually composing the response in real time.
+
+Humans can still be involved in the broader AI system lifecycle, including training, evaluation, safety, infrastructure, and product development. That is different from human intervention in an individual response.
+
+### Important Mental Model
+
+```text
+LLM
+  = Core reasoning + language generation
+
+RAG
+  = Retrieval + LLM generation
+
+Tool Calling
+  = LLM + External capability
+
+Context
+  = Information already available to the model
+
+Human Intervention
+  = Normally not part of generating an individual answer
+```
+
+### Remember
+
+> **RAG, web search, Python, GitHub, and other tools are not separate brains answering the user. The LLM remains the component that interprets the information and formulates the response.**
+

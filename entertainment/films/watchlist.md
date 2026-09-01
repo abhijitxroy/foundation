@@ -62,3 +62,7 @@ A curated collection of films, documentaries, and series that I want to watch in
 - Explore films based on true events, history, and human achievement.
 - Discover stories of resilience, adventure, and survival.
 - Maintain a personal collection of meaningful and memorable films to watch over time.
+
+
+- Image 
+![Satyajit Ray ](Satyajit-Ray.png)

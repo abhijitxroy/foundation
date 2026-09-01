@@ -6,6 +6,31 @@ The format is based on the principles of **Keep a Changelog**, and this project 
 
 ---
 
+# v1.27.0 — Astronomy, Energy, Nuclear Energy & Space Foundations
+
+### Highlights
+
+Expanded the `areas-of-interest` knowledge base with four major foundation areas: **Astronomy, Energy, Nuclear Energy, and Space**.
+
+### Added
+
+- Added structured **Astronomy** learning path.
+- Added **Energy** fundamentals through energy transition.
+- Added comprehensive **Nuclear Energy** coverage including reactors, fuel cycles, thorium, safety, economics, and fusion.
+- Added **Space** coverage from lunar fundamentals through ISRU, mining, Helium-3, and space resource utilization.
+- Added supporting READMEs and structured learning paths.
+
+### Changed
+
+- Expanded and organized the foundation knowledge base into progressive, interconnected learning areas.
+
+### What's Next?
+
+- Continue expanding major knowledge gaps across the foundation repository.
+- Deepen selected science, technology, and engineering areas.
+
+---
+
 ## [v1.26.0] - Local AI Foundations & Projects
 
 ### Highlights
