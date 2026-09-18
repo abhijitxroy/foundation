@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DNS — Knowledge Guide</title>
+
+<style>
+:root{
+  --bg:#f5f7fb;
+  --panel:#fff;
+  --ink:#172033;
+  --muted:#5d687d;
+  --line:#dfe5ef;
+  --nav:#101827;
+  --nav2:#182337;
+  --accent:#4f46e5;
+  --accent2:#06b6d4;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.62;
+}
+
+/* =========================
+   LEFT NAVIGATION
+   ========================= */
+
+.side{
+  position:fixed;
+  left:0;
+  top:0;
+  bottom:0;
+  width:260px;
+  background:linear-gradient(180deg,var(--nav),#0b1220);
+  color:#fff;
+  padding:20px 14px;
+  overflow:auto;
+}
+
+.brand{
+  font-weight:800;
+  font-size:17px;
+  padding:4px 10px 18px;
+}
+
+.brand span{
+  display:block;
+  color:#9fb0ca;
+  font-size:11px;
+  font-weight:500;
+  margin-top:3px;
+}
+
+.group{
+  margin:16px 0 7px 8px;
+  color:#8190a8;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+
+.tab{
+  display:block;
+  width:100%;
+  border:0;
+  background:transparent;
+  color:#cbd5e1;
+  text-align:left;
+  padding:8px 10px;
+  border-radius:8px;
+  margin:2px 0;
+  cursor:pointer;
+  font-size:12px;
+}
+
+.tab:hover,
+.tab.active{
+  background:var(--nav2);
+  color:#fff;
+}
+
+.tab.active{
+  box-shadow:inset 3px 0 var(--accent);
+}
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.main{
+  margin-left:260px;
+  max-width:1200px;
+  padding:28px;
+}
+
+.page{
+  display:none;
+}
+
+.page.active{
+  display:block;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero{
+  padding:34px;
+  border-radius:20px;
+  background:linear-gradient(
+    135deg,
+    #111827,
+    #3730a3 58%,
+    #0891b2
+  );
+  color:#fff;
+  margin-bottom:22px;
+}
+
+.hero h1{
+  font-size:34px;
+  line-height:1.15;
+  margin:0 0 10px;
+}
+
+.hero p{
+  max-width:900px;
+  color:#e8eefc;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:18px;
+  margin:12px 0;
+  box-shadow:0 5px 18px #11182708;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+  gap:14px;
+}
+
+/* =========================
+   CALLOUTS
+   ========================= */
+
+.why,
+.note,
+.warn,
+.good{
+  padding:13px 16px;
+  border-radius:10px;
+  margin:14px 0;
+  border-left:4px solid;
+}
+
+.why{
+  background:#ecfeff;
+  border-color:#06b6d4;
+}
+
+.note{
+  background:#eff6ff;
+  border-color:#3b82f6;
+}
+
+.warn{
+  background:#fffbeb;
+  border-color:#f59e0b;
+}
+
+.good{
+  background:#ecfdf5;
+  border-color:#10b981;
+}
+
+/* =========================
+   DIAGRAM
+   ========================= */
+
+.arch{
+  background:#0b1220;
+  color:#dbeafe;
+  border-radius:12px;
+  padding:18px;
+  overflow:auto;
+  font:12px/1.55
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  white-space:pre;
+}
+
+/* =========================
+   TABLES
+   ========================= */
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:12px 0;
+  background:#fff;
+}
+
+th,
+td{
+  padding:9px 10px;
+  border:1px solid var(--line);
+  text-align:left;
+  vertical-align:top;
+  font-size:13px;
+}
+
+th{
+  background:#f1f5f9;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media(max-width:850px){
+
+  .side{
+    position:relative;
+    width:100%;
+    height:auto;
+    max-height:360px;
+  }
+
+  .main{
+    margin-left:0;
+    padding:16px;
+  }
+
+  .hero h1{
+    font-size:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     LEFT NAVIGATION
+     ===================================================== -->
+
+<aside class="side">
+
+  <div class="brand">
+    DNS — Knowledge Guide
+    <span>Interactive learning example</span>
+  </div>
+
+  <div class="group">START</div>
+
+  <button class="tab active" data-page="start">
+    00 · Start Here
+  </button>
+
+  <button class="tab" data-page="map">
+    01 · Learning Map
+  </button>
+
+  <div class="group">FOUNDATIONS</div>
+
+  <button class="tab" data-page="fundamentals">
+    02 · Fundamentals
+  </button>
+
+  <button class="tab" data-page="how">
+    03 · How DNS Works
+  </button>
+
+  <button class="tab" data-page="architecture">
+    04 · Architecture
+  </button>
+
+  <div class="group">PRACTICAL</div>
+
+  <button class="tab" data-page="lab">
+    05 · DIY Lab
+  </button>
+
+  <button class="tab" data-page="debug">
+    06 · Debugging
+  </button>
+
+  <div class="group">REFERENCE</div>
+
+  <button class="tab" data-page="qa">
+    07 · Interview / KT
+  </button>
+
+  <button class="tab" data-page="glossary">
+    08 · Glossary
+  </button>
+
+  <button class="tab" data-page="revision">
+    09 · Quick Revision
+  </button>
+
+  <button class="tab" data-page="quiz">
+    10 · Knowledge Check
+  </button>
+
+  <button class="tab" data-page="audit">
+    11 · Coverage Audit
+  </button>
+
+  <button class="tab" data-page="sources">
+    12 · Sources & Scope
+  </button>
+
+</aside>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+     ===================================================== -->
+
+<main class="main">
+
+
+<!-- =====================================================
+     START HERE
+     ===================================================== -->
+
+<section id="start" class="page active">
+
+  <div class="hero">
+
+    <h1>DNS — Domain Name System</h1>
+
+    <p>
+      Learn how a name such as example.com becomes an IP address
+      that a computer can use to communicate with a server.
+    </p>
+
+  </div>
+
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>What is DNS?</h3>
+
+      <p>
+        DNS is a distributed naming system used to map domain names
+        to information such as IP addresses.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Why do we need it?</h3>
+
+      <p>
+        Humans prefer names. Networks communicate using addresses.
+        DNS connects the two.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Simple example</h3>
+
+      <p>
+        You type:
+        <b>example.com</b>
+      </p>
+
+      <p>
+        DNS helps your system discover the corresponding address.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="why">
+
+    <b>Big idea:</b>
+
+    DNS is like a distributed directory for Internet names.
+
+  </div>
+
+
+  <div class="arch">
+
+USER
+  ↓
+BROWSER
+  ↓
+DNS QUERY
+  ↓
+DNS SERVER
+  ↓
+IP ADDRESS
+  ↓
+SERVER
+  ↓
+RESPONSE
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     LEARNING MAP
+     ===================================================== -->
+
+<section id="map" class="page">
+
+  <div class="hero">
+
+    <h1>Learning Map</h1>
+
+    <p>
+      Understand DNS from the basic idea to troubleshooting.
+    </p>
+
+  </div>
+
+
+  <div class="arch">
+
+01  What is DNS?
+        ↓
+02  Domain names
+        ↓
+03  DNS records
+        ↓
+04  Resolver
+        ↓
+05  Root / TLD / authoritative DNS
+        ↓
+06  DNS lookup
+        ↓
+07  Caching
+        ↓
+08  Troubleshooting
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     FUNDAMENTALS
+     ===================================================== -->
+
+<section id="fundamentals" class="page">
+
+  <div class="hero">
+
+    <h1>DNS Fundamentals</h1>
+
+    <p>
+      Start with the problem DNS solves.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Names vs addresses</h3>
+
+    <table>
+
+      <tr>
+        <th>Human</th>
+        <th>Computer network</th>
+      </tr>
+
+      <tr>
+        <td>example.com</td>
+        <td>IP address</td>
+      </tr>
+
+      <tr>
+        <td>Easy to remember</td>
+        <td>Used for network communication</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Common DNS records</h3>
+
+    <table>
+
+      <tr>
+        <th>Record</th>
+        <th>Purpose</th>
+      </tr>
+
+      <tr>
+        <td>A</td>
+        <td>Maps a name to an IPv4 address.</td>
+      </tr>
+
+      <tr>
+        <td>AAAA</td>
+        <td>Maps a name to an IPv6 address.</td>
+      </tr>
+
+      <tr>
+        <td>CNAME</td>
+        <td>Creates an alias to another domain name.</td>
+      </tr>
+
+      <tr>
+        <td>MX</td>
+        <td>Specifies mail-server information.</td>
+      </tr>
+
+      <tr>
+        <td>TXT</td>
+        <td>Stores text information used by many systems.</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+
+  <div class="note">
+
+    <b>Note:</b>
+
+    DNS does much more than simply return an IP address.
+    Different record types support different use cases.
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     HOW DNS WORKS
+     ===================================================== -->
+
+<section id="how" class="page">
+
+  <div class="hero">
+
+    <h1>How DNS Works</h1>
+
+    <p>
+      Follow one DNS lookup from your computer to the answer.
+    </p>
+
+  </div>
+
+
+  <div class="arch">
+
+YOU TYPE
+
+https://example.com
+
+        ↓
+
+LOCAL CACHE
+
+        ↓
+
+DNS RESOLVER
+
+        ↓
+
+ROOT DNS
+        ↓
+.COM TLD DNS
+        ↓
+AUTHORITATIVE DNS
+        ↓
+IP ADDRESS
+
+        ↓
+
+YOUR COMPUTER
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Step 1 — Ask the resolver</h3>
+
+    <p>
+      Your system normally sends the DNS request to a configured
+      recursive resolver.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Step 2 — Resolver finds the answer</h3>
+
+    <p>
+      If the resolver does not already have a valid cached answer,
+      it can query the DNS hierarchy.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Step 3 — Result is returned</h3>
+
+    <p>
+      The resolver returns the DNS answer to the client.
+    </p>
+
+  </div>
+
+
+  <div class="good">
+
+    <b>Key takeaway:</b>
+
+    The browser usually does not directly walk the entire DNS hierarchy.
+    A recursive resolver performs that work on behalf of the client.
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     ARCHITECTURE
+     ===================================================== -->
+
+<section id="architecture" class="page">
+
+  <div class="hero">
+
+    <h1>DNS Architecture</h1>
+
+    <p>
+      DNS is hierarchical and distributed.
+    </p>
+
+  </div>
+
+
+  <div class="arch">
+
+                         DNS ROOT
+                            │
+             ┌──────────────┼──────────────┐
+             ↓              ↓              ↓
+            .com           .org           .net
+             │
+             ↓
+      AUTHORITATIVE DNS
+             │
+             ↓
+       example.com
+             │
+             ↓
+        DNS RECORD
+             │
+             ↓
+         IP ADDRESS
+
+  </div>
+
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>Recursive Resolver</h3>
+
+      <p>
+        Finds answers for clients and commonly caches them.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Root Servers</h3>
+
+      <p>
+        Provide referrals toward the authoritative infrastructure
+        for top-level domains.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>TLD DNS</h3>
+
+      <p>
+        Handles top-level domains such as .com, .org and .net.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>Authoritative DNS</h3>
+
+      <p>
+        Provides the authoritative records for a domain.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     DIY LAB
+     ===================================================== -->
+
+<section id="lab" class="page">
+
+  <div class="hero">
+
+    <h1>DIY DNS Lab</h1>
+
+    <p>
+      Inspect DNS behavior directly from your computer.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Linux / macOS</h3>
+
+    <pre>
+dig example.com
+dig example.com A
+dig example.com MX
+    </pre>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Windows</h3>
+
+    <pre>
+nslookup example.com
+nslookup -type=MX example.com
+    </pre>
+
+  </div>
+
+
+  <div class="why">
+
+    <b>What to observe:</b>
+
+    Look at the query, answer, TTL, server used and returned records.
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     DEBUGGING
+     ===================================================== -->
+
+<section id="debug" class="page">
+
+  <div class="hero">
+
+    <h1>DNS Debugging</h1>
+
+    <p>
+      Troubleshoot DNS systematically instead of guessing.
+    </p>
+
+  </div>
+
+
+  <div class="arch">
+
+APPLICATION
+     ↓
+OS DNS CONFIG
+     ↓
+NETWORK
+     ↓
+DNS RESOLVER
+     ↓
+AUTHORITATIVE DNS
+     ↓
+DNS RECORD
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Useful checks</h3>
+
+    <pre>
+ipconfig /all
+nslookup example.com
+ping example.com
+tracert example.com
+    </pre>
+
+  </div>
+
+
+  <div class="warn">
+
+    <b>Important:</b>
+
+    A successful DNS lookup does not prove that the destination
+    application is healthy. DNS, routing, transport and application
+    layers can fail independently.
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTERVIEW / KT
+     ===================================================== -->
+
+<section id="qa" class="page">
+
+  <div class="hero">
+
+    <h1>Interview / KT Q&A</h1>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Q: What is DNS?</h3>
+
+    <p>
+      DNS is a distributed naming system that maps domain names
+      to information such as IP addresses.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Q: Is DNS the Internet?</h3>
+
+    <p>
+      No. DNS is one service used by Internet-connected systems.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Q: What is DNS caching?</h3>
+
+    <p>
+      A DNS result can be stored temporarily so future queries
+      can be answered without repeating the complete lookup.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     GLOSSARY
+     ===================================================== -->
+
+<section id="glossary" class="page">
+
+  <div class="hero">
+
+    <h1>Glossary</h1>
+
+  </div>
+
+
+  <table>
+
+    <tr>
+      <th>Term</th>
+      <th>Simple meaning</th>
+    </tr>
+
+    <tr>
+      <td>DNS</td>
+      <td>Domain Name System.</td>
+    </tr>
+
+    <tr>
+      <td>Resolver</td>
+      <td>System that obtains DNS answers for clients.</td>
+    </tr>
+
+    <tr>
+      <td>TTL</td>
+      <td>Time-to-live associated with cached DNS information.</td>
+    </tr>
+
+    <tr>
+      <td>Authoritative</td>
+      <td>Providing the official DNS data for a domain.</td>
+    </tr>
+
+    <tr>
+      <td>Record</td>
+      <td>A DNS data entry such as A, AAAA or MX.</td>
+    </tr>
+
+  </table>
+
+</section>
+
+
+<!-- =====================================================
+     QUICK REVISION
+     ===================================================== -->
+
+<section id="revision" class="page">
+
+  <div class="hero">
+
+    <h1>Quick Revision</h1>
+
+  </div>
+
+
+  <div class="arch">
+
+DOMAIN NAME
+     ↓
+DNS RESOLVER
+     ↓
+DNS HIERARCHY
+     ↓
+DNS RECORD
+     ↓
+IP ADDRESS
+     ↓
+NETWORK CONNECTION
+
+  </div>
+
+
+  <div class="good">
+
+    <b>Remember:</b>
+
+    DNS translates names into useful network information.
+    It does not itself transport your application data.
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     KNOWLEDGE CHECK
+     ===================================================== -->
+
+<section id="quiz" class="page">
+
+  <div class="hero">
+
+    <h1>Knowledge Check</h1>
+
+  </div>
+
+
+  <ol>
+
+    <li>Why do humans need domain names?</li>
+
+    <li>What problem does DNS solve?</li>
+
+    <li>What is a recursive resolver?</li>
+
+    <li>What is an authoritative DNS server?</li>
+
+    <li>What is an A record?</li>
+
+    <li>Why does DNS caching exist?</li>
+
+    <li>Is DNS the same thing as the Internet?</li>
+
+    <li>How would you debug a DNS problem?</li>
+
+  </ol>
+
+
+  <div class="card">
+
+    <h3>Self-check</h3>
+
+    <p>
+      If you can explain the complete path from
+      <b>domain name → resolver → DNS hierarchy → record → IP address</b>,
+      you understand the core concept.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     COVERAGE AUDIT
+     ===================================================== -->
+
+<section id="audit" class="page">
+
+  <div class="hero">
+
+    <h1>Coverage Audit</h1>
+
+  </div>
+
+
+  <table>
+
+    <tr>
+      <th>Requirement</th>
+      <th>Covered?</th>
+      <th>Section</th>
+    </tr>
+
+    <tr>
+      <td>Fundamentals</td>
+      <td>Yes</td>
+      <td>Fundamentals</td>
+    </tr>
+
+    <tr>
+      <td>Architecture</td>
+      <td>Yes</td>
+      <td>Architecture</td>
+    </tr>
+
+    <tr>
+      <td>How it works</td>
+      <td>Yes</td>
+      <td>How DNS Works</td>
+    </tr>
+
+    <tr>
+      <td>Practical</td>
+      <td>Yes</td>
+      <td>DIY Lab</td>
+    </tr>
+
+    <tr>
+      <td>Debugging</td>
+      <td>Yes</td>
+      <td>Debugging</td>
+    </tr>
+
+    <tr>
+      <td>Interview</td>
+      <td>Yes</td>
+      <td>Interview / KT</td>
+    </tr>
+
+    <tr>
+      <td>Revision</td>
+      <td>Yes</td>
+      <td>Quick Revision</td>
+    </tr>
+
+  </table>
+
+</section>
+
+
+<!-- =====================================================
+     SOURCES
+     ===================================================== -->
+
+<section id="sources" class="page">
+
+  <div class="hero">
+
+    <h1>Sources & Scope</h1>
+
+  </div>
+
+
+  <div class="card">
+
+    <h3>Source strategy</h3>
+
+    <ul>
+
+      <li>
+        Prefer official standards and documentation.
+      </li>
+
+      <li>
+        Use authoritative technical references for protocol details.
+      </li>
+
+      <li>
+        Clearly identify historical or definition-dependent claims.
+      </li>
+
+      <li>
+        Do not invent sources.
+      </li>
+
+    </ul>
+
+  </div>
+
+
+  <div class="note">
+
+    <b>Scope:</b>
+
+    This sample demonstrates the HTML structure.
+    A real topic guide should expand the relevant sections
+    to provide comprehensive coverage.
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     NAVIGATION JAVASCRIPT
+     ===================================================== -->
+
+<script>
+
+const tabs =
+  [...document.querySelectorAll(".tab")];
+
+const pages =
+  [...document.querySelectorAll(".page")];
+
+function show(id, update=true){
+
+  pages.forEach(page => {
+
+    page.classList.toggle(
+      "active",
+      page.id === id
+    );
+
+  });
+
+  tabs.forEach(tab => {
+
+    tab.classList.toggle(
+      "active",
+      tab.dataset.page === id
+    );
+
+  });
+
+  if(update){
+
+    history.replaceState(
+      null,
+      "",
+      "#" + id
+    );
+
+  }
+
+  window.scrollTo({
+    top:0,
+    behavior:"instant"
+  });
+
+}
+
+
+tabs.forEach(tab => {
+
+  tab.addEventListener(
+    "click",
+    () => show(tab.dataset.page)
+  );
+
+});
+
+
+const initial =
+  location.hash.slice(1);
+
+if(
+  initial &&
+  document.getElementById(initial)
+){
+
+  show(initial,false);
+
+}
+
+</script>
+
+</body>
+</html>
