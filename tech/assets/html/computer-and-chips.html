@@ -1,0 +1,1079 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Computer → Semiconductor → Chip → Connectivity — Knowledge Guide</title>
+<style>
+:root{
+  --bg:#f5f7fb;--panel:#fff;--ink:#172033;--muted:#5d687d;--line:#dfe5ef;
+  --nav:#101827;--nav2:#182337;--accent:#4f46e5;--accent2:#06b6d4;
+  --good:#0f766e;--warn:#a16207;--bad:#b91c1c;--code:#101828;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.62}
+.side{position:fixed;left:0;top:0;bottom:0;width:270px;background:linear-gradient(180deg,var(--nav),#0b1220);color:#fff;padding:20px 14px;overflow:auto;z-index:5}
+.brand{font-weight:800;font-size:17px;padding:4px 10px 18px}.brand span{display:block;color:#9fb0ca;font-size:11px;font-weight:500;margin-top:3px}
+.group{margin:16px 0 7px 8px;color:#8190a8;font-size:10px;text-transform:uppercase;letter-spacing:.12em}
+.tab{display:block;width:100%;border:0;background:transparent;color:#cbd5e1;text-align:left;padding:8px 10px;border-radius:8px;margin:2px 0;cursor:pointer;font-size:12px}
+.tab:hover,.tab.active{background:var(--nav2);color:#fff}.tab.active{box-shadow:inset 3px 0 var(--accent)}
+.main{margin-left:270px;max-width:1250px;padding:28px}
+.page{display:none}.page.active{display:block}
+.hero{padding:34px;border-radius:20px;background:linear-gradient(135deg,#111827,#3730a3 58%,#0891b2);color:#fff;margin-bottom:22px;box-shadow:0 12px 35px #11182722}
+.hero h1{font-size:34px;line-height:1.15;margin:0 0 10px}.hero p{max-width:900px;color:#e8eefc;margin:8px 0}
+h2{font-size:26px;margin:10px 0 12px}h3{font-size:18px;margin:20px 0 8px}h4{margin:14px 0 6px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin:12px 0;box-shadow:0 5px 18px #11182708}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pill{display:inline-block;padding:4px 9px;border-radius:999px;background:#eef2ff;color:#3730a3;font-size:11px;font-weight:700;margin:3px}
+.note,.why,.warn,.good{padding:13px 16px;border-radius:10px;margin:14px 0;border-left:4px solid}
+.note{background:#eff6ff;border-color:#3b82f6}.why{background:#ecfeff;border-color:#06b6d4}.warn{background:#fffbeb;border-color:#f59e0b}.good{background:#ecfdf5;border-color:#10b981}
+.arch{background:#0b1220;color:#dbeafe;border-radius:12px;padding:18px;overflow:auto;font:12px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre}
+table{width:100%;border-collapse:collapse;margin:12px 0;background:#fff;border-radius:10px;overflow:hidden}
+th,td{padding:9px 10px;border:1px solid var(--line);vertical-align:top;text-align:left;font-size:13px}th{background:#f1f5f9}
+code{background:#eef2f7;padding:2px 5px;border-radius:5px}pre{background:var(--code);color:#e5e7eb;padding:15px;border-radius:10px;overflow:auto}
+a{color:#4338ca}.small{font-size:12px;color:var(--muted)}.muted{color:var(--muted)}
+ul,ol{padding-left:22px}.check li{margin:5px 0}
+.kpi{font-size:25px;font-weight:800}.tag{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#64748b}
+.qa{border-top:1px solid var(--line);padding:12px 0}.qa b{display:block;margin-bottom:4px}
+.footer{margin-top:24px;color:#64748b;font-size:11px}
+@media(max-width:900px){.side{position:relative;width:100%;height:auto;max-height:360px}.main{margin-left:0;padding:16px}.two{grid-template-columns:1fr}.hero h1{font-size:28px}}
+</style>
+</head>
+<body>
+<aside class="side">
+<div class="brand">Knowledge Guide<span>Computer → Semiconductor → Chip → Connectivity</span></div>
+
+<div class="group">Start</div>
+<button class="tab active" data-page="start">00 · Start Here</button>
+<button class="tab" data-page="map">01 · Learning Map</button>
+<button class="tab" data-page="timeline">02 · Timeline</button>
+
+<div class="group">Foundations</div>
+<button class="tab" data-page="computer">03 · What Is a Computer?</button>
+<button class="tab" data-page="electricity">04 · Electricity & Electronics</button>
+<button class="tab" data-page="semiconductor">05 · Semiconductor Fundamentals</button>
+<button class="tab" data-page="transistor">06 · Transistor & MOSFET</button>
+<button class="tab" data-page="logic">07 · Logic & ICs</button>
+<button class="tab" data-page="cpu">08 · CPU Architecture</button>
+<button class="tab" data-page="memory">09 · Memory & Storage</button>
+<button class="tab" data-page="gpu">10 · GPU</button>
+<button class="tab" data-page="soc">11 · SoC</button>
+
+<div class="group">Connectivity</div>
+<button class="tab" data-page="peripherals">12 · Peripherals & I/O</button>
+<button class="tab" data-page="buses">13 · Buses</button>
+<button class="tab" data-page="network">14 · Networking</button>
+<button class="tab" data-page="internet">15 · Internet</button>
+<button class="tab" data-page="radio">16 · Radio & Wireless</button>
+<button class="tab" data-page="wifi">17 · Wi-Fi</button>
+<button class="tab" data-page="bluetooth">18 · Bluetooth</button>
+<button class="tab" data-page="cellular">19 · Cellular</button>
+
+<div class="group">Semiconductor Industry</div>
+<button class="tab" data-page="industry">20 · Industry Ecosystem</button>
+<button class="tab" data-page="design">21 · Chip Design</button>
+<button class="tab" data-page="eda">22 · EDA & IP</button>
+<button class="tab" data-page="fab">23 · Fabless / IDM / Foundry</button>
+<button class="tab" data-page="equipment">24 · Equipment</button>
+<button class="tab" data-page="packaging">25 · Packaging & OSAT</button>
+
+<div class="group">How Chips Are Made</div>
+<button class="tab" data-page="manufacturing">26 · Manufacturing Overview</button>
+<button class="tab" data-page="silicon">27 · Sand → Silicon</button>
+<button class="tab" data-page="wafer">28 · Crystal → Wafer</button>
+<button class="tab" data-page="fabsteps">29 · Fabrication Steps</button>
+<button class="tab" data-page="doping">30 · Doping</button>
+<button class="tab" data-page="test">31 · Test → Package → Ship</button>
+
+<div class="group">Modern Computing</div>
+<button class="tab" data-page="modern">32 · Modern Compute</button>
+<button class="tab" data-page="chiplets">33 · Chiplets & Packaging</button>
+<button class="tab" data-page="hbm">34 · HBM & Memory Bandwidth</button>
+<button class="tab" data-page="ai">35 · AI Hardware</button>
+<button class="tab" data-page="companies">36 · Company Ecosystem</button>
+<button class="tab" data-page="standards">37 · Standards</button>
+
+<div class="group">Practice</div>
+<button class="tab" data-page="diy">38 · DIY Labs</button>
+<button class="tab" data-page="debug">39 · Debugging Mindset</button>
+<button class="tab" data-page="qa">40 · Interview / KT Q&A</button>
+<button class="tab" data-page="glossary">41 · Glossary</button>
+<button class="tab" data-page="revision">42 · Quick Revision</button>
+<button class="tab" data-page="quiz">43 · Knowledge Check</button>
+<button class="tab" data-page="audit">44 · Coverage Audit</button>
+<button class="tab" data-page="sources">45 · Sources & Scope</button>
+</aside>
+
+<main class="main">
+
+<section id="start" class="page active">
+<div class="hero">
+<h1>Computer → Semiconductor → Chip → Connectivity</h1>
+<p>A single end-to-end knowledge guide: from the first computing machines and transistors to CPUs, GPUs, wireless communication, the Internet, semiconductor manufacturing, modern packaging and AI hardware.</p>
+<span class="pill">Easy English</span><span class="pill">Visual learning</span><span class="pill">Interview + KT</span><span class="pill">DIY friendly</span>
+</div>
+<div class="grid">
+<div class="card"><div class="tag">Core idea</div><div class="kpi">1 → 0 → compute</div><p>A transistor is an electrically controlled switch. Huge numbers of switches are organized into logic, memory and interconnects to perform computation.</p></div>
+<div class="card"><div class="tag">Big journey</div><div class="kpi">Sand → Chip</div><p>Silicon-containing minerals are purified, converted into a controlled crystal, sliced into wafers, patterned repeatedly, tested, diced and packaged.</p></div>
+<div class="card"><div class="tag">Connectivity</div><div class="kpi">Bits → Radio</div><p>Computers turn information into electrical signals and, through radios and antennas, into electromagnetic waves for wireless communication.</p></div>
+</div>
+<div class="why"><b>How to use this guide:</b> Read the pages in order once. Then revisit the diagrams, Q&A and quick revision pages. The goal is not memorizing every fabrication detail; it is understanding how the pieces connect.</div>
+<div class="arch">THE WHOLE STORY
+
+Natural materials
+     ↓
+Purified silicon
+     ↓
+Single-crystal ingot → wafer
+     ↓
+Repeated fabrication steps
+     ↓
+Transistors + interconnects
+     ↓
+Integrated circuit / chip
+     ↓
+CPU / GPU / SoC / memory / accelerator
+     ↓
+Computer / phone / server
+     ↓
+I/O + network interface
+     ↓
+Radio + antenna
+     ↓
+Wi-Fi / Bluetooth / cellular
+     ↓
+Internet
+     ↓
+Modern connected computing</div>
+</section>
+
+<section id="map" class="page">
+<div class="hero"><h1>Learning Map</h1><p>Follow the dependency chain instead of treating the topics as isolated facts.</p></div>
+<div class="card">
+<table><tr><th>Layer</th><th>Question</th><th>What you learn</th></tr>
+<tr><td>1. History</td><td>Where did computing come from?</td><td>Mechanical calculators, electromechanical machines, vacuum tubes, transistor, IC, microprocessor.</td></tr>
+<tr><td>2. Physics</td><td>What makes current possible?</td><td>Charge, voltage, current, resistance, electric field, atoms, electrons, energy bands.</td></tr>
+<tr><td>3. Semiconductor</td><td>Why silicon?</td><td>Controlled carrier concentration, doping, PN junctions, MOS structures.</td></tr>
+<tr><td>4. Transistor</td><td>How does a switch become a computer?</td><td>MOSFET, CMOS, logic gates, registers, ALUs, caches.</td></tr>
+<tr><td>5. Architecture</td><td>How is a chip organized?</td><td>CPU, GPU, memory hierarchy, buses, SoC, accelerators.</td></tr>
+<tr><td>6. Connectivity</td><td>How do machines communicate?</td><td>Ethernet, IP, TCP/UDP, DNS, HTTP, radio, Wi-Fi, Bluetooth, cellular.</td></tr>
+<tr><td>7. Manufacturing</td><td>How is a physical chip made?</td><td>Purification, crystal growth, wafering, lithography, deposition, etch, implant, CMP, interconnect, test and package.</td></tr>
+<tr><td>8. Industry</td><td>Who does what?</td><td>Fabless, foundry, IDM, EDA, IP, equipment, materials, OSAT, system companies.</td></tr>
+<tr><td>9. Practice</td><td>Can I see these ideas myself?</td><td>Digital logic, transistor switching, Linux networking, Wi-Fi inspection and software-level experiments.</td></tr>
+</table>
+</div>
+</section>
+
+<section id="timeline" class="page">
+<div class="hero"><h1>Timeline — From Mechanical Computing to AI</h1><p>The exact boundary of “first computer” depends on the definition. Treat history as a sequence of enabling technologies.</p></div>
+<div class="card">
+<table><tr><th>Era</th><th>Milestone</th><th>Why it matters</th></tr>
+<tr><td>Ancient → 1600s</td><td>Abacus and mechanical calculation</td><td>Shows that computation can be represented physically.</td></tr>
+<tr><td>1600s–1800s</td><td>Mechanical calculators and programmable concepts</td><td>Arithmetic becomes mechanized; programmability ideas emerge.</td></tr>
+<tr><td>1800s</td><td>Analytical Engine concept</td><td>Introduces ideas resembling memory, control and a processing unit.</td></tr>
+<tr><td>Late 1800s–1930s</td><td>Electromechanical computing</td><td>Relays and switches automate larger calculations.</td></tr>
+<tr><td>1930s–1940s</td><td>Electronic computing with vacuum tubes</td><td>Much faster switching than mechanical/relay systems.</td></tr>
+<tr><td>1947</td><td>Working transistor at Bell Labs</td><td>Solid-state switching becomes practical.</td></tr>
+<tr><td>1958–1959</td><td>Integrated-circuit breakthroughs</td><td>Multiple electronic components can be fabricated together.</td></tr>
+<tr><td>1959</td><td>MOSFET demonstrated</td><td>A scalable transistor structure becomes foundational to modern ICs.</td></tr>
+<tr><td>1970s</td><td>Microprocessors</td><td>CPU functions are integrated onto a chip.</td></tr>
+<tr><td>1980s–2000s</td><td>Personal computing + networking</td><td>Computers become widely connected.</td></tr>
+<tr><td>2000s–2020s</td><td>Multicore, GPU, SoC, mobile and cloud</td><td>Parallel compute and integration dominate systems.</td></tr>
+<tr><td>2020s+</td><td>AI accelerators, chiplets, advanced packaging</td><td>Compute, memory bandwidth and power efficiency become tightly co-designed.</td></tr>
+</table>
+<div class="note"><b>Important wording:</b> “first computer” is not one universally accepted object. Define whether you mean first programmable machine, first electronic general-purpose computer, first stored-program computer, first commercial computer, or first microprocessor-based computer.</div>
+</div>
+</section>
+
+<section id="computer" class="page">
+<div class="hero"><h1>What Is a Computer?</h1><p>A computer is a system that represents information, transforms it according to instructions, stores state and communicates with other systems.</p></div>
+<div class="grid">
+<div class="card"><h3>Input</h3><p>Keyboard, mouse, camera, microphone, sensors, network packets.</p></div>
+<div class="card"><h3>Processing</h3><p>CPU, GPU, DSP, NPU or other accelerators execute operations.</p></div>
+<div class="card"><h3>Memory</h3><p>Registers, cache, RAM and storage hold data at different speeds and capacities.</p></div>
+<div class="card"><h3>Output</h3><p>Display, audio, storage, network transmission, actuators.</p></div>
+</div>
+<div class="arch">PROGRAM
+  ↓
+INSTRUCTIONS + DATA
+  ↓
+┌─────────────── COMPUTER ───────────────┐
+│ CPU / GPU / ACCELERATOR               │
+│        ↕                               │
+│ Cache ↔ RAM ↔ Storage                 │
+│        ↕                               │
+│ I/O controllers ↔ peripherals         │
+└────────────────────────────────────────┘
+  ↓
+RESULT / COMMUNICATION</div>
+</section>
+
+<section id="electricity" class="page">
+<div class="hero"><h1>Electricity & Electronics</h1><p>Before understanding a transistor, understand the quantities that describe electrical behavior.</p></div>
+<table><tr><th>Quantity</th><th>Meaning</th><th>Useful mental model</th></tr>
+<tr><td>Charge (Q)</td><td>Electrical property carried by particles such as electrons.</td><td>Amount of “electrical stuff”.</td></tr>
+<tr><td>Voltage (V)</td><td>Potential difference.</td><td>Energy-per-charge difference / electrical pressure.</td></tr>
+<tr><td>Current (I)</td><td>Rate of charge flow.</td><td>How much charge moves per second.</td></tr>
+<tr><td>Resistance (R)</td><td>Opposition to current.</td><td>How difficult it is for current to flow.</td></tr>
+<tr><td>Power (P)</td><td>Rate of energy transfer.</td><td>Electrical energy used per unit time.</td></tr>
+</table>
+<div class="card"><h3>Ohm’s law</h3><div class="arch">V = I × R
+I = V / R
+P = V × I</div><p>Real semiconductor devices are more complex than a simple resistor, but these relationships build the basic intuition.</p></div>
+<div class="why"><b>Key connection:</b> a transistor does not create electricity. It controls how carriers move by using an electric field and device structure.</div>
+</section>
+
+<section id="semiconductor" class="page">
+<div class="hero"><h1>Semiconductor Fundamentals</h1><p>This is the foundation of the entire chip story: why semiconductor materials are useful, how silicon is prepared, and how conductivity is engineered.</p></div>
+<div class="card"><h3>Conductor vs insulator vs semiconductor</h3>
+<table><tr><th>Material class</th><th>Typical behavior</th><th>Engineering value</th></tr>
+<tr><td>Conductor</td><td>Many mobile charge carriers; current flows readily.</td><td>Excellent for interconnects and contacts.</td></tr>
+<tr><td>Insulator</td><td>Very few mobile carriers under normal conditions.</td><td>Useful for isolation and gate dielectrics.</td></tr>
+<tr><td>Semiconductor</td><td>Carrier concentration can be strongly engineered and controlled.</td><td>Enables switches, diodes, sensors and integrated circuits.</td></tr>
+</table>
+<div class="warn"><b>Do not use this oversimplification:</b> “A semiconductor is exactly halfway between a conductor and insulator” or “a tiny voltage simply turns silicon into a conductor.” The useful idea is controlled carrier concentration and an electric field that changes device behavior.</div>
+</div>
+<div class="card"><h3>Why silicon?</h3><ul>
+<li>Silicon has four valence electrons and forms a stable crystal lattice.</li>
+<li>Its electrical properties can be engineered by adding controlled dopants.</li>
+<li>Silicon forms a high-quality oxide, silicon dioxide (SiO₂), which is extremely useful in MOS technology.</li>
+<li>Its material and processing ecosystem supports large-scale manufacturing.</li>
+</ul></div>
+<div class="card"><h3>Silicon crystal — simple picture</h3>
+<div class="arch">          Si
+       /  |  |  \
+     Si---Si---Si
+      \   |   /
+        Si---Si
+
+Each Si atom has 4 valence electrons.
+In a crystal, atoms share bonds.
+Doping intentionally replaces a small number of Si atoms
+with atoms such as B or P to engineer carrier behavior.</div></div>
+<div class="card"><h3>Energy bands — the important idea</h3><p>In a solid, electron energy states form bands. The <b>valence band</b> is associated with bound electrons; the <b>conduction band</b> contains states in which carriers can contribute to electrical conduction. The band gap influences how easily carriers can be excited.</p>
+<div class="arch">ENERGY ↑
+
+Conduction band
+========================
+        ↑ band gap
+        │
+========================
+Valence band
+
+Engineering goal: control how many carriers are available
+and how easily they can move through a device.</div></div>
+<div class="card"><h3>Intrinsic and extrinsic semiconductor</h3><ul>
+<li><b>Intrinsic:</b> relatively pure semiconductor; carriers are generated by the material's own physics.</li>
+<li><b>Extrinsic:</b> intentionally doped to change carrier concentration.</li>
+<li><b>N-type:</b> donor dopants such as phosphorus introduce donor states; electrons are the majority carriers.</li>
+<li><b>P-type:</b> acceptor dopants such as boron create acceptor states; holes are the majority carriers.</li>
+</ul></div>
+<div class="arch">P-TYPE                         N-TYPE
+Si  Si  B  Si                 Si  Si  P  Si
+  \ | /                         \ | /
+   HOLE                          EXTRA
+   (carrier)                     ELECTRON
+
+Boron: 3 valence electrons → acceptor behavior
+Phosphorus: 5 valence electrons → donor behavior</div>
+<div class="why"><b>Core answer to “why not just use a conductor?”</b> A good computer needs a material system in which current can be turned, shaped and isolated with high precision. Semiconductor device physics gives engineers that controllability. Conductors remain essential inside the chip for wiring.</div>
+</section>
+
+<section id="transistor" class="page">
+<div class="hero"><h1>Transistor & MOSFET</h1><p>The MOSFET is the central switching device behind modern CMOS logic.</p></div>
+<div class="card"><h3>Historical bridge</h3><ul><li>1947: Bardeen, Brattain and Shockley demonstrated a working transistor at Bell Labs.</li><li>1958–1959: Jack Kilby and Robert Noyce made foundational integrated-circuit advances.</li><li>1959: Mohamed Atalla and Dawon Kahng demonstrated the MOSFET.</li></ul><p class="small">These milestones are distinct: transistor → integrated circuit → MOSFET-based scaling.</p></div>
+<div class="arch">MOSFET — CONCEPTUAL
+
+              Gate
+               │
+          ┌────┴────┐
+          │ dielectric
+Source ───┤  CHANNEL ├─── Drain
+          └──────────┘
+               │
+             Body
+
+Gate electric field changes the channel's carrier concentration.
+That controls source-to-drain current.</div>
+<div class="card"><h3>Why this becomes a switch</h3><table><tr><th>Condition</th><th>Conceptual result</th></tr><tr><td>Gate control below threshold</td><td>Channel is strongly suppressed in a basic digital abstraction → logic “OFF”.</td></tr><tr><td>Gate control above threshold</td><td>Channel forms/increases conductivity → logic “ON”.</td></tr></table></div>
+<div class="card"><h3>CMOS</h3><p>CMOS logic uses complementary NMOS and PMOS transistors. A major benefit is very low static power in ideal steady-state CMOS logic; dynamic switching consumes energy when nodes charge and discharge.</p></div>
+</section>
+
+<section id="logic" class="page">
+<div class="hero"><h1>Logic Gates → Integrated Circuits</h1><p>Transistors become useful computation when arranged into repeatable logic structures.</p></div>
+<div class="grid">
+<div class="card"><h3>NOT</h3><div class="arch">A ──[ NOT ]── Y
+0 → 1
+1 → 0</div></div>
+<div class="card"><h3>AND</h3><div class="arch">A B | Y
+0 0 | 0
+0 1 | 0
+1 0 | 0
+1 1 | 1</div></div>
+<div class="card"><h3>OR</h3><div class="arch">A B | Y
+0 0 | 0
+0 1 | 1
+1 0 | 1
+1 1 | 1</div></div>
+<div class="card"><h3>XOR</h3><div class="arch">A B | Y
+0 0 | 0
+0 1 | 1
+1 0 | 1
+1 1 | 0</div></div>
+</div>
+<div class="arch">TRANSISTORS
+   ↓
+LOGIC GATES
+   ↓
+COMBINATIONAL LOGIC + FLIP-FLOPS
+   ↓
+REGISTERS / COUNTERS / ALUs / CONTROL
+   ↓
+PROCESSOR</div>
+<div class="note"><b>Integrated circuit:</b> many electronic devices and their interconnections are fabricated together on a semiconductor substrate rather than assembling each transistor as a separate component.</div>
+</section>
+
+<section id="cpu" class="page">
+<div class="hero"><h1>CPU Architecture</h1><p>A CPU is a programmable general-purpose processing engine, not merely “the chip”.</p></div>
+<div class="arch">                 CPU
+ ┌─────────────────────────────────────────────┐
+ │ Control / Decode                            │
+ │                                             │
+ │ Registers → ALU / execution units          │
+ │      ↕              ↕                       │
+ │   Load/Store      Branch / vector units     │
+ │              ↕                              │
+ │             Cache                           │
+ └─────────────────────────────────────────────┘
+                    ↕
+                  RAM</div>
+<div class="grid">
+<div class="card"><h3>Instruction</h3><p>Encodes an operation and operands according to an ISA.</p></div>
+<div class="card"><h3>ISA</h3><p>The programmer-visible contract: instructions, registers, memory model and other architectural rules.</p></div>
+<div class="card"><h3>Microarchitecture</h3><p>How a processor implements the ISA: pipelines, caches, execution units, branch prediction, out-of-order machinery, etc.</p></div>
+<div class="card"><h3>Clock</h3><p>Provides a timing reference. Performance is not determined by frequency alone.</p></div>
+</div>
+</section>
+
+<section id="memory" class="page">
+<div class="hero"><h1>Memory & Storage</h1><p>Computers separate fast, small storage from slower, larger storage.</p></div>
+<table><tr><th>Layer</th><th>Typical role</th><th>Trade-off</th></tr>
+<tr><td>Registers</td><td>Immediate CPU operands/state</td><td>Extremely fast, tiny</td></tr>
+<tr><td>Cache</td><td>Keep frequently used data near compute</td><td>Fast, limited capacity</td></tr>
+<tr><td>DRAM</td><td>Main memory</td><td>Much larger, slower than cache</td></tr>
+<tr><td>SSD / NAND</td><td>Persistent storage</td><td>Non-volatile, high capacity, slower than RAM</td></tr>
+<tr><td>HDD</td><td>Persistent magnetic storage</td><td>Large capacity, mechanical latency</td></tr>
+</table>
+<div class="note"><b>Correction:</b> DRAM cells use a capacitor plus access transistor. SRAM cells use a multi-transistor latch and do not use the same capacitor-based cell structure.</div>
+</section>
+
+<section id="gpu" class="page">
+<div class="hero"><h1>GPU Architecture</h1><p>GPUs are designed for massive parallel workloads; the exact architecture differs by vendor and generation.</p></div>
+<div class="arch">CPU                         GPU
+Few powerful general        Many parallel execution
+purpose cores               resources
+
+Control-heavy               Throughput-oriented
+low-latency tasks            large data-parallel work
+
+        BOTH
+          ↓
+     Memory hierarchy
+          ↓
+       Workloads</div>
+<div class="card"><h3>Common GPU workloads</h3><ul><li>Graphics rendering</li><li>Matrix and vector operations</li><li>Machine learning / AI</li><li>Scientific and engineering simulation</li><li>Other massively parallel kernels</li></ul></div>
+<div class="why"><b>Do not reduce GPU to “graphics chip”.</b> Modern GPUs are general parallel-compute engines with specialized units and software stacks.</div>
+</section>
+
+<section id="soc" class="page">
+<div class="hero"><h1>SoC Architecture</h1><p>A System-on-Chip integrates multiple system functions into one package or die-level platform.</p></div>
+<div class="arch">                 SoC
+┌────────────────────────────────────────────────┐
+│ CPU cores        GPU          NPU / DSP       │
+│                                                │
+│ Memory controller     Cache / interconnect    │
+│                                                │
+│ ISP / media        Security        I/O         │
+│                                                │
+│ Wi-Fi / BT / modem may be integrated depending │
+│ on product architecture                        │
+└────────────────────────────────────────────────┘</div>
+<p>Integration reduces board-level interconnects and can improve power, latency, cost and form-factor efficiency, while creating complex design and validation challenges.</p>
+</section>
+
+<section id="peripherals" class="page">
+<div class="hero"><h1>Peripherals & I/O</h1><p>Peripherals let the compute system sense, store, display and communicate.</p></div>
+<table><tr><th>Category</th><th>Examples</th></tr>
+<tr><td>Human input</td><td>Keyboard, mouse, touch, game controller</td></tr>
+<tr><td>Display</td><td>Monitor, panel, projector</td></tr>
+<tr><td>Audio</td><td>Microphone, speaker, codec</td></tr>
+<tr><td>Storage</td><td>SSD, HDD, USB storage</td></tr>
+<tr><td>Imaging</td><td>Camera, image sensor</td></tr>
+<tr><td>Network</td><td>Ethernet NIC, Wi-Fi, Bluetooth, cellular modem</td></tr>
+<tr><td>Physical interface</td><td>USB, PCIe, SATA, I²C, SPI, UART, GPIO</td></tr>
+<tr><td>Sensors / actuators</td><td>Temperature, accelerometer, motors, LEDs</td></tr>
+</table>
+</section>
+
+<section id="buses" class="page">
+<div class="hero"><h1>Buses & Interconnects</h1><p>Inside a computer, components need agreed protocols for moving data, addresses, commands and control information.</p></div>
+<table><tr><th>Interface</th><th>Typical role</th></tr>
+<tr><td>PCIe</td><td>High-speed point-to-point peripheral interconnect; common for GPUs, NVMe and accelerators.</td></tr>
+<tr><td>USB</td><td>General-purpose external peripheral connectivity.</td></tr>
+<tr><td>SATA</td><td>Storage interface, historically common for HDDs and SATA SSDs.</td></tr>
+<tr><td>I²C</td><td>Low-speed board-level control and sensor/device communication.</td></tr>
+<tr><td>SPI</td><td>Simple synchronous peripheral bus, often used for flash, sensors and controllers.</td></tr>
+<tr><td>UART</td><td>Asynchronous serial communication; widely used for debug consoles.</td></tr>
+</table>
+</section>
+
+<section id="network" class="page">
+<div class="hero"><h1>Networking Fundamentals</h1><p>Networking is layered: each layer solves a different part of the communication problem.</p></div>
+<div class="arch">APPLICATION   HTTP / DNS / SSH / ...
+      ↓
+TRANSPORT     TCP / UDP
+      ↓
+NETWORK       IP
+      ↓
+LINK          Ethernet / Wi-Fi
+      ↓
+PHYSICAL      electrical / optical / radio signals</div>
+<div class="card"><h3>Key concepts</h3><ul><li>MAC address: link-layer identifier used in many LAN technologies.</li><li>IP address: network-layer addressing.</li><li>Port: identifies an application endpoint at the transport layer.</li><li>DNS: maps names to network information such as IP addresses.</li><li>TCP: reliable, ordered byte-stream transport.</li><li>UDP: connectionless datagram transport with fewer guarantees.</li></ul></div>
+</section>
+
+<section id="internet" class="page">
+<div class="hero"><h1>The Internet</h1><p>The Internet is a network of interconnected networks using a common suite of protocols. It was not “invented for computers” as a single product; it evolved from networking research and operational networks that connected computing systems.</p></div>
+<div class="arch">YOUR PHONE / PC
+      ↓
+Wi-Fi / Ethernet
+      ↓
+Home / Enterprise router
+      ↓
+ISP / access network
+      ↓
+Internet routing
+      ↓
+Data-center / cloud / destination network
+      ↓
+SERVER</div>
+<div class="note"><b>History:</b> ARPANET was an important early packet-switched network. The TCP/IP protocol suite became a major foundation of the modern Internet. The Web is a service built on top of the Internet, not the Internet itself.</div>
+</section>
+
+<section id="radio" class="page">
+<div class="hero"><h1>Radio & Wireless</h1><p>Wireless communication uses electromagnetic waves to transfer information without a physical conductor between endpoints.</p></div>
+<div class="arch">BITS
+ ↓
+ENCODING / MODULATION
+ ↓
+DIGITAL SIGNAL
+ ↓
+DAC / RF CIRCUITRY
+ ↓
+POWER AMPLIFIER
+ ↓
+ANTENNA ))))))))))))  ELECTROMAGNETIC WAVE
+                         ↓
+                      ANTENNA
+                         ↓
+                   RF FRONT END
+                         ↓
+                   ADC / DEMODULATION
+                         ↓
+                       BITS</div>
+<div class="grid">
+<div class="card"><h3>Frequency</h3><p>Describes the oscillation rate of the electromagnetic signal. Different bands support different propagation and bandwidth characteristics.</p></div>
+<div class="card"><h3>Modulation</h3><p>Changes properties of a carrier to encode information. Modern systems use sophisticated digital modulation and coding.</p></div>
+<div class="card"><h3>Antenna</h3><p>Converts electrical/RF energy to electromagnetic radiation and vice versa.</p></div>
+<div class="card"><h3>RF front end</h3><p>Filters, amplifies and conditions signals between antenna and digital processing.</p></div>
+</div>
+</section>
+
+<section id="wifi" class="page">
+<div class="hero"><h1>Wi-Fi</h1><p>Wi-Fi is a family of IEEE 802.11 wireless LAN technologies. It is designed primarily for local networking and IP connectivity.</p></div>
+<div class="arch">APPLICATION
+   ↓
+TCP/IP
+   ↓
+Wi-Fi MAC
+   ↓
+Wi-Fi PHY
+   ↓
+RF / FILTER / PA / LNA
+   ↓
+ANTENNA</div>
+<div class="card"><h3>Engineering view</h3><ul><li>MAC handles medium access, framing, addressing and link-level behavior.</li><li>PHY handles modulation, coding, channelization and radio transmission/reception.</li><li>RF components connect the baseband/PHY to the antenna.</li><li>Performance depends on bandwidth, MCS, channel conditions, interference, spatial streams, power and protocol overhead.</li></ul></div>
+</section>
+
+<section id="bluetooth" class="page">
+<div class="hero"><h1>Bluetooth</h1><p>Bluetooth is a short-range wireless technology family used for peripherals, audio, sensors and device-to-device communication.</p></div>
+<table><tr><th>Area</th><th>Concept</th></tr><tr><td>Bluetooth Classic</td><td>Common in traditional device connectivity and audio profiles.</td></tr><tr><td>Bluetooth Low Energy</td><td>Designed for low-power communication and broad sensor/peripheral use.</td></tr><tr><td>Profiles</td><td>Define higher-level device behavior and interoperability.</td></tr><tr><td>Radio band</td><td>Operates in the 2.4 GHz ISM band.</td></tr></table>
+<div class="why"><b>Wi-Fi vs Bluetooth:</b> both use radio, but their protocol design, typical range/power/use cases and network models differ. Bluetooth is not simply “slower Wi-Fi”.</div>
+</section>
+
+<section id="cellular" class="page">
+<div class="hero"><h1>Cellular — 4G / 5G</h1><p>Cellular systems use geographically distributed cells, radio access networks and a mobile core to provide wide-area connectivity.</p></div>
+<div class="arch">PHONE
+ ↓
+MODEM / RF
+ ↓
+CELLULAR ANTENNA
+ ))))
+ ↓
+BASE STATION
+ ↓
+RADIO ACCESS NETWORK
+ ↓
+MOBILE CORE
+ ↓
+INTERNET / SERVICE</div>
+<div class="card"><h3>Why cellular is different</h3><p>The system is engineered for mobility, coverage, spectrum reuse, authentication, handover and large numbers of subscribers—not just local device connectivity.</p></div>
+</section>
+
+<section id="industry" class="page">
+<div class="hero"><h1>Semiconductor Industry Ecosystem</h1><p>A modern chip is usually the result of a large chain of specialized companies and organizations.</p></div>
+<table><tr><th>Role</th><th>What it does</th><th>Examples</th></tr>
+<tr><td>System / chip company</td><td>Defines product requirements and architecture; may design chips.</td><td>Intel, AMD, NVIDIA, Apple, Qualcomm, Broadcom</td></tr>
+<tr><td>Fabless</td><td>Designs chips; outsources wafer manufacturing.</td><td>NVIDIA, AMD, Qualcomm (business-model examples)</td></tr>
+<tr><td>Foundry</td><td>Manufactures chips for customers.</td><td>TSMC, Samsung Foundry, Intel Foundry</td></tr>
+<tr><td>IDM</td><td>Historically integrates chip design and manufacturing; modern models vary.</td><td>Intel, Samsung, Texas Instruments</td></tr>
+<tr><td>EDA</td><td>Tools for design, verification, synthesis, physical implementation and signoff.</td><td>Synopsys, Cadence, Siemens EDA</td></tr>
+<tr><td>IP</td><td>Reusable blocks such as CPU cores, interfaces and PHYs.</td><td>Arm, Imagination, Synopsys IP</td></tr>
+<tr><td>Equipment</td><td>Machines for lithography, deposition, etch, metrology, implant, etc.</td><td>ASML, Applied Materials, Lam Research, KLA</td></tr>
+<tr><td>Materials</td><td>Wafers, gases, chemicals, photoresists and other inputs.</td><td>Many specialized suppliers</td></tr>
+<tr><td>OSAT</td><td>Outsourced semiconductor assembly and test.</td><td>ASE, Amkor</td></tr>
+</table>
+</section>
+
+<section id="design" class="page">
+<div class="hero"><h1>Chip Design Flow</h1><p>Design is the digital/physical specification of the chip before manufacturing.</p></div>
+<div class="arch">PRODUCT REQUIREMENTS
+        ↓
+SYSTEM ARCHITECTURE
+        ↓
+MICROARCHITECTURE
+        ↓
+RTL (Verilog / SystemVerilog)
+        ↓
+FUNCTIONAL VERIFICATION
+        ↓
+LOGIC SYNTHESIS
+        ↓
+FLOORPLAN / PLACE / ROUTE
+        ↓
+TIMING / POWER / PHYSICAL SIGNOFF
+        ↓
+TAPEOUT
+        ↓
+FOUNDRY FABRICATION</div>
+<div class="card"><h3>Validation is different from verification</h3><p><b>Verification</b> asks whether the design implements the intended specification. <b>Validation</b> asks whether the resulting product satisfies real-world requirements and workloads. Silicon debug and post-silicon validation happen after manufacturing.</p></div>
+</section>
+
+<section id="eda" class="page">
+<div class="hero"><h1>EDA & Semiconductor IP</h1><p>EDA software is the engineering toolchain that makes modern chip design possible.</p></div>
+<div class="grid">
+<div class="card"><h3>Simulation</h3><p>Models RTL or gate-level behavior before silicon.</p></div>
+<div class="card"><h3>Synthesis</h3><p>Transforms RTL into a gate-level implementation subject to constraints.</p></div>
+<div class="card"><h3>Physical design</h3><p>Floorplanning, placement, clocking, routing and optimization.</p></div>
+<div class="card"><h3>Signoff</h3><p>Timing, power, physical verification and manufacturability checks.</p></div>
+</div>
+<p>IP blocks can be licensed or reused rather than designed from scratch: CPU cores, memory controllers, PCIe, USB, Ethernet, SerDes, security blocks and more.</p>
+</section>
+
+<section id="fab" class="page">
+<div class="hero"><h1>Fabless vs IDM vs Foundry</h1><p>These terms describe business and manufacturing models, not a simple quality hierarchy.</p></div>
+<table><tr><th>Model</th><th>Simple definition</th></tr>
+<tr><td>Fabless</td><td>Focuses on chip design/product; wafer fabrication is contracted to a foundry.</td></tr>
+<tr><td>Foundry</td><td>Provides wafer manufacturing services and process technology.</td></tr>
+<tr><td>IDM</td><td>Company has historically controlled both design and manufacturing; the exact scope differs by company and era.</td></tr>
+</table>
+<div class="note"><b>Modern reality:</b> companies can use mixed models, external manufacturing, internal fabs, packaging partners and multiple foundries depending on product.</div>
+</section>
+
+<section id="equipment" class="page">
+<div class="hero"><h1>Semiconductor Equipment</h1><p>Fabrication requires specialized machines because structures are extremely small and must be aligned and controlled across many process steps.</p></div>
+<table><tr><th>Equipment area</th><th>Purpose</th></tr>
+<tr><td>Lithography</td><td>Projects patterned light into photoresist.</td></tr>
+<tr><td>Deposition</td><td>Adds controlled thin films.</td></tr>
+<tr><td>Etch</td><td>Removes selected material.</td></tr>
+<tr><td>Ion implantation</td><td>Introduces dopant atoms into semiconductor material.</td></tr>
+<tr><td>CMP</td><td>Chemical-mechanical polishing to flatten surfaces.</td></tr>
+<tr><td>Metrology / inspection</td><td>Measures dimensions and detects defects.</td></tr>
+<tr><td>Cleaning</td><td>Removes contamination between critical process steps.</td></tr>
+</table>
+</section>
+
+<section id="packaging" class="page">
+<div class="hero"><h1>Packaging & OSAT</h1><p>A finished die needs mechanical protection, electrical connections, thermal management and a route to the system board.</p></div>
+<div class="arch">WAFER
+ ↓
+DIE
+ ↓
+PACKAGE
+ ├─ substrate / interposer
+ ├─ die attach
+ ├─ electrical connections
+ ├─ heat spreader / thermal path
+ └─ protection
+ ↓
+SYSTEM BOARD
+ ↓
+COMPUTER / PHONE / SERVER</div>
+<p><b>OSAT</b> means outsourced semiconductor assembly and test. Packaging is increasingly part of system architecture because bandwidth, power and chip-to-chip latency depend on how dies and memory are physically connected.</p>
+</section>
+
+<section id="manufacturing" class="page">
+<div class="hero"><h1>How a Chip Is Made — Big Picture</h1><p>Manufacturing is a repeated patterning process. A chip is not made by drawing a transistor once; many layers and process cycles build the complete structure.</p></div>
+<div class="arch">1  SILICON PURIFICATION
+        ↓
+2  CRYSTAL GROWTH
+        ↓
+3  INGOT
+        ↓
+4  WAFER SLICING + POLISHING
+        ↓
+5  OXIDATION / DEPOSITION
+        ↓
+6  PHOTORESIST
+        ↓
+7  PHOTOMASK + LITHOGRAPHY
+        ↓
+8  ETCH / IMPLANT / DEPOSITION
+        ↓
+9  ANNEAL / CMP / CLEAN
+        ↓
+10 REPEAT FOR MANY LAYERS
+        ↓
+11 INTERCONNECT METALS
+        ↓
+12 WAFER TEST
+        ↓
+13 DICING
+        ↓
+14 PACKAGE
+        ↓
+15 FINAL TEST + BINNING</div>
+</section>
+
+<section id="silicon" class="page">
+<div class="hero"><h1>Sand → Silicon</h1><p>“Sand becomes a chip” is a useful headline, but the real industrial chain is purification-heavy.</p></div>
+<div class="arch">QUARTZ / SILICA / SILICATE MINERALS
+             ↓
+        SILICON-CONTAINING FEEDSTOCK
+             ↓
+     CHEMICAL / THERMAL PURIFICATION
+             ↓
+      HIGH-PURITY SILICON
+             ↓
+   ELECTRONIC-GRADE PROCESS MATERIAL
+             ↓
+       CRYSTAL GROWTH
+             ↓
+            INGOT</div>
+<div class="card"><h3>Important corrections</h3><ul><li>Silicon is abundant in Earth's crust but is usually chemically bonded in silica and silicate minerals.</li><li>It is not accurate to say industry simply melts ordinary beach sand and adds boron.</li><li>Industrial purification and controlled crystal growth are essential.</li><li>Silicon melts at about 1414°C; individual industrial steps may use different temperatures and chemistries.</li></ul></div>
+</section>
+
+<section id="wafer" class="page">
+<div class="hero"><h1>Crystal → Ingot → Wafer</h1><p>Crystal quality and wafer surface quality are critical foundations for fabrication.</p></div>
+<div class="arch">PURIFIED SILICON
+      ↓
+MOLTEN SILICON
+      ↓
+SEED CRYSTAL + CONTROLLED GROWTH
+      ↓
+SINGLE-CRYSTAL INGOT
+      ↓
+CUT INTO THIN WAFERS
+      ↓
+GRIND / LAP / POLISH
+      ↓
+CLEAN + INSPECT
+      ↓
+FAB-READY WAFER</div>
+<p>Single-crystal structure provides a controlled substrate for transistor fabrication. Wafer thickness, flatness, defect density and surface cleanliness are tightly controlled.</p>
+</section>
+
+<section id="fabsteps" class="page">
+<div class="hero"><h1>Fabrication Steps</h1><p>The same core operations recur in carefully controlled sequences.</p></div>
+<table><tr><th>Step</th><th>Plain-English meaning</th></tr>
+<tr><td>Oxidation</td><td>Grow an oxide layer on silicon under controlled conditions.</td></tr>
+<tr><td>Deposition</td><td>Put down a thin film of material.</td></tr>
+<tr><td>Photoresist</td><td>Coat the wafer with a light-sensitive material.</td></tr>
+<tr><td>Photolithography</td><td>Use a mask and light to define where resist changes.</td></tr>
+<tr><td>Etching</td><td>Remove selected material according to the patterned resist.</td></tr>
+<tr><td>Ion implantation</td><td>Introduce dopant ions at controlled dose and energy.</td></tr>
+<tr><td>Annealing</td><td>Thermally repair/activate the implanted region and tune material properties.</td></tr>
+<tr><td>CMP</td><td>Flatten a surface using chemical and mechanical action.</td></tr>
+<tr><td>Cleaning</td><td>Remove particles, residues and contaminants.</td></tr>
+<tr><td>Metrology</td><td>Measure critical dimensions, films and defects.</td></tr>
+</table>
+<div class="why"><b>Think “pattern → modify → flatten → inspect → repeat”.</b> That mental model explains a large part of modern wafer fabrication.</div>
+</section>
+
+<section id="doping" class="page">
+<div class="hero"><h1>Doping — Boron, Phosphorus and Carrier Control</h1><p>Doping changes the electrical behavior of a semiconductor by introducing carefully controlled impurity atoms.</p></div>
+<div class="arch">PURE / INTRINSIC SILICON
+        ↓
+   CONTROLLED DOPING
+   ┌───────────────┐
+   │ Boron (B)     │ → acceptor → P-type → holes majority
+   │ Phosphorus(P) │ → donor    → N-type → electrons majority
+   └───────────────┘
+        ↓
+ENGINEERED REGIONS
+        ↓
+PN JUNCTIONS / MOSFET SOURCE-DRAIN / WELL STRUCTURES
+        ↓
+FUNCTIONAL TRANSISTORS</div>
+<div class="card"><h3>Why boron creates P-type behavior</h3><p>Silicon normally forms four covalent bonds. Boron has three valence electrons. When boron substitutes for silicon, the bonding arrangement creates an acceptor state; the resulting absence of an electron in the bonding picture is treated as a mobile <b>hole</b>.</p></div>
+<div class="card"><h3>Why phosphorus creates N-type behavior</h3><p>Phosphorus has five valence electrons. Four can participate in the silicon-like bonding arrangement, leaving an extra electron associated with donor behavior. Electrons become the majority carriers.</p></div>
+<div class="warn"><b>Better than “boron removes electrons”:</b> boron creates an acceptor state. Better than “phosphorus adds an electron to the chip”: phosphorus introduces a donor impurity whose extra electron can contribute to conduction.</div>
+</section>
+
+<section id="test" class="page">
+<div class="hero"><h1>Wafer Test → Dicing → Package → Final Test</h1><p>Manufacturing is incomplete until the physical product is electrically characterized and qualified.</p></div>
+<div class="arch">FABRICATED WAFER
+      ↓
+WAFER SORT / PROBE TEST
+      ↓
+KNOWN-GOOD / BINNING DATA
+      ↓
+DICING
+      ↓
+INDIVIDUAL DIE
+      ↓
+PACKAGE ASSEMBLY
+      ↓
+PACKAGE TEST
+      ↓
+CHARACTERIZATION / VALIDATION
+      ↓
+BINNING / QUALITY SCREEN
+      ↓
+SHIP TO SYSTEM / CUSTOMER</div>
+<p>Different products have different test, qualification and screening requirements. “Yield” describes the fraction of manufactured units meeting defined criteria; defects can occur at many stages.</p>
+</section>
+
+<section id="modern" class="page">
+<div class="hero"><h1>Modern Compute</h1><p>Modern systems are heterogeneous: different compute engines work together.</p></div>
+<div class="grid">
+<div class="card"><h3>CPU</h3><p>General-purpose control and low-latency workloads.</p></div>
+<div class="card"><h3>GPU</h3><p>Highly parallel throughput workloads, graphics and AI.</p></div>
+<div class="card"><h3>NPU / AI accelerator</h3><p>Specialized matrix/tensor or inference workloads, depending on architecture.</p></div>
+<div class="card"><h3>DSP / media</h3><p>Specialized signal and multimedia processing.</p></div>
+</div>
+<div class="arch">APPLICATION
+    ↓
+RUNTIME / OS
+    ↓
+┌──────────── COMPUTE FABRIC ────────────┐
+│ CPU ↔ GPU ↔ NPU ↔ DSP ↔ MEDIA         │
+│            ↕                           │
+│      CACHE / INTERCONNECT              │
+│            ↕                           │
+│        MEMORY / HBM / DDR              │
+└────────────────────────────────────────┘</div>
+</section>
+
+<section id="chiplets" class="page">
+<div class="hero"><h1>Chiplets & Advanced Packaging</h1><p>Instead of putting everything on one large monolithic die, a system can combine multiple dies/chiplets in one package.</p></div>
+<div class="arch">PACKAGE
+┌──────────────────────────────────────┐
+│  CHIPLET A   ↔   CHIPLET B           │
+│     CPU            I/O               │
+│                                      │
+│  CHIPLET C   ↔   HBM STACKS          │
+│     GPU / AI                         │
+│                                      │
+│      substrate / interposer          │
+└──────────────────────────────────────┘</div>
+<div class="card"><h3>Why use chiplets?</h3><ul><li>Mix different functions and process nodes.</li><li>Potentially improve yield versus one huge die.</li><li>Reuse chiplet designs.</li><li>Scale package-level compute and memory bandwidth.</li></ul><p class="small">Trade-offs include packaging complexity, die-to-die interconnect, power, latency, testing and software/architecture integration.</p></div>
+</section>
+
+<section id="hbm" class="page">
+<div class="hero"><h1>HBM & Memory Bandwidth</h1><p>High Bandwidth Memory places DRAM dies in a vertical stack and uses a very wide interface to increase bandwidth near accelerators.</p></div>
+<div class="arch">        GPU / AI ACCELERATOR
+                 │
+          WIDE MEMORY LINK
+                 │
+        ┌───────────────┐
+        │ HBM stack     │
+        │ DRAM die      │
+        │ DRAM die      │
+        │ DRAM die      │
+        │ DRAM die      │
+        └───────────────┘
+             package</div>
+<div class="why"><b>AI insight:</b> compute throughput can be limited by how quickly data reaches the compute units. Memory bandwidth and locality therefore become first-class architecture concerns.</div>
+</section>
+
+<section id="ai" class="page">
+<div class="hero"><h1>AI Hardware</h1><p>AI workloads emphasize matrix operations, memory movement, parallelism and efficient execution.</p></div>
+<table><tr><th>Concept</th><th>Why it matters</th></tr>
+<tr><td>Tensor / matrix operations</td><td>Core operations in many neural-network workloads.</td></tr>
+<tr><td>Parallelism</td><td>Many independent operations can execute concurrently.</td></tr>
+<tr><td>Memory bandwidth</td><td>Weights and activations must move efficiently.</td></tr>
+<tr><td>Precision</td><td>FP32, BF16, FP16, INT8 and other formats trade accuracy, bandwidth and compute cost.</td></tr>
+<tr><td>Software stack</td><td>Compilers, kernels, runtimes and frameworks determine whether hardware is effectively used.</td></tr>
+</table>
+<div class="arch">MODEL
+ ↓
+FRAMEWORK (PyTorch / etc.)
+ ↓
+GRAPH / COMPILER / RUNTIME
+ ↓
+KERNELS
+ ↓
+CPU / GPU / NPU / ACCELERATOR
+ ↓
+MEMORY + INTERCONNECT
+ ↓
+PHYSICAL SILICON</div>
+</section>
+
+<section id="companies" class="page">
+<div class="hero"><h1>Company Ecosystem — Who Does What?</h1><p>Use this page to map company roles rather than memorizing a flat company list.</p></div>
+<table><tr><th>Company / organization</th><th>Primary role(s)</th></tr>
+<tr><td>Intel</td><td>CPU/SoC/accelerator design, software, platforms; manufacturing/foundry activities.</td></tr>
+<tr><td>AMD</td><td>CPU/GPU/accelerator/system design; uses external manufacturing partners for many products.</td></tr>
+<tr><td>NVIDIA</td><td>GPU/accelerator/system design and software ecosystem; uses foundry and packaging partners.</td></tr>
+<tr><td>TSMC</td><td>Leading pure-play foundry; manufactures chips for customers.</td></tr>
+<tr><td>Samsung</td><td>Broad semiconductor ecosystem including memory and foundry activities.</td></tr>
+<tr><td>Qualcomm</td><td>Mobile/edge SoCs, modems, connectivity and related platforms.</td></tr>
+<tr><td>Broadcom</td><td>Networking, connectivity, custom silicon and infrastructure semiconductors.</td></tr>
+<tr><td>Apple</td><td>System/chip architecture and custom silicon for its products.</td></tr>
+<tr><td>ASML</td><td>Lithography equipment.</td></tr>
+<tr><td>Applied Materials / Lam Research / KLA</td><td>Major semiconductor manufacturing equipment and process-control roles.</td></tr>
+<tr><td>Synopsys / Cadence / Siemens EDA</td><td>EDA tools and semiconductor IP.</td></tr>
+<tr><td>ASE / Amkor</td><td>Packaging and test services.</td></tr>
+</table>
+<div class="note">Roles can overlap and evolve. This table is an orientation map, not a complete description of every company's current portfolio.</div>
+</section>
+
+<section id="standards" class="page">
+<div class="hero"><h1>Standards Organizations</h1><p>Interoperability depends on specifications shared across vendors.</p></div>
+<table><tr><th>Organization / ecosystem</th><th>Examples</th></tr>
+<tr><td>IEEE</td><td>802.3 Ethernet, 802.11 Wi-Fi and many other standards.</td></tr>
+<tr><td>Bluetooth SIG</td><td>Bluetooth specifications and profiles/ecosystem governance.</td></tr>
+<tr><td>3GPP</td><td>Cellular system specifications including LTE and 5G NR.</td></tr>
+<tr><td>USB-IF</td><td>USB specifications and certification ecosystem.</td></tr>
+<tr><td>PCI-SIG</td><td>PCI Express specifications.</td></tr>
+<tr><td>JEDEC</td><td>Many memory and semiconductor-industry standards.</td></tr>
+<tr><td>W3C / IETF</td><td>Web standards and Internet protocol standards respectively.</td></tr>
+</table>
+</section>
+
+<section id="diy" class="page">
+<div class="hero"><h1>DIY Labs — See the Concepts Yourself</h1><p>You can reproduce many software and low-voltage electronics concepts without a semiconductor fab.</p></div>
+<div class="grid">
+<div class="card"><h3>Lab 1 — Logic gates</h3><p>Use an Arduino/Raspberry Pi Pico and LEDs to implement NOT/AND/OR truth tables.</p><pre>INPUT A → GPIO
+INPUT B → GPIO
+OUTPUT  → LED
+Observe 00, 01, 10, 11</pre></div>
+<div class="card"><h3>Lab 2 — Transistor switch</h3><p>Use a small low-voltage transistor, resistor and LED. Drive the base/gate from a GPIO through an appropriate circuit. Follow the component datasheet and safe voltage/current limits.</p></div>
+<div class="card"><h3>Lab 3 — Linux networking</h3><pre>ip addr
+ip route
+ping 1.1.1.1
+ss -tulpen
+traceroute example.com
+dig example.com</pre></div>
+<div class="card"><h3>Lab 4 — Wi-Fi inspection</h3><pre>Linux:
+iw dev
+iw list
+nmcli dev wifi
+ip link</pre><p>Observe SSIDs, channels, signal level and interface state. Passive inspection is safer than attempting to interfere with other networks.</p></div>
+<div class="card"><h3>Lab 5 — Packet capture</h3><p>Use Wireshark on your own test network. Identify DNS, TCP, TLS and HTTP(S) flows. Do not capture traffic you are not authorized to inspect.</p></div>
+<div class="card"><h3>Lab 6 — CPU vs GPU</h3><p>Run the same numerical workload using a CPU implementation and a GPU-enabled framework, then compare execution time and data-transfer overhead.</p></div>
+</div>
+<div class="warn"><b>Safety:</b> Stay with low-voltage electronics. Never experiment with mains electricity, RF transmission outside legal/authorized limits, or unknown power supplies.</div>
+</section>
+
+<section id="debug" class="page">
+<div class="hero"><h1>Debugging Mindset</h1><p>Use the same layered method whether debugging a chip, driver, wireless link or application.</p></div>
+<div class="arch">SYMPTOM
+  ↓
+REPRODUCE
+  ↓
+DEFINE EXPECTED BEHAVIOR
+  ↓
+IDENTIFY LAYER
+  ↓
+COLLECT EVIDENCE
+  ↓
+FORM HYPOTHESIS
+  ↓
+CHANGE ONE THING
+  ↓
+RETEST
+  ↓
+ROOT CAUSE
+  ↓
+FIX + REGRESSION TEST</div>
+<div class="card"><h3>Layer checklist</h3><ul><li>Application / workload</li><li>OS / driver</li><li>Runtime / compiler</li><li>Device firmware</li><li>Protocol / link</li><li>Hardware / power / thermal</li><li>Physical signal / RF</li><li>Manufacturing / silicon issue</li></ul></div>
+</section>
+
+<section id="qa" class="page">
+<div class="hero"><h1>Interview / KT Q&A</h1><p>Use these as short spoken answers. Expand with the diagrams when someone asks “how?”</p></div>
+<div class="qa"><b>Q: Why are semiconductors useful for computers?</b>A: Their carrier concentration and electrical behavior can be engineered and controlled, allowing devices such as diodes and MOSFETs to act as switches and other circuit elements.</div>
+<div class="qa"><b>Q: Why not build a computer only from conductors?</b>A: Conductors are excellent for wiring, but a computer needs controllable switching and isolation. Semiconductor devices provide that control.</div>
+<div class="qa"><b>Q: Is silicon naturally a semiconductor?</b>A: Yes. Silicon is a semiconductor material. Industrial chips use highly purified, controlled silicon and intentionally engineered regions.</div>
+<div class="qa"><b>Q: What does doping mean?</b>A: Intentionally introducing controlled impurity atoms to change carrier concentration and electrical behavior.</div>
+<div class="qa"><b>Q: Why boron?</b>A: Boron has three valence electrons and behaves as an acceptor in silicon, producing P-type behavior with holes as majority carriers.</div>
+<div class="qa"><b>Q: Why phosphorus?</b>A: Phosphorus has five valence electrons and behaves as a donor in silicon, producing N-type behavior with electrons as majority carriers.</div>
+<div class="qa"><b>Q: What is a MOSFET?</b>A: A field-effect transistor in which an electric field at the gate controls a channel between source and drain.</div>
+<div class="qa"><b>Q: How do transistors become a CPU?</b>A: Transistors are organized into logic gates, storage elements and larger blocks such as ALUs, control logic, caches and interconnects; these implement the processor architecture.</div>
+<div class="qa"><b>Q: What is the Internet?</b>A: A global system of interconnected networks using common protocols such as IP. The Web is one service that runs over it.</div>
+<div class="qa"><b>Q: Is Wi-Fi the Internet?</b>A: No. Wi-Fi is a local wireless link/network technology. It can provide access to an IP network, which may then reach the Internet.</div>
+<div class="qa"><b>Q: How is a chip made from sand?</b>A: Silicon-containing minerals are processed and purified into high-purity silicon, grown into a single-crystal ingot, sliced into wafers and processed through many fabrication cycles before packaging and test.</div>
+<div class="qa"><b>Q: What is a foundry?</b>A: A semiconductor manufacturing company that fabricates wafers for itself and/or customers, depending on its business model.</div>
+<div class="qa"><b>Q: What is the difference between verification and validation?</b>A: Verification checks implementation against specification; validation checks whether the product meets intended real-world requirements and use cases.</div>
+</section>
+
+<section id="glossary" class="page">
+<div class="hero"><h1>Glossary</h1><p>Keep these definitions short. Learn the relationship between them.</p></div>
+<table><tr><th>Term</th><th>Meaning</th></tr>
+<tr><td>Atom</td><td>Basic unit of an element; electrons occupy quantized states around the nucleus.</td></tr>
+<tr><td>Valence electron</td><td>Electron in an outer shell involved in chemical bonding and material behavior.</td></tr>
+<tr><td>Band gap</td><td>Energy separation between valence and conduction bands in a semiconductor.</td></tr>
+<tr><td>Carrier</td><td>Mobile charge carrier; electrons and holes are the main semiconductor carriers.</td></tr>
+<tr><td>Doping</td><td>Intentional addition of impurities to engineer carrier behavior.</td></tr>
+<tr><td>PN junction</td><td>Interface between P-type and N-type semiconductor regions.</td></tr>
+<tr><td>Diode</td><td>Device that uses junction/device physics to provide strongly asymmetric current behavior.</td></tr>
+<tr><td>MOSFET</td><td>Metal-oxide-semiconductor field-effect transistor.</td></tr>
+<tr><td>CMOS</td><td>Complementary MOS circuit technology using PMOS and NMOS devices.</td></tr>
+<tr><td>IC</td><td>Integrated circuit.</td></tr>
+<tr><td>ISA</td><td>Instruction Set Architecture.</td></tr>
+<tr><td>RTL</td><td>Register-transfer level hardware description.</td></tr>
+<tr><td>EDA</td><td>Electronic Design Automation.</td></tr>
+<tr><td>Fab</td><td>Semiconductor fabrication facility.</td></tr>
+<tr><td>Foundry</td><td>Company providing wafer fabrication services.</td></tr>
+<tr><td>OSAT</td><td>Outsourced Semiconductor Assembly and Test.</td></tr>
+<tr><td>Yield</td><td>Fraction of manufactured units meeting defined criteria.</td></tr>
+<tr><td>RF</td><td>Radio frequency.</td></tr>
+<tr><td>PHY</td><td>Physical layer.</td></tr>
+<tr><td>MAC</td><td>Media Access Control layer/subsystem.</td></tr>
+<tr><td>SoC</td><td>System on Chip.</td></tr>
+<tr><td>Chiplet</td><td>One die used as part of a multi-die package/system.</td></tr>
+<tr><td>HBM</td><td>High Bandwidth Memory.</td></tr>
+</table>
+</section>
+
+<section id="revision" class="page">
+<div class="hero"><h1>Quick Revision</h1><p>If you can explain these chains, you have the core mental model.</p></div>
+<div class="grid">
+<div class="card"><h3>Material chain</h3><p><b>Silicon → crystal → wafer → engineered regions → devices</b></p></div>
+<div class="card"><h3>Device chain</h3><p><b>Carrier control → MOSFET → switch → logic → circuits</b></p></div>
+<div class="card"><h3>Compute chain</h3><p><b>Logic → ALU/control/cache → CPU/GPU/accelerator → system</b></p></div>
+<div class="card"><h3>Communication chain</h3><p><b>Bits → protocol → PHY → RF → antenna → radio wave → receiver</b></p></div>
+<div class="card"><h3>Internet chain</h3><p><b>Application → TCP/UDP → IP → Ethernet/Wi-Fi → router → ISP → destination</b></p></div>
+<div class="card"><h3>Manufacturing chain</h3><p><b>Purify → crystal → wafer → pattern/modify/repeat → test → dice → package</b></p></div>
+</div>
+<div class="arch">ONE-MINUTE EXPLANATION
+
+A computer needs controllable electronic switches.
+Modern switches are largely MOSFETs made from engineered semiconductor regions.
+Silicon is purified, grown as a single crystal and made into wafers.
+Manufacturing repeatedly patterns and modifies thin layers to create billions of devices
+and their interconnects.
+Those devices form logic, memory and compute engines such as CPUs and GPUs.
+The system connects to peripherals through I/O and networks through wired or wireless links.
+Wi-Fi, Bluetooth and cellular use radio; the Internet connects many networks using protocols.
+Modern AI systems add specialized accelerators, high-bandwidth memory and advanced packaging.</div>
+</section>
+
+<section id="quiz" class="page">
+<div class="hero"><h1>Knowledge Check</h1><p>Try answering before opening the answer.</p></div>
+<ol class="check">
+<li>Why is “semiconductor = halfway between conductor and insulator” incomplete?</li>
+<li>What is the role of valence electrons in silicon?</li>
+<li>What changes when silicon is doped with boron?</li>
+<li>What changes when silicon is doped with phosphorus?</li>
+<li>How does a MOSFET use an electric field?</li>
+<li>How do transistors become logic gates?</li>
+<li>What is the difference between CPU and GPU at a high level?</li>
+<li>Why is DRAM not the same as SRAM?</li>
+<li>What is the difference between Wi-Fi and the Internet?</li>
+<li>Why is an antenna needed in wireless communication?</li>
+<li>What is the role of a foundry?</li>
+<li>Why are lithography, etch and deposition repeated?</li>
+<li>What is an OSAT?</li>
+<li>Why can memory bandwidth become a bottleneck for AI?</li>
+</ol>
+<div class="card"><h3>Self-check answers</h3>
+<ol><li>Because the defining engineering value is controllable carrier concentration and device behavior, not a simple midpoint.</li>
+<li>They participate in bonding and influence the electronic structure of crystalline silicon.</li>
+<li>Boron acts as an acceptor and creates P-type behavior with holes as majority carriers.</li>
+<li>Phosphorus acts as a donor and creates N-type behavior with electrons as majority carriers.</li>
+<li>The gate field controls channel carrier concentration and therefore source-drain current.</li>
+<li>Transistors are connected into gates, then larger sequential/combinational blocks.</li>
+<li>CPU is general-purpose and control-oriented; GPU is highly parallel and throughput-oriented.</li>
+<li>DRAM uses capacitor-based cells; SRAM uses transistor-based latch cells.</li>
+<li>Wi-Fi is a local wireless networking technology; the Internet is a global interconnected network system.</li>
+<li>The antenna converts between guided electrical/RF energy and electromagnetic radiation.</li>
+<li>A foundry fabricates semiconductor wafers using a process technology.</li>
+<li>Different layers/features must be built and patterned to create the complete 3D device and interconnect structure.</li>
+<li>Outsourced Semiconductor Assembly and Test.</li>
+<li>Accelerators can perform huge numbers of operations, but they still need to fetch weights and activations.</li></ol>
+</div>
+</section>
+
+<section id="audit" class="page">
+<div class="hero"><h1>Coverage Audit</h1><p>This page makes the intended scope explicit so future additions can be checked instead of getting lost.</p></div>
+<table><tr><th>Original learning question</th><th>Covered?</th><th>Where</th></tr>
+<tr><td>When / where / who in computing history?</td><td>Yes</td><td>Timeline + Q&A</td></tr>
+<tr><td>First computer</td><td>Yes, with definition caveat</td><td>Timeline</td></tr>
+<tr><td>Was the first computer made with a chip?</td><td>Yes, conceptually</td><td>Timeline + foundations</td></tr>
+<tr><td>First transistor / first IC / MOSFET pioneers</td><td>Yes</td><td>Semiconductor + Transistor</td></tr>
+<tr><td>First GPU</td><td>Partially</td><td>GPU history is not a single universal “first”; architecture page focuses on concepts</td></tr>
+<tr><td>Computer peripherals</td><td>Yes</td><td>Peripherals</td></tr>
+<tr><td>First Internet</td><td>Yes, with historical definition caveat</td><td>Internet</td></tr>
+<tr><td>First wireless technology</td><td>Partially</td><td>Radio & Wireless; history is treated as an evolution rather than one “first”</td></tr>
+<tr><td>Infrared / Bluetooth / Wi-Fi / cellular</td><td>Yes</td><td>Connectivity</td></tr>
+<tr><td>Companies and roles</td><td>Yes</td><td>Industry + Company Ecosystem</td></tr>
+<tr><td>How chips are made</td><td>Yes</td><td>Manufacturing sections</td></tr>
+<tr><td>Sand / quartz → silicon</td><td>Yes</td><td>Sand → Silicon</td></tr>
+<tr><td>Boron / phosphorus doping</td><td>Yes</td><td>Doping</td></tr>
+<tr><td>Conductor vs semiconductor vs insulator</td><td>Yes</td><td>Semiconductor Fundamentals</td></tr>
+<tr><td>Why semiconductor rather than conductor?</td><td>Yes</td><td>Semiconductor Fundamentals</td></tr>
+<tr><td>DIY practical demonstrations</td><td>Yes</td><td>DIY Labs</td></tr>
+</table>
+<div class="warn"><b>Known scope boundary:</b> This guide is a structured foundation, not a process-engineering textbook. Exact fabrication recipes, process-node details, proprietary implementations and current product specifications vary by company and generation.</div>
+</section>
+
+<section id="sources" class="page">
+<div class="hero"><h1>Sources & Scope</h1><p>Use authoritative references when you need exact historical dates, standards versions, current product specifications or manufacturing details.</p></div>
+<div class="card"><h3>Source basis for this version</h3>
+<ul>
+<li>User-provided <b>Semiconductor Masterclass</b> HTML: used for the conductor/semiconductor foundations, historical pioneers and basic manufacturing ingredient structure.</li>
+<li>User-provided <b>Intel Wireless Connectivity — Knowledge Guide</b>: used as the layout/style reference for this master guide.</li>
+<li>User-provided learning questions and notes: used to define the requested scope.</li>
+</ul></div>
+<div class="card"><h3>Recommended authoritative reference families</h3>
+<ul>
+<li>IEEE — computer and networking standards</li>
+<li>IETF — Internet protocols and RFCs</li>
+<li>3GPP — cellular standards</li>
+<li>Bluetooth SIG — Bluetooth specifications</li>
+<li>PCI-SIG / USB-IF / JEDEC — interface and memory standards</li>
+<li>Semiconductor manufacturer technology/process documentation</li>
+<li>University semiconductor/device physics textbooks and lecture notes</li>
+</ul></div>
+<div class="note"><b>Scope note:</b> Historical “first” claims often depend on definitions. Company roles and product capabilities change over time. For current factual claims, verify against current official documentation before using this guide as a formal engineering reference.</div>
+<div class="footer">Single-file learning guide • Designed for local/offline reading • No external JavaScript or CSS dependencies</div>
+</section>
+
+</main>
+<script>
+const tabs=[...document.querySelectorAll('.tab')];
+const pages=[...document.querySelectorAll('.page')];
+function show(id,update=true){
+  pages.forEach(p=>p.classList.toggle('active',p.id===id));
+  tabs.forEach(t=>t.classList.toggle('active',t.dataset.page===id));
+  if(update) history.replaceState(null,'','#'+id);
+  window.scrollTo({top:0,behavior:'instant'});
+}
+tabs.forEach(t=>t.addEventListener('click',()=>show(t.dataset.page)));
+const initial=location.hash.slice(1);
+if(initial && document.getElementById(initial)) show(initial,false);
+</script>
+</body>
+</html>
