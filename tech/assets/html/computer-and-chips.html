@@ -631,8 +631,37 @@ MASK / RETICLE
           TRANSISTORS</div>
 </div>
 
-<div class="grid">
-<div class="card"><h3>DUV vs EUV</h3><p><b>DUV</b> uses deep-ultraviolet wavelengths and remains important across many semiconductor layers and products. <b>EUV</b> uses much shorter-wavelength extreme-ultraviolet light and helps pattern the smallest, most critical layers with less reliance on complex multi-patterning.</p></div>
+<div class="card"><h3>DUV vs EUV — simple meaning</h3>
+<table><tr><th>Technology</th><th>Full name</th><th>Typical light</th><th>Who makes it?</th><th>Where it fits</th></tr>
+<tr><td><b>DUV</b></td><td>Deep Ultraviolet</td><td>Common advanced systems use ArF excimer lasers at 193 nm; other DUV generations include KrF at 248 nm.</td><td><b>ASML, Nikon, Canon</b> and others in related lithography equipment markets.</td><td>Used across many chip layers, including critical layers where appropriate. DUV remains essential even in advanced fabs.</td></tr>
+<tr><td><b>EUV</b></td><td>Extreme Ultraviolet</td><td><b>13.5 nm</b></td><td><b>ASML</b> — currently the only manufacturer of EUV lithography systems.</td><td>Used for the most intricate layers of leading-edge chips; DUV is still used for many other layers.</td></tr>
+</table>
+<p><b>Easy memory trick:</b> DUV = shorter-than-visible UV used broadly in semiconductor lithography. EUV = much shorter 13.5 nm light used for the most demanding patterning.</p>
+<p class="small">Important: “Who makes it?” means lithography equipment manufacturers, not the chip manufacturers. Intel, TSMC, Samsung and others are the <i>customers/fabs</i> that use lithography tools to manufacture chips.</p>
+</div>
+<div class="card"><h3>Who does what?</h3>
+<div class="arch">LITHOGRAPHY EQUIPMENT
+        │
+        ├── DUV ──► ASML
+        │          Nikon
+        │          Canon
+        │
+        └── EUV ──► ASML
+                    (unique EUV systems)
+
+EQUIPMENT
+   ↓
+CHIPMAKER FAB
+   ↓
+WAFFER + PHOTORESIST
+   ↓
+PATTERN TRANSFER
+   ↓
+TRANSISTORS / INTERCONNECTS
+   ↓
+CHIP</div>
+<p>ASML itself has both DUV and EUV product lines. Nikon and Canon also supply semiconductor lithography equipment, particularly in DUV and related technologies. Canon additionally commercializes nanoimprint lithography (NIL), which transfers patterns using a stamp-like mold rather than conventional optical projection.</p>
+</div>
 <div class="card"><h3>Why EUV is difficult</h3><p>EUV light is absorbed by almost all materials, so conventional lenses cannot be used. ASML's EUV systems use a vacuum environment and multilayer precision mirrors instead.</p></div>
 <div class="card"><h3>High-NA EUV</h3><p>ASML's EXE platform raises numerical aperture from 0.33 to 0.55. Higher NA enables higher-resolution patterning and is intended to support future advanced logic and memory nodes.</p></div>
 <div class="card"><h3>Global ecosystem</h3><p>ASML integrates a highly specialized international supplier ecosystem. A useful lesson is that a country's technological advantage can come from system integration plus decades of specialized partners, not from every component being made domestically.</p></div>
