@@ -75,33 +75,34 @@ ul,ol{padding-left:22px}.check li{margin:5px 0}
 <button class="tab" data-page="eda">22 · EDA & IP</button>
 <button class="tab" data-page="fab">23 · Fabless / IDM / Foundry</button>
 <button class="tab" data-page="equipment">24 · Equipment</button>
-<button class="tab" data-page="packaging">25 · Packaging & OSAT</button>
+<button class="tab" data-page="asml">25 · ASML & EUV</button>
+<button class="tab" data-page="packaging">26 · Packaging & OSAT</button>
 
 <div class="group">How Chips Are Made</div>
-<button class="tab" data-page="manufacturing">26 · Manufacturing Overview</button>
-<button class="tab" data-page="silicon">27 · Sand → Silicon</button>
-<button class="tab" data-page="wafer">28 · Crystal → Wafer</button>
-<button class="tab" data-page="fabsteps">29 · Fabrication Steps</button>
-<button class="tab" data-page="doping">30 · Doping</button>
-<button class="tab" data-page="test">31 · Test → Package → Ship</button>
+<button class="tab" data-page="manufacturing">27 · Manufacturing Overview</button>
+<button class="tab" data-page="silicon">28 · Sand → Silicon</button>
+<button class="tab" data-page="wafer">29 · Crystal → Wafer</button>
+<button class="tab" data-page="fabsteps">30 · Fabrication Steps</button>
+<button class="tab" data-page="doping">31 · Doping</button>
+<button class="tab" data-page="test">32 · Test → Package → Ship</button>
 
 <div class="group">Modern Computing</div>
-<button class="tab" data-page="modern">32 · Modern Compute</button>
-<button class="tab" data-page="chiplets">33 · Chiplets & Packaging</button>
-<button class="tab" data-page="hbm">34 · HBM & Memory Bandwidth</button>
-<button class="tab" data-page="ai">35 · AI Hardware</button>
-<button class="tab" data-page="companies">36 · Company Ecosystem</button>
-<button class="tab" data-page="standards">37 · Standards</button>
+<button class="tab" data-page="modern">33 · Modern Compute</button>
+<button class="tab" data-page="chiplets">34 · Chiplets & Packaging</button>
+<button class="tab" data-page="hbm">35 · HBM & Memory Bandwidth</button>
+<button class="tab" data-page="ai">36 · AI Hardware</button>
+<button class="tab" data-page="companies">37 · Company Ecosystem</button>
+<button class="tab" data-page="standards">38 · Standards</button>
 
 <div class="group">Practice</div>
-<button class="tab" data-page="diy">38 · DIY Labs</button>
-<button class="tab" data-page="debug">39 · Debugging Mindset</button>
-<button class="tab" data-page="qa">40 · Interview / KT Q&A</button>
-<button class="tab" data-page="glossary">41 · Glossary</button>
-<button class="tab" data-page="revision">42 · Quick Revision</button>
-<button class="tab" data-page="quiz">43 · Knowledge Check</button>
-<button class="tab" data-page="audit">44 · Coverage Audit</button>
-<button class="tab" data-page="sources">45 · Sources & Scope</button>
+<button class="tab" data-page="diy">39 · DIY Labs</button>
+<button class="tab" data-page="debug">40 · Debugging Mindset</button>
+<button class="tab" data-page="qa">41 · Interview / KT Q&A</button>
+<button class="tab" data-page="glossary">42 · Glossary</button>
+<button class="tab" data-page="revision">43 · Quick Revision</button>
+<button class="tab" data-page="quiz">44 · Knowledge Check</button>
+<button class="tab" data-page="audit">45 · Coverage Audit</button>
+<button class="tab" data-page="sources">46 · Sources & Scope</button>
 </aside>
 
 <main class="main">
@@ -602,6 +603,73 @@ FOUNDRY FABRICATION</div>
 </table>
 </section>
 
+
+<section id="asml" class="page">
+<div class="hero"><h1>ASML & EUV — The Lithography Bottleneck</h1><p>One of the most important pieces of the modern semiconductor ecosystem is the ability to pattern extremely small features on a wafer. ASML is currently the world's only manufacturer of EUV lithography systems.</p><span class="pill">Netherlands</span><span class="pill">EUV</span><span class="pill">Lithography</span><span class="pill">High-NA</span></div>
+
+<div class="card">
+<h3>Why ASML matters</h3>
+<p>Modern chip manufacturing needs lithography to transfer extremely small patterns onto a wafer. ASML's EUV systems are used for the most intricate critical layers of advanced microchips. ASML's 2025 annual report states that it is currently the world's only manufacturer of EUV lithography systems.</p>
+<div class="arch">CHIP DESIGN
+     ↓
+MASK / RETICLE
+     ↓
+┌──────────────────────────────┐
+│        ASML EUV SYSTEM       │
+│                              │
+│  EUV LIGHT SOURCE            │
+│        ↓                     │
+│  PRECISION MIRRORS / OPTICS  │
+│        ↓                     │
+│  RETICLE → WAFER             │
+└──────────────┬───────────────┘
+               ↓
+       PATTERN IN PHOTORESIST
+               ↓
+       ETCH / PROCESS STEPS
+               ↓
+          TRANSISTORS</div>
+</div>
+
+<div class="grid">
+<div class="card"><h3>DUV vs EUV</h3><p><b>DUV</b> uses deep-ultraviolet wavelengths and remains important across many semiconductor layers and products. <b>EUV</b> uses much shorter-wavelength extreme-ultraviolet light and helps pattern the smallest, most critical layers with less reliance on complex multi-patterning.</p></div>
+<div class="card"><h3>Why EUV is difficult</h3><p>EUV light is absorbed by almost all materials, so conventional lenses cannot be used. ASML's EUV systems use a vacuum environment and multilayer precision mirrors instead.</p></div>
+<div class="card"><h3>High-NA EUV</h3><p>ASML's EXE platform raises numerical aperture from 0.33 to 0.55. Higher NA enables higher-resolution patterning and is intended to support future advanced logic and memory nodes.</p></div>
+<div class="card"><h3>Global ecosystem</h3><p>ASML integrates a highly specialized international supplier ecosystem. A useful lesson is that a country's technological advantage can come from system integration plus decades of specialized partners, not from every component being made domestically.</p></div>
+</div>
+
+<div class="card">
+<h3>How the EUV light is generated</h3>
+<div class="arch">TINY TIN DROPLETS
+        ↓
+POWERFUL LASER PULSES
+        ↓
+PLASMA
+        ↓
+EUV LIGHT
+        ↓
+COLLECTED BY MIRRORS
+        ↓
+LITHOGRAPHY OPTICS
+        ↓
+WAFER</div>
+<p>ASML describes its EUV source as laser-produced plasma: laser pulses strike tiny tin droplets in/near vacuum to create plasma that emits EUV light. The process is repeated at very high frequency in commercial systems.</p>
+</div>
+
+<div class="card">
+<h3>Why mirrors instead of lenses?</h3>
+<p>At EUV wavelengths, most materials absorb the light. ASML therefore uses multilayer mirrors rather than conventional transmissive lenses. These mirrors require extraordinary surface precision and multilayer engineering.</p>
+</div>
+
+<div class="card">
+<h3>High-NA milestone — current context</h3>
+<p>ASML says the first High-NA EUV lithography system was delivered in December 2023. In July 2026, ASML reported that Intel Foundry had entered high-volume manufacturing for a subset of Intel Core Ultra Series 3 processors using ASML's EXE High-NA EUV technology on Intel 18A.</p>
+<div class="why"><b>Important distinction:</b> ASML makes the lithography equipment; Intel, TSMC, Samsung and other chipmakers use semiconductor manufacturing equipment to fabricate chips. ASML is not a chip manufacturer.</div>
+</div>
+
+<div class="note"><b>Learning takeaway:</b> When you learn “wafer → photolithography → transistor,” remember that lithography is itself a huge engineering discipline involving optics, lasers, vacuum systems, precision mechatronics, sensors, control software, metrology and computational techniques.</div>
+</section>
+
 <section id="packaging" class="page">
 <div class="hero"><h1>Packaging & OSAT</h1><p>A finished die needs mechanical protection, electrical connections, thermal management and a route to the system board.</p></div>
 <div class="arch">WAFER
@@ -845,6 +913,7 @@ PHYSICAL SILICON</div>
 <tr><td>Applied Materials / Lam Research / KLA</td><td>Major semiconductor manufacturing equipment and process-control roles.</td></tr>
 <tr><td>Synopsys / Cadence / Siemens EDA</td><td>EDA tools and semiconductor IP.</td></tr>
 <tr><td>ASE / Amkor</td><td>Packaging and test services.</td></tr>
+<tr><td>ASML</td><td>EUV and DUV lithography systems, plus metrology/inspection and software-related products across its portfolio.</td></tr>
 </table>
 <div class="note">Roles can overlap and evolve. This table is an orientation map, not a complete description of every company's current portfolio.</div>
 </section>
@@ -1029,6 +1098,7 @@ Modern AI systems add specialized accelerators, high-bandwidth memory and advanc
 <tr><td>First wireless technology</td><td>Partially</td><td>Radio & Wireless; history is treated as an evolution rather than one “first”</td></tr>
 <tr><td>Infrared / Bluetooth / Wi-Fi / cellular</td><td>Yes</td><td>Connectivity</td></tr>
 <tr><td>Companies and roles</td><td>Yes</td><td>Industry + Company Ecosystem</td></tr>
+<tr><td>ASML / EUV / High-NA lithography</td><td>Yes</td><td>ASML & EUV + Company Ecosystem</td></tr>
 <tr><td>How chips are made</td><td>Yes</td><td>Manufacturing sections</td></tr>
 <tr><td>Sand / quartz → silicon</td><td>Yes</td><td>Sand → Silicon</td></tr>
 <tr><td>Boron / phosphorus doping</td><td>Yes</td><td>Doping</td></tr>
@@ -1046,6 +1116,8 @@ Modern AI systems add specialized accelerators, high-bandwidth memory and advanc
 <li>User-provided <b>Semiconductor Masterclass</b> HTML: used for the conductor/semiconductor foundations, historical pioneers and basic manufacturing ingredient structure.</li>
 <li>User-provided <b>Intel Wireless Connectivity — Knowledge Guide</b>: used as the layout/style reference for this master guide.</li>
 <li>User-provided learning questions and notes: used to define the requested scope.</li>
+<li>ASML official 2025 Annual Report and ASML EUV product/technology pages: used to verify the EUV-only-manufacturer statement, EUV/High-NA facts and lithography concepts.</li>
+<li>ASML July 2026 High-NA EUV milestone release: used for the current Intel Foundry / 18A High-NA production context.</li>
 </ul></div>
 <div class="card"><h3>Recommended authoritative reference families</h3>
 <ul>
