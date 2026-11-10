@@ -45,3 +45,4 @@
 | 43 | *A Bag of Marbles* | 2017 | Christian Duguay / Jonathan Duguay | Christian Duguay | True Story / War | Dorian Le Clech — Joseph Joffo |
 | 44 | *North Face* | 2008 | Philipp Stölzl / Christoph Silber | Philipp Stölzl | True Story / Survival | Benno Fürmann — Toni Kurz |
 | 45 | *The 33* | 2015 | Mikko Alanne / Craig Borten / Michael Thomas | Patricia Riggen | True Story / Survival | Antonio Banderas — Mario Sepúlveda |
+| 46 | *My Penguin Friend* | 2024 |  are Paulina Lagudi Ulrich & Kristen Lazarian | David Schurmann | True Story of DinDim the Penguin | Jean Reno |
