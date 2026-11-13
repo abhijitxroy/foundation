@@ -26,6 +26,10 @@
 | 22 | *Yodha* | 2024 | Sagar Ambre / Pushkar Ojha | Sagar Ambre / Pushkar Ojha | Action / Thriller | Sidharth Malhotra |
 | 23 | *The Ghazi Attack* | 2017 | Sankalp Reddy / Niranjan Ramireddy / Gunnam Gangaraju / Azad Alam / Raja Raghu Vardhan | Sankalp Reddy | True Story / War | Rana Daggubati / Kay Kay Menon |
 | 24 | *Airlift* | 2016 | Raja Krishna Menon / Rahul Sangha / Ritesh Shah / Suresh Nair | Raja Krishna Menon | True Story / War | Akshay Kumar |
+| 25 | *The Tashkent Files* | 2019 | Vivek Agnihotri | Vivek Agnihotri | Political / Mystery / Thriller | Shweta Basu Prasad / Mithun Chakraborty / Naseeruddin Shah / Pankaj Tripathi |
+| 26 | *Madras Cafe* | 2013 | Shoojit Sircar / Shubhashish Bhutiani / Juhi Chaturvedi | Shoojit Sircar | Inspired by True Events / Political Thriller | John Abraham / Nargis Fakhri |
+| 27 | *The Accidental Prime Minister* | 2019 | Mayank Tewari / Vijay Gutte / Karl Dunne | Vijay Ratnakar Gutte | Biography / True Story / Political | Anupam Kher — Manmohan Singh / Akshaye Khanna — Sanjaya Baru |
+| 28 | *Article 370* | 2024 | Aditya Suhas Jambhale / Arjun Dhawan / Aditya Suhas Jambhale | Aditya Suhas Jambhale | Political Thriller / Based on Real Events | Yami Gautam / Priyamani |
 
 ## Web Series
 
